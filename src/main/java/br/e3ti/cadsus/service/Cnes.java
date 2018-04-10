@@ -29,6 +29,13 @@ import br.gov.saude.servicos.cnes.v1r0.profissionalsaudeservice.RequestConsultar
 import br.gov.saude.servicos.cnes.v1r0.profissionalsaudeservice.RequestConsultarProfissionalSaude;
 import br.gov.saude.servicos.cnes.v1r0.profissionalsaudeservice.ResponseConsultarProfissionaisSaude;
 import br.gov.saude.servicos.cnes.v1r0.profissionalsaudeservice.ResponseConsultarProfissionalSaude;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.RequestVinculacao;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.RequestVinculacaos;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.ResponseVinculacao;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.ResponseVinculacaos;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoFault;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoPortType;
+import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoProfissionalService;
 import br.gov.saude.servicos.schema.cadsus.v5r0.cns.CNSType;
 import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
@@ -36,6 +43,11 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnpj.CNPJTyp
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.registroprofissionalsaude.RegistroProfissionalSaudeType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaestabelecimentosaude.FiltroPesquisaEstabelecimentoSaudeType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprofissionalsaude.FiltroPesquisaProfissionalSaudeType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.EstabelecimentoVinculacaoType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.FiltroPesquisaVinculacaoType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.TipoVinculacaoType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.FiltroPesquisaVinculacaosType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.ProfissionalVinculacaoType;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -144,7 +156,7 @@ public class Cnes extends BaseService {
 
     }
 
-    public ResponseConsultarProfissionalSaude getProfissionalByCnes(CNSType cns, CPFType cpf, RegistroProfissionalSaudeType registroProfissional) {
+    public ResponseConsultarProfissionalSaude getProfissional(CNSType cns, CPFType cpf, RegistroProfissionalSaudeType registroProfissional) {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
@@ -177,7 +189,7 @@ public class Cnes extends BaseService {
         }
     }
 
-    public ResponseConsultarProfissionaisSaude getProfissionaisByCnes(String cnes, String cnpj) {
+    public ResponseConsultarProfissionaisSaude getProfissionais(String cnes, String cnpj) {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
@@ -206,6 +218,75 @@ public class Cnes extends BaseService {
             return port.consultarProfissionaisSaude(requestConsultarProfissionalSaude);
         } catch (ProfissionalSaudeFault ex) {
             Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+            return null;
+        }
+
+    }
+
+    public ResponseVinculacaos getVinculacoes(br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.EstabelecimentoVinculacaoType estabelecimentoVinculacaoType, ProfissionalVinculacaoType profissionalVinculacaoType) {
+
+        try {
+            // Call Web Cnes Operation
+            VinculacaoProfissionalService service = new VinculacaoProfissionalService();
+            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            service.setHandlerResolver(handlerResolver);
+            VinculacaoPortType port = service.getVinculacaoProfissionalServicePort();
+            RequestVinculacaos requestVinculacaos = new RequestVinculacaos();
+
+            FiltroPesquisaVinculacaosType filtroPesquisaVinculacaosType = new FiltroPesquisaVinculacaosType();
+
+            if (Objects.nonNull(profissionalVinculacaoType)) {
+
+                filtroPesquisaVinculacaosType.setIdentificacaoProfissional(profissionalVinculacaoType);
+            }
+
+            if (Objects.nonNull(estabelecimentoVinculacaoType)) {
+
+                filtroPesquisaVinculacaosType.setIdentificacaoEstabelecimento(estabelecimentoVinculacaoType);
+            }
+
+            requestVinculacaos.setFiltroPesquisaVinculacaos(filtroPesquisaVinculacaosType);
+
+            return port.pesquisarVinculacaoProfissionalSaude(requestVinculacaos);
+        } catch (VinculacaoFault ex) {
+            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
+
+    }
+
+    public ResponseVinculacao getVinculacao(
+            EstabelecimentoVinculacaoType estabelecimentoVinculacaoType,
+            br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.ProfissionalVinculacaoType profissionalVinculacaoType,
+            TipoVinculacaoType tipoVinculacaoType) {
+
+        try {
+            // Call Web Cnes Operation
+            VinculacaoProfissionalService service = new VinculacaoProfissionalService();
+            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            service.setHandlerResolver(handlerResolver);
+            VinculacaoPortType port = service.getVinculacaoProfissionalServicePort();
+            RequestVinculacao requestVinculacao = new RequestVinculacao();
+
+            FiltroPesquisaVinculacaoType filtroPesquisaVinculacaosType = new FiltroPesquisaVinculacaoType();
+
+            if (Objects.nonNull(profissionalVinculacaoType)) {
+                filtroPesquisaVinculacaosType.setIdentificacaoProfissional(profissionalVinculacaoType);
+            }
+
+            if (Objects.nonNull(estabelecimentoVinculacaoType)) {
+                filtroPesquisaVinculacaosType.setIdentificacaoEstabelecimento(estabelecimentoVinculacaoType);
+            }
+
+            if (Objects.nonNull(tipoVinculacaoType)) {
+                filtroPesquisaVinculacaosType.setIdentificacaoVinculacao(tipoVinculacaoType);
+            }
+
+            requestVinculacao.setFiltroPesquisaVinculacao(filtroPesquisaVinculacaosType);
+
+            return port.detalharVinculacaoProfissionalSaude(requestVinculacao);
+        } catch (VinculacaoFault ex) {
+            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
 
