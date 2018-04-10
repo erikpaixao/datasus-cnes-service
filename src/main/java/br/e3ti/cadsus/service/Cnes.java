@@ -5,6 +5,7 @@
  */
 package br.e3ti.cadsus.service;
 
+import br.e3ti.cadsus.handlers.ClientHandlerCnes;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesFault;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesService;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesServicePortType;
@@ -78,7 +79,7 @@ public class Cnes extends BaseService {
 
         try { // Call Web Cnes Operation
             CnesService service = new CnesService();
-            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            HandlerResolver handlerResolver = new ClientHandlerCnes();
             service.setHandlerResolver(handlerResolver);
 
             CnesServicePortType port = service.getCnesServicePort();
@@ -103,7 +104,7 @@ public class Cnes extends BaseService {
 
         try { // Call Web Cnes Operation
             CnesService service = new CnesService();
-            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            HandlerResolver handlerResolver = new ClientHandlerCnes();
             service.setHandlerResolver(handlerResolver);
 
             CnesServicePortType port = service.getCnesServicePort();
@@ -130,7 +131,7 @@ public class Cnes extends BaseService {
 
         try { // Call Web Cnes Operation
             CnesService service = new CnesService();
-            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            HandlerResolver handlerResolver = new ClientHandlerCnes();
             service.setHandlerResolver(handlerResolver);
 
             CnesServicePortType port = service.getCnesServicePort();
@@ -153,7 +154,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         EquipamentoService service = new EquipamentoService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         EquipamentoServicePortType port = service.getEquipamentoServicePort();
         RequestConsultarEquipamentos consultarEquipamentos = new RequestConsultarEquipamentos();
@@ -175,7 +176,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         EstabelecimentoSaudeServicePortType port = service.getEstabelecimentoSaudeServicePort();
         br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestConsultarEstabelecimentoSaude requestConsultarEstabelecimentoSaude = new br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestConsultarEstabelecimentoSaude();
@@ -207,7 +208,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         EstabelecimentoSaudeServicePortType port = service.getEstabelecimentoSaudeServicePort();
         RequestConsultarPrecadastroCNES requestConsultarEstabelecimentoSaude = new RequestConsultarPrecadastroCNES();
@@ -237,7 +238,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         EstabelecimentoSaudeServicePortType port = service.getEstabelecimentoSaudeServicePort();
         RequestLocalizarEstabelecimentoSaude localizarEstabelecimentoSaude = new RequestLocalizarEstabelecimentoSaude();
@@ -269,7 +270,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         LeitoService service = new LeitoService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         LeitoServicePortType port = service.getLeitoServicePort();
         RequestConsultarLeitosCNES requestConsultarLeito = new RequestConsultarLeitosCNES();
@@ -290,7 +291,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         ProfissionalSaudeServicePortType port = service.getProfissionalSaudeServicePort();
         RequestConsultarProfissionalSaude requestConsultarProfissionalSaude = new RequestConsultarProfissionalSaude();
@@ -323,7 +324,7 @@ public class Cnes extends BaseService {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
-        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        HandlerResolver handlerResolver = new ClientHandlerCnes();
         service.setHandlerResolver(handlerResolver);
         ProfissionalSaudeServicePortType port = service.getProfissionalSaudeServicePort();
         RequestConsultarProfissionaisSaude requestConsultarProfissionalSaude = new RequestConsultarProfissionaisSaude();
@@ -358,7 +359,7 @@ public class Cnes extends BaseService {
         try {
             // Call Web Cnes Operation
             VinculacaoProfissionalService service = new VinculacaoProfissionalService();
-            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            HandlerResolver handlerResolver = new ClientHandlerCnes();
             service.setHandlerResolver(handlerResolver);
             VinculacaoPortType port = service.getVinculacaoProfissionalServicePort();
             RequestVinculacaos requestVinculacaos = new RequestVinculacaos();
@@ -393,7 +394,7 @@ public class Cnes extends BaseService {
         try {
             // Call Web Cnes Operation
             VinculacaoProfissionalService service = new VinculacaoProfissionalService();
-            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            HandlerResolver handlerResolver = new ClientHandlerCnes();
             service.setHandlerResolver(handlerResolver);
             VinculacaoPortType port = service.getVinculacaoProfissionalServicePort();
             RequestVinculacao requestVinculacao = new RequestVinculacao();

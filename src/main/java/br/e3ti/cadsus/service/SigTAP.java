@@ -5,6 +5,7 @@
  */
 package br.e3ti.cadsus.service;
 
+import br.e3ti.cadsus.handlers.ClientHandlerSigTapResolver;
 import br.gov.saude.servicos.sigtap.v1.procedimentoservice.ProcedimentoService;
 import br.gov.saude.servicos.sigtap.v1.procedimentoservice.ProcedimentoServicePortType;
 import br.gov.saude.servicos.sigtap.v1.procedimentoservice.RequestDetalharProcedimento;
