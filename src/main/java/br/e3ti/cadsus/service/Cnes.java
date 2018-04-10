@@ -8,8 +8,12 @@ package br.e3ti.cadsus.service;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesFault;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesService;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.CnesServicePortType;
+import br.gov.saude.servicos.cnes.v1r0.cnesservice.RequestConsultarDadosComplementaresEstabelecimentoSaude;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.RequestConsultarEstabelecimentoSaude;
+import br.gov.saude.servicos.cnes.v1r0.cnesservice.RequestConsultarEstabelecimentoSaudePorMunicipio;
+import br.gov.saude.servicos.cnes.v1r0.cnesservice.ResponseConsultarDadosComplementaresEstabelecimentoSaude;
 import br.gov.saude.servicos.cnes.v1r0.cnesservice.ResponseConsultarEstabelecimentoSaude;
+import br.gov.saude.servicos.cnes.v1r0.cnesservice.ResponseConsultarEstabelecimentoSaudePorMunicipio;
 import br.gov.saude.servicos.cnes.v1r0.equipamentoservice.EquipamentoService;
 import br.gov.saude.servicos.cnes.v1r0.equipamentoservice.EquipamentoServicePortType;
 import br.gov.saude.servicos.cnes.v1r0.equipamentoservice.RequestConsultarEquipamentos;
@@ -17,6 +21,10 @@ import br.gov.saude.servicos.cnes.v1r0.equipamentoservice.ResponseConsultarEquip
 import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.EstabelecimentoSaudeFault;
 import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.EstabelecimentoSaudeService;
 import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.EstabelecimentoSaudeServicePortType;
+import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestConsultarPrecadastroCNES;
+import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestLocalizarEstabelecimentoSaude;
+import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.ResponseConsultarPrecadastroCNES;
+import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.ResponseLocalizarEstabelecimentoSaude;
 import br.gov.saude.servicos.cnes.v1r0.leitoservice.LeitoFault;
 import br.gov.saude.servicos.cnes.v1r0.leitoservice.LeitoService;
 import br.gov.saude.servicos.cnes.v1r0.leitoservice.LeitoServicePortType;
@@ -37,11 +45,17 @@ import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoF
 import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoPortType;
 import br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice.VinculacaoProfissionalService;
 import br.gov.saude.servicos.schema.cadsus.v5r0.cns.CNSType;
+import br.gov.saude.servicos.schema.cnes.v1r0.cmpt.CmptType;
 import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
+import br.gov.saude.servicos.schema.cnes.v1r0.localizacao.LocalizacaoType;
+import br.gov.saude.servicos.schema.cnes.v1r0.tipounidade.TipoUnidadeType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnpj.CNPJType;
+import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.registroprofissionalsaude.RegistroProfissionalSaudeType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtrolocalizacaoestabelecimentosaude.FiltroLocalizacaoEstabelecimentoSaudeType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaestabelecimentosaude.FiltroPesquisaEstabelecimentoSaudeType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprecadastrocnes.FiltroPesquisaPrecadastroCnesType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprofissionalsaude.FiltroPesquisaProfissionalSaudeType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.EstabelecimentoVinculacaoType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.FiltroPesquisaVinculacaoType;
@@ -51,6 +65,7 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.Prof
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.xml.bind.JAXBElement;
 import javax.xml.ws.handler.HandlerResolver;
 
 /**
@@ -59,7 +74,7 @@ import javax.xml.ws.handler.HandlerResolver;
  */
 public class Cnes extends BaseService {
 
-    public ResponseConsultarEstabelecimentoSaude getEstabelecimentoSaudeServiceByCnes(String cnes) {
+    public ResponseConsultarEstabelecimentoSaude consultarEstabelecimentoSaude(String cnes) {
 
         try { // Call Web Cnes Operation
             CnesService service = new CnesService();
@@ -84,7 +99,57 @@ public class Cnes extends BaseService {
         }
     }
 
-    public ResponseConsultarEquipamentos getEquipamentoServiceByCnes(String cnes) {
+    public ResponseConsultarDadosComplementaresEstabelecimentoSaude consultarDadosComplementaresEstabelecimentoSaude(MunicipioType municipioType, CmptType cmptType) {
+
+        try { // Call Web Cnes Operation
+            CnesService service = new CnesService();
+            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            service.setHandlerResolver(handlerResolver);
+
+            CnesServicePortType port = service.getCnesServicePort();
+
+            RequestConsultarDadosComplementaresEstabelecimentoSaude complementaresEstabelecimentoSaude = new RequestConsultarDadosComplementaresEstabelecimentoSaude();
+
+            if (Objects.nonNull(cmptType)) {
+                complementaresEstabelecimentoSaude.setCmpt(cmptType);
+            }
+
+            if (Objects.nonNull(municipioType)) {
+                complementaresEstabelecimentoSaude.setMunicipioCNES(municipioType);
+            }
+
+            return port.consultarDadosComplementaresEstabelecimentoSaude(complementaresEstabelecimentoSaude);
+
+        } catch (CnesFault ex) {
+            LOG.log(Level.SEVERE, "Error = {0}", ex.getMessage());
+            return null;
+        }
+    }
+    
+    public ResponseConsultarEstabelecimentoSaudePorMunicipio consultarEstabelecimentoSaudePorMunicipio(MunicipioType municipioType) {
+
+        try { // Call Web Cnes Operation
+            CnesService service = new CnesService();
+            HandlerResolver handlerResolver = new ClientHandlerResolver();
+            service.setHandlerResolver(handlerResolver);
+
+            CnesServicePortType port = service.getCnesServicePort();
+
+            RequestConsultarEstabelecimentoSaudePorMunicipio consultarEstabelecimentoSaudePorMunicipio = new RequestConsultarEstabelecimentoSaudePorMunicipio();
+
+            if (Objects.nonNull(municipioType)) {
+                consultarEstabelecimentoSaudePorMunicipio.setMunicipio(municipioType);
+            }
+
+            return port.consultarEstabelecimentoSaudePorMunicipio(consultarEstabelecimentoSaudePorMunicipio);
+
+        } catch (CnesFault ex) {
+            LOG.log(Level.SEVERE, "Error = {0}", ex.getMessage());
+            return null;
+        }
+    }
+
+    public ResponseConsultarEquipamentos consultarEquipamentos(String cnes) {
 
         // Call Web Cnes Operation
         EquipamentoService service = new EquipamentoService();
@@ -103,7 +168,7 @@ public class Cnes extends BaseService {
         }
     }
 
-    public br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.ResponseConsultarEstabelecimentoSaude getEstabelecimentoServiceByCnes(String cnes, String cnpj) {
+    public br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.ResponseConsultarEstabelecimentoSaude consultarEstabelecimentoSaude(String cnes, String cnpj) {
 
         // Call Web Cnes Operation
         EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
@@ -113,13 +178,13 @@ public class Cnes extends BaseService {
         br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestConsultarEstabelecimentoSaude requestConsultarEstabelecimentoSaude = new br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.RequestConsultarEstabelecimentoSaude();
         FiltroPesquisaEstabelecimentoSaudeType filtroPesquisaEstabelecimentoSaudeType = new FiltroPesquisaEstabelecimentoSaudeType();
 
-        if (Objects.nonNull(cnpj)) {
+        if (Objects.nonNull(cnes)) {
             CodigoCNESType cNESType = new CodigoCNESType();
             cNESType.setCodigo(cnes);
             filtroPesquisaEstabelecimentoSaudeType.setCodigoCNES(cNESType);
         }
 
-        if (Objects.nonNull(cnes)) {
+        if (Objects.nonNull(cnpj)) {
             CNPJType cNPJType = new CNPJType();
             cNPJType.setNumeroCNPJ(cnpj);
             filtroPesquisaEstabelecimentoSaudeType.setCNPJ(cNPJType);
@@ -135,7 +200,69 @@ public class Cnes extends BaseService {
 
     }
 
-    public ResponseConsultarLeitosCNES getLeitosByCnes(String cnes) {
+    public ResponseConsultarPrecadastroCNES consultarPrecadastroCNES(String cnes, JAXBElement<String> situacao) {
+
+        // Call Web Cnes Operation
+        EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
+        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        service.setHandlerResolver(handlerResolver);
+        EstabelecimentoSaudeServicePortType port = service.getEstabelecimentoSaudeServicePort();
+        RequestConsultarPrecadastroCNES requestConsultarEstabelecimentoSaude = new RequestConsultarPrecadastroCNES();
+        FiltroPesquisaPrecadastroCnesType filtroPesquisaPrecadastroCnesType = new FiltroPesquisaPrecadastroCnesType();
+
+        if (Objects.nonNull(cnes)) {
+            CodigoCNESType cNESType = new CodigoCNESType();
+            cNESType.setCodigo(cnes);
+            filtroPesquisaPrecadastroCnesType.setCodigoCNES(cNESType);
+        }
+
+        if (Objects.nonNull(situacao)) {
+            filtroPesquisaPrecadastroCnesType.setSituacao(situacao);
+        }
+
+        requestConsultarEstabelecimentoSaude.setFiltroPesquisaPrecadastroCnes(filtroPesquisaPrecadastroCnesType);
+        try {
+            return port.consultarPrecadastroCNES(requestConsultarEstabelecimentoSaude);
+        } catch (EstabelecimentoSaudeFault ex) {
+            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+            return null;
+        }
+
+    }
+
+    public ResponseLocalizarEstabelecimentoSaude localizarEstabelecimentoSaude(LocalizacaoType localizacaoType, br.gov.saude.servicos.wsdl.mensageria.v1r0.paginacao.PaginacaoType paginacaoType, TipoUnidadeType tipoUnidadeType) {
+
+        // Call Web Cnes Operation
+        EstabelecimentoSaudeService service = new EstabelecimentoSaudeService();
+        HandlerResolver handlerResolver = new ClientHandlerResolver();
+        service.setHandlerResolver(handlerResolver);
+        EstabelecimentoSaudeServicePortType port = service.getEstabelecimentoSaudeServicePort();
+        RequestLocalizarEstabelecimentoSaude localizarEstabelecimentoSaude = new RequestLocalizarEstabelecimentoSaude();
+        FiltroLocalizacaoEstabelecimentoSaudeType filtroLocalizacaoEstabelecimentoSaudeType = new FiltroLocalizacaoEstabelecimentoSaudeType();
+
+        if (Objects.nonNull(localizacaoType)) {
+            filtroLocalizacaoEstabelecimentoSaudeType.setLocalizacao(localizacaoType);
+        }
+
+        if (Objects.nonNull(paginacaoType)) {
+            filtroLocalizacaoEstabelecimentoSaudeType.setPaginacao(paginacaoType);
+        }
+
+        if (Objects.nonNull(tipoUnidadeType)) {
+            filtroLocalizacaoEstabelecimentoSaudeType.setTipoUnidade(tipoUnidadeType);
+        }
+
+        localizarEstabelecimentoSaude.setFiltroLocalizacaoEstabelecimentoSaude(filtroLocalizacaoEstabelecimentoSaudeType);
+        try {
+            return port.localizarEstabelecimentoSaude(localizarEstabelecimentoSaude);
+        } catch (EstabelecimentoSaudeFault ex) {
+            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+            return null;
+        }
+
+    }
+
+    public ResponseConsultarLeitosCNES consultarLeitosCNES(String cnes) {
 
         // Call Web Cnes Operation
         LeitoService service = new LeitoService();
@@ -156,7 +283,7 @@ public class Cnes extends BaseService {
 
     }
 
-    public ResponseConsultarProfissionalSaude getProfissional(CNSType cns, CPFType cpf, RegistroProfissionalSaudeType registroProfissional) {
+    public ResponseConsultarProfissionalSaude consultarProfissionalSaude(CNSType cns, CPFType cpf, RegistroProfissionalSaudeType registroProfissional) {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
@@ -189,7 +316,7 @@ public class Cnes extends BaseService {
         }
     }
 
-    public ResponseConsultarProfissionaisSaude getProfissionais(String cnes, String cnpj) {
+    public ResponseConsultarProfissionaisSaude consultarProfissionaisSaude(String cnes, String cnpj) {
 
         // Call Web Cnes Operation
         ProfissionalSaudeService service = new ProfissionalSaudeService();
@@ -223,7 +350,7 @@ public class Cnes extends BaseService {
 
     }
 
-    public ResponseVinculacaos getVinculacoes(br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.EstabelecimentoVinculacaoType estabelecimentoVinculacaoType, ProfissionalVinculacaoType profissionalVinculacaoType) {
+    public ResponseVinculacaos pesquisarVinculacaoProfissionalSaude(br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.EstabelecimentoVinculacaoType estabelecimentoVinculacaoType, ProfissionalVinculacaoType profissionalVinculacaoType) {
 
         try {
             // Call Web Cnes Operation
@@ -255,7 +382,7 @@ public class Cnes extends BaseService {
 
     }
 
-    public ResponseVinculacao getVinculacao(
+    public ResponseVinculacao detalharVinculacaoProfissionalSaude(
             EstabelecimentoVinculacaoType estabelecimentoVinculacaoType,
             br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.ProfissionalVinculacaoType profissionalVinculacaoType,
             TipoVinculacaoType tipoVinculacaoType) {
