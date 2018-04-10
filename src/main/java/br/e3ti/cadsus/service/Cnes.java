@@ -125,7 +125,7 @@ public class Cnes extends BaseService {
             return null;
         }
     }
-    
+
     public ResponseConsultarEstabelecimentoSaudePorMunicipio consultarEstabelecimentoSaudePorMunicipio(MunicipioType municipioType) {
 
         try { // Call Web Cnes Operation
@@ -157,15 +157,18 @@ public class Cnes extends BaseService {
         service.setHandlerResolver(handlerResolver);
         EquipamentoServicePortType port = service.getEquipamentoServicePort();
         RequestConsultarEquipamentos consultarEquipamentos = new RequestConsultarEquipamentos();
+
         CodigoCNESType cNESType = new CodigoCNESType();
         cNESType.setCodigo(cnes);
+
         consultarEquipamentos.setCodigoCNES(cNESType);
         try {
             return port.consultarEquipamentos(consultarEquipamentos);
         } catch (br.gov.saude.servicos.cnes.v1r0.equipamentoservice.CnesFault ex) {
-            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex.getMessage());
+            Logger.getLogger(Cnes.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
+
     }
 
     public br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.ResponseConsultarEstabelecimentoSaude consultarEstabelecimentoSaude(String cnes, String cnpj) {
@@ -327,13 +330,13 @@ public class Cnes extends BaseService {
 
         FiltroPesquisaEstabelecimentoSaudeType filtroPesquisaEstabelecimentoSaudeType = new FiltroPesquisaEstabelecimentoSaudeType();
 
-        if (Objects.nonNull(cnpj)) {
+        if (Objects.nonNull(cnes)) {
             CodigoCNESType cNESType = new CodigoCNESType();
             cNESType.setCodigo(cnes);
             filtroPesquisaEstabelecimentoSaudeType.setCodigoCNES(cNESType);
         }
 
-        if (Objects.nonNull(cnes)) {
+        if (Objects.nonNull(cnpj)) {
             CNPJType cNPJType = new CNPJType();
             cNPJType.setNumeroCNPJ(cnpj);
             filtroPesquisaEstabelecimentoSaudeType.setCNPJ(cNPJType);

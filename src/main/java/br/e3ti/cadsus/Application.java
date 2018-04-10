@@ -2,6 +2,9 @@ package br.e3ti.cadsus;
 
 import br.e3ti.cadsus.service.Cnes;
 import br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice.EstabelecimentoSaudeFault;
+import br.gov.saude.servicos.schema.cadsus.v5r0.cns.CNSType;
+import br.gov.saude.servicos.schema.cadsus.v5r0.cns.NumeroCNSType;
+import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao.ProfissionalVinculacaoType;
 import com.google.gson.Gson;
 import java.net.MalformedURLException;
 import org.springframework.boot.SpringApplication;
@@ -19,17 +22,36 @@ public class Application {
 
         System.out.println("Teste de getEstabelecimentoSaudeServiceByCnes ====================> " + json);
 
-        String json1 = gson.toJson(cnes.consultarEquipamentos("7161158"));
+        //String json1 = gson.toJson(cnes.consultarEquipamentos("7161158"));
 
-        System.out.println("Teste de getEquipamentoServiceByCnes ====================> " + json1);
+        //System.out.println("Teste de getEquipamentoServiceByCnes ====================> " + json1);
 
         String json2 = gson.toJson(cnes.consultarEstabelecimentoSaude("7161158", null));
 
         System.out.println("Teste de getEstabelecimentoServiceByCnes ====================> " + json2);
+        
+        String json6 = gson.toJson(cnes.consultarProfissionaisSaude("7161158", null));
+
+        System.out.println("Teste de consultarProfissionaisSaude ====================> " + json6);
+        
+        CNSType cNSType = new CNSType();
+        cNSType.setNumeroCNS("210157960540003");
+        String json7 = gson.toJson(cnes.consultarProfissionalSaude(cNSType, null, null));
+
+        System.out.println("Teste de consultarProfissionalSaude ====================> " + json7);
 
         String json4 = gson.toJson(cnes.consultarLeitosCNES("7161158"));
 
         System.out.println("Teste de getLeitosByCnes ====================> " + json4);
+        
+        ProfissionalVinculacaoType profissionalVinculacaoType = new ProfissionalVinculacaoType();
+        NumeroCNSType numeroCNSType = new NumeroCNSType();
+        numeroCNSType.setNumeroCNS("210157960540003");
+        profissionalVinculacaoType.setCns(numeroCNSType);
+        
+        String json10 = gson.toJson(cnes.detalharVinculacaoProfissionalSaude(null, profissionalVinculacaoType, null));
+
+        System.out.println("Teste de getLeitosByCnes ====================> " + json10);
 
     }
 
