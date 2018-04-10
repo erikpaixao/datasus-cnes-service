@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.corporativo.endereco.v1r2.endereco;
 
 import java.math.BigInteger;
@@ -13,12 +12,14 @@ import br.gov.saude.servicos.schema.corporativo.endereco.v1r1.tipologradouro.Tip
 import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
 import br.gov.saude.servicos.schema.corporativo.v1r2.pais.PaisType;
 
-
 /**
- * <p>Classe Java de EnderecoType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de EnderecoType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="EnderecoType"&gt;
  *   &lt;complexContent&gt;
@@ -64,8 +65,8 @@ import br.gov.saude.servicos.schema.corporativo.v1r2.pais.PaisType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EnderecoType", propOrder = {
@@ -104,11 +105,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade identificador.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getIdentificador() {
         return identificador;
@@ -116,11 +115,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade identificador.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setIdentificador(BigInteger value) {
         this.identificador = value;
@@ -128,11 +125,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade tipoEndereco.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getTipoEndereco() {
         return tipoEndereco;
@@ -140,11 +135,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade tipoEndereco.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setTipoEndereco(String value) {
         this.tipoEndereco = value;
@@ -152,11 +145,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade tipoLogradouro.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoLogradouroType }
-     *     
+     *
+     * @return possible object is {@link TipoLogradouroType }
+     *
      */
     public TipoLogradouroType getTipoLogradouro() {
         return tipoLogradouro;
@@ -164,11 +155,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade tipoLogradouro.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoLogradouroType }
-     *     
+     *
+     * @param value allowed object is {@link TipoLogradouroType }
+     *
      */
     public void setTipoLogradouro(TipoLogradouroType value) {
         this.tipoLogradouro = value;
@@ -176,11 +165,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade nomeLogradouro.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getNomeLogradouro() {
         return nomeLogradouro;
@@ -188,11 +175,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade nomeLogradouro.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setNomeLogradouro(String value) {
         this.nomeLogradouro = value;
@@ -200,11 +185,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade numero.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getNumero() {
         return numero;
@@ -212,11 +195,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade numero.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setNumero(String value) {
         this.numero = value;
@@ -224,11 +205,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade complemento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getComplemento() {
         return complemento;
@@ -236,11 +215,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade complemento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setComplemento(String value) {
         this.complemento = value;
@@ -248,11 +225,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade bairro.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BairroType }
-     *     
+     *
+     * @return possible object is {@link BairroType }
+     *
      */
     public BairroType getBairro() {
         return bairro;
@@ -260,11 +235,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade bairro.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BairroType }
-     *     
+     *
+     * @param value allowed object is {@link BairroType }
+     *
      */
     public void setBairro(BairroType value) {
         this.bairro = value;
@@ -272,11 +245,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade cep.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CEPType }
-     *     
+     *
+     * @return possible object is {@link CEPType }
+     *
      */
     public CEPType getCEP() {
         return cep;
@@ -284,11 +255,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade cep.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CEPType }
-     *     
+     *
+     * @param value allowed object is {@link CEPType }
+     *
      */
     public void setCEP(CEPType value) {
         this.cep = value;
@@ -296,11 +265,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade municipio.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @return possible object is {@link MunicipioType }
+     *
      */
     public MunicipioType getMunicipio() {
         return municipio;
@@ -308,11 +275,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade municipio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @param value allowed object is {@link MunicipioType }
+     *
      */
     public void setMunicipio(MunicipioType value) {
         this.municipio = value;
@@ -320,11 +285,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade pais.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaisType }
-     *     
+     *
+     * @return possible object is {@link PaisType }
+     *
      */
     public PaisType getPais() {
         return pais;
@@ -332,11 +295,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade pais.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaisType }
-     *     
+     *
+     * @param value allowed object is {@link PaisType }
+     *
      */
     public void setPais(PaisType value) {
         this.pais = value;
@@ -344,11 +305,9 @@ public class EnderecoType {
 
     /**
      * Obtém o valor da propriedade municipioInternacional.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getMunicipioInternacional() {
         return municipioInternacional;
@@ -356,11 +315,9 @@ public class EnderecoType {
 
     /**
      * Define o valor da propriedade municipioInternacional.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setMunicipioInternacional(String value) {
         this.municipioInternacional = value;

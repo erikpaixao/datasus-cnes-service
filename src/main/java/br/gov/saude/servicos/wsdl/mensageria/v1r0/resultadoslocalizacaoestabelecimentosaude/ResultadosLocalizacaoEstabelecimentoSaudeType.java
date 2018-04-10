@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadoslocalizacaoestabelecimentosaude;
 
 import java.util.ArrayList;
@@ -10,12 +9,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.paginacao.PaginacaoType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadolocalizacaoestabelecimentosaude.ResultadoLocalizacaoEstabelecimentoSaudeType;
 
-
 /**
- * <p>Classe Java de ResultadosLocalizacaoEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ResultadosLocalizacaoEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ResultadosLocalizacaoEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +29,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadolocalizacaoestabeleci
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResultadosLocalizacaoEstabelecimentoSaudeType", propOrder = {
@@ -44,26 +45,28 @@ public class ResultadosLocalizacaoEstabelecimentoSaudeType {
     protected PaginacaoType paginacao;
 
     /**
-     * Lista de Estabelecimentos de Saúde Localizados Gets the value of the resultadoLocalizacaoEstabelecimentoSaude property.
-     * 
+     * Lista de Estabelecimentos de Saúde Localizados Gets the value of the
+     * resultadoLocalizacaoEstabelecimentoSaude property.
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the resultadoLocalizacaoEstabelecimentoSaude property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the resultadoLocalizacaoEstabelecimentoSaude
+     * property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getResultadoLocalizacaoEstabelecimentoSaude().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ResultadoLocalizacaoEstabelecimentoSaudeType }
-     * 
-     * 
+     *
+     *
      */
     public List<ResultadoLocalizacaoEstabelecimentoSaudeType> getResultadoLocalizacaoEstabelecimentoSaude() {
         if (resultadoLocalizacaoEstabelecimentoSaude == null) {
@@ -74,12 +77,10 @@ public class ResultadosLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Resposta da paginação
-     * 					
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     *
+     * @return possible object is {@link PaginacaoType }
+     *
      */
     public PaginacaoType getPaginacao() {
         return paginacao;
@@ -87,11 +88,9 @@ public class ResultadosLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade paginacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     * @param value allowed object is {@link PaginacaoType }
+     *
      */
     public void setPaginacao(PaginacaoType value) {
         this.paginacao = value;

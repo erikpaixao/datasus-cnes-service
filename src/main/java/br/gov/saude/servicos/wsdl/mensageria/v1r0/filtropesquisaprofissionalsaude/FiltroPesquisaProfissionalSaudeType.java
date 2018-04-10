@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprofissionalsaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,12 +8,14 @@ import br.gov.saude.servicos.schema.cadsus.v5r0.cns.CNSType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.registroprofissionalsaude.RegistroProfissionalSaudeType;
 
-
 /**
- * <p>Classe Java de FiltroPesquisaProfissionalSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de FiltroPesquisaProfissionalSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="FiltroPesquisaProfissionalSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +29,8 @@ import br.gov.saude.servicos.schema.profissionalsaude.v1r0.registroprofissionals
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FiltroPesquisaProfissionalSaudeType", propOrder = {
@@ -48,11 +49,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * CNS do Profissional de Saúde
-     * 
-     * @return
-     *     possible object is
-     *     {@link CNSType }
-     *     
+     *
+     * @return possible object is {@link CNSType }
+     *
      */
     public CNSType getCNS() {
         return cns;
@@ -60,11 +59,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade cns.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CNSType }
-     *     
+     *
+     * @param value allowed object is {@link CNSType }
+     *
      */
     public void setCNS(CNSType value) {
         this.cns = value;
@@ -72,11 +69,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * CPF do Profissional de Saúde
-     * 
-     * @return
-     *     possible object is
-     *     {@link CPFType }
-     *     
+     *
+     * @return possible object is {@link CPFType }
+     *
      */
     public CPFType getCPF() {
         return cpf;
@@ -84,11 +79,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade cpf.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CPFType }
-     *     
+     *
+     * @param value allowed object is {@link CPFType }
+     *
      */
     public void setCPF(CPFType value) {
         this.cpf = value;
@@ -96,11 +89,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * Registro do Profissional de Saúde
-     * 
-     * @return
-     *     possible object is
-     *     {@link RegistroProfissionalSaudeType }
-     *     
+     *
+     * @return possible object is {@link RegistroProfissionalSaudeType }
+     *
      */
     public RegistroProfissionalSaudeType getRegistroProfissionalSaude() {
         return registroProfissionalSaude;
@@ -108,11 +99,9 @@ public class FiltroPesquisaProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade registroProfissionalSaude.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RegistroProfissionalSaudeType }
-     *     
+     *
+     * @param value allowed object is {@link RegistroProfissionalSaudeType }
+     *
      */
     public void setRegistroProfissionalSaude(RegistroProfissionalSaudeType value) {
         this.registroProfissionalSaude = value;

@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.complementoprofissionalsaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,12 +6,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.vinculoempregaticio.VinculoEmpregaticioType;
 
-
 /**
- * <p>Classe Java de ComplementoProfissionalSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ComplementoProfissionalSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ComplementoProfissionalSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +27,8 @@ import br.gov.saude.servicos.schema.profissionalsaude.v1r0.vinculoempregaticio.V
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ComplementoProfissionalSaudeType", propOrder = {
@@ -45,11 +46,9 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade tipoVinculacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getTipoVinculacao() {
         return tipoVinculacao;
@@ -57,11 +56,9 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade tipoVinculacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setTipoVinculacao(String value) {
         this.tipoVinculacao = value;
@@ -69,11 +66,9 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Vínculo Empregatício.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VinculoEmpregaticioType }
-     *     
+     *
+     * @return possible object is {@link VinculoEmpregaticioType }
+     *
      */
     public VinculoEmpregaticioType getVinculoempregaticio() {
         return vinculoempregaticio;
@@ -81,11 +76,9 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade vinculoempregaticio.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VinculoEmpregaticioType }
-     *     
+     *
+     * @param value allowed object is {@link VinculoEmpregaticioType }
+     *
      */
     public void setVinculoempregaticio(VinculoEmpregaticioType value) {
         this.vinculoempregaticio = value;
@@ -93,7 +86,7 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade quantidadeProfissionaisSaude.
-     * 
+     *
      */
     public int getQuantidadeProfissionaisSaude() {
         return quantidadeProfissionaisSaude;
@@ -101,7 +94,7 @@ public class ComplementoProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade quantidadeProfissionaisSaude.
-     * 
+     *
      */
     public void setQuantidadeProfissionaisSaude(int value) {
         this.quantidadeProfissionaisSaude = value;

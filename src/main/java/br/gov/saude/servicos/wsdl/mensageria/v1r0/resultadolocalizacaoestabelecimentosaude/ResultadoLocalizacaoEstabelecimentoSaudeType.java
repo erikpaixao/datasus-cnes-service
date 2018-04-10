@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadolocalizacaoestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,12 +6,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.dadosgeraiscnes.DadosGeraisEstabelecimentoSaudeType;
 
-
 /**
- * <p>Classe Java de ResultadoLocalizacaoEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ResultadoLocalizacaoEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ResultadoLocalizacaoEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -24,8 +25,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.dadosgeraiscnes.DadosGeraisEstabel
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResultadoLocalizacaoEstabelecimentoSaudeType", propOrder = {
@@ -38,11 +39,9 @@ public class ResultadoLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade estabelecimentoSaude.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DadosGeraisEstabelecimentoSaudeType }
-     *     
+     *
+     * @return possible object is {@link DadosGeraisEstabelecimentoSaudeType }
+     *
      */
     public DadosGeraisEstabelecimentoSaudeType getEstabelecimentoSaude() {
         return estabelecimentoSaude;
@@ -50,11 +49,10 @@ public class ResultadoLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade estabelecimentoSaude.
-     * 
-     * @param value
-     *     allowed object is
+     *
+     * @param value allowed object is
      *     {@link DadosGeraisEstabelecimentoSaudeType }
-     *     
+     *
      */
     public void setEstabelecimentoSaude(DadosGeraisEstabelecimentoSaudeType value) {
         this.estabelecimentoSaude = value;

@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.profissionalsaude.v1r0.cbo;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,12 +5,14 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java de CBOType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de CBOType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="CBOType"&gt;
  *   &lt;complexContent&gt;
@@ -24,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CBOType", propOrder = {
@@ -40,11 +41,9 @@ public class CBOType {
 
     /**
      * Obtém o valor da propriedade codigoCBO.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoCBO() {
         return codigoCBO;
@@ -52,11 +51,9 @@ public class CBOType {
 
     /**
      * Define o valor da propriedade codigoCBO.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoCBO(String value) {
         this.codigoCBO = value;
@@ -64,11 +61,9 @@ public class CBOType {
 
     /**
      * Obtém o valor da propriedade descricaoCBO.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDescricaoCBO() {
         return descricaoCBO;
@@ -76,11 +71,9 @@ public class CBOType {
 
     /**
      * Define o valor da propriedade descricaoCBO.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDescricaoCBO(String value) {
         this.descricaoCBO = value;

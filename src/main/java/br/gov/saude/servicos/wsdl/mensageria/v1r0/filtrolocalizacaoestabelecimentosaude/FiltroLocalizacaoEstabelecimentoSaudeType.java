@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtrolocalizacaoestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,12 +8,14 @@ import br.gov.saude.servicos.schema.cnes.v1r0.localizacao.LocalizacaoType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipounidade.TipoUnidadeType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.paginacao.PaginacaoType;
 
-
 /**
- * <p>Classe Java de FiltroLocalizacaoEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de FiltroLocalizacaoEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="FiltroLocalizacaoEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +29,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.paginacao.PaginacaoType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FiltroLocalizacaoEstabelecimentoSaudeType", propOrder = {
@@ -48,11 +49,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Localização do estabelecimento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LocalizacaoType }
-     *     
+     *
+     * @return possible object is {@link LocalizacaoType }
+     *
      */
     public LocalizacaoType getLocalizacao() {
         return localizacao;
@@ -60,11 +59,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade localizacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LocalizacaoType }
-     *     
+     *
+     * @param value allowed object is {@link LocalizacaoType }
+     *
      */
     public void setLocalizacao(LocalizacaoType value) {
         this.localizacao = value;
@@ -72,11 +69,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Tipo de Unidade do Estabelecimento de Saúde.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @return possible object is {@link TipoUnidadeType }
+     *
      */
     public TipoUnidadeType getTipoUnidade() {
         return tipoUnidade;
@@ -84,11 +79,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade tipoUnidade.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @param value allowed object is {@link TipoUnidadeType }
+     *
      */
     public void setTipoUnidade(TipoUnidadeType value) {
         this.tipoUnidade = value;
@@ -96,11 +89,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Paginação enviada para uma consulta.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     * @return possible object is {@link PaginacaoType }
+     *
      */
     public PaginacaoType getPaginacao() {
         return paginacao;
@@ -108,11 +99,9 @@ public class FiltroLocalizacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade paginacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     * @param value allowed object is {@link PaginacaoType }
+     *
      */
     public void setPaginacao(PaginacaoType value) {
         this.paginacao = value;

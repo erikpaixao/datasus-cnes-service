@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v2r0.estabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,12 +6,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.identificacaoestabelecimentosaude.IdentificacaoEstabelecimentoSaudeType;
 
-
 /**
- * <p>Classe Java de EstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de EstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="EstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +32,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.identificacaoestabelecimentosaude.
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EstabelecimentoSaudeType", propOrder = {
@@ -48,11 +49,9 @@ public class EstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade codigoCNES.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoCNES() {
         return codigoCNES;
@@ -60,11 +59,9 @@ public class EstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade codigoCNES.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoCNES(String value) {
         this.codigoCNES = value;
@@ -72,11 +69,9 @@ public class EstabelecimentoSaudeType {
 
     /**
      * Identificação do Estabelecimento de Saúde..
-     * 
-     * @return
-     *     possible object is
-     *     {@link IdentificacaoEstabelecimentoSaudeType }
-     *     
+     *
+     * @return possible object is {@link IdentificacaoEstabelecimentoSaudeType }
+     *
      */
     public IdentificacaoEstabelecimentoSaudeType getIdentificacaoEstabelecimentoSaude() {
         return identificacaoEstabelecimentoSaude;
@@ -84,11 +79,10 @@ public class EstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade identificacaoEstabelecimentoSaude.
-     * 
-     * @param value
-     *     allowed object is
+     *
+     * @param value allowed object is
      *     {@link IdentificacaoEstabelecimentoSaudeType }
-     *     
+     *
      */
     public void setIdentificacaoEstabelecimentoSaude(IdentificacaoEstabelecimentoSaudeType value) {
         this.identificacaoEstabelecimentoSaude = value;

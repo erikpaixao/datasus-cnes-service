@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.dadosgeraiscnes.DadosGeraisEstabelecimentoSaudeType;
 
-
 /**
- * <p>Classe Java de anonymous complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de anonymous complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -25,8 +26,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.dadosgeraiscnes.DadosGeraisEstabel
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -40,11 +41,9 @@ public class ResponseConsultarEstabelecimentoSaude {
 
     /**
      * Obtém o valor da propriedade dadosGeraisEstabelecimentoSaude.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DadosGeraisEstabelecimentoSaudeType }
-     *     
+     *
+     * @return possible object is {@link DadosGeraisEstabelecimentoSaudeType }
+     *
      */
     public DadosGeraisEstabelecimentoSaudeType getDadosGeraisEstabelecimentoSaude() {
         return dadosGeraisEstabelecimentoSaude;
@@ -52,11 +51,10 @@ public class ResponseConsultarEstabelecimentoSaude {
 
     /**
      * Define o valor da propriedade dadosGeraisEstabelecimentoSaude.
-     * 
-     * @param value
-     *     allowed object is
+     *
+     * @param value allowed object is
      *     {@link DadosGeraisEstabelecimentoSaudeType }
-     *     
+     *
      */
     public void setDadosGeraisEstabelecimentoSaude(DadosGeraisEstabelecimentoSaudeType value) {
         this.dadosGeraisEstabelecimentoSaude = value;

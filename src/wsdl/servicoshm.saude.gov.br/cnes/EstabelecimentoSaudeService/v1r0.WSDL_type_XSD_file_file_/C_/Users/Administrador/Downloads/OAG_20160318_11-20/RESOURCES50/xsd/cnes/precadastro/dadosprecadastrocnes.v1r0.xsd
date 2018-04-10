@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosprecadastrocnes" xmlns:nomejuridico="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" xmlns:codigocnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" xmlns:cnpj="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" xmlns:cpf="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" xmlns:naturezajuridica="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/naturezajuridica" xmlns:endereco="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" xmlns:telefone="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" xmlns:email="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosprecadastrocnes">
 
-	<xs:import id="nomejuridico" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnomejuridico.v1r0.xsd"/>
+    <xs:import id="nomejuridico" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnomejuridico.v1r0.xsd"/>
 
-	<xs:import id="codigocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
+    <xs:import id="codigocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
 		
-	<xs:import id="cnpj" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnpj.v1r0.xsd"/>
+    <xs:import id="cnpj" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnpj.v1r0.xsd"/>
 
-	<xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
+    <xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
 
-	<xs:import id="naturezajuridica" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/naturezajuridica" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnaturezajuridica.v1r0.xsd"/>
+    <xs:import id="naturezajuridica" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/naturezajuridica" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnaturezajuridica.v1r0.xsd"/>
 
-	<xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
+    <xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
 
-	<xs:import id="telefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftelefone.v1r2.xsd"/>
+    <xs:import id="telefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftelefone.v1r2.xsd"/>
 
-	<xs:import id="email" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Femail.v1r2.xsd"/>
+    <xs:import id="email" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Femail.v1r2.xsd"/>
 
-	<xs:annotation>
-		<xs:documentation>Representa o objeto a informação Pré-Cadastro de um Estabelecimento de Saúde.
-		</xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation>Representa o objeto a informação Pré-Cadastro de um Estabelecimento de Saúde.
+        </xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="DadosPreCadastroCNES" type="DadosPreCadastroCNESType"/>
+    <xs:element name="DadosPreCadastroCNES" type="DadosPreCadastroCNESType"/>
 
-	<xs:complexType name="DadosPreCadastroCNESType">
-		<xs:sequence>
-			<xs:element minOccurs="1" maxOccurs="1" ref="codigocnes:CodigoCNES">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="cpf:CPF">
-				<xs:annotation>
-					<xs:documentation><![CDATA[CPF do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="cnpj:CNPJ">
-				<xs:annotation>
-					<xs:documentation><![CDATA[CNPJ do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="NomeFantasia" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Nome Fantasia do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="NomeEmpresarial" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Nome Empreserial do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="NaturezaJuridica" minOccurs="0" maxOccurs="unbounded" type="naturezajuridica:NaturezaJuridicaType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Natureza Jurídica do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="CNPJMantenedora" minOccurs="0" maxOccurs="1" type="cnpj:CNPJType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[CNPJ do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="NaturezaJuridicaMantenedora" minOccurs="0" maxOccurs="unbounded" type="naturezajuridica:NaturezaJuridicaType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Natureza Jurídica da Mantenedora.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:date">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Data da ultima atualização do pré-cadastro do estabelecimento de saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="endereco:Endereco">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Endereço do Estabelecimetno de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="Telefones" minOccurs="0" maxOccurs="2" type="telefone:TelefoneType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Telefone(s) do Estabelecimento de Saúde]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="unbounded" ref="email:Email">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Email(s) do Estabelecimento de Saúde]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="DadosPreCadastroCNESType">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" ref="codigocnes:CodigoCNES">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="cpf:CPF">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[CPF do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="cnpj:CNPJ">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[CNPJ do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NomeFantasia" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Nome Fantasia do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NomeEmpresarial" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Nome Empreserial do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NaturezaJuridica" minOccurs="0" maxOccurs="unbounded" type="naturezajuridica:NaturezaJuridicaType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Natureza Jurídica do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="CNPJMantenedora" minOccurs="0" maxOccurs="1" type="cnpj:CNPJType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[CNPJ do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="NaturezaJuridicaMantenedora" minOccurs="0" maxOccurs="unbounded" type="naturezajuridica:NaturezaJuridicaType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Natureza Jurídica da Mantenedora.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:date">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Data da ultima atualização do pré-cadastro do estabelecimento de saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="endereco:Endereco">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Endereço do Estabelecimetno de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Telefones" minOccurs="0" maxOccurs="2" type="telefone:TelefoneType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Telefone(s) do Estabelecimento de Saúde]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="email:Email">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Email(s) do Estabelecimento de Saúde]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

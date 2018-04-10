@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.profissionalsaude.v1r0.profissionalsaude;
 
 import java.util.ArrayList;
@@ -17,12 +16,14 @@ import br.gov.saude.servicos.schema.corporativo.pessoafisica.v1r2.nomecompleto.N
 import br.gov.saude.servicos.schema.corporativo.v1r2.email.EmailType;
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.cbo.CBOType;
 
-
 /**
- * <p>Classe Java de ProfissionalSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ProfissionalSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ProfissionalSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -41,8 +42,8 @@ import br.gov.saude.servicos.schema.profissionalsaude.v1r0.cbo.CBOType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ProfissionalSaudeType", propOrder = {
@@ -76,11 +77,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade dataAtualizacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is {@link XMLGregorianCalendar }
+     *
      */
     public XMLGregorianCalendar getDataAtualizacao() {
         return dataAtualizacao;
@@ -88,11 +87,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade dataAtualizacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is {@link XMLGregorianCalendar }
+     *
      */
     public void setDataAtualizacao(XMLGregorianCalendar value) {
         this.dataAtualizacao = value;
@@ -100,11 +97,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade nome.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NomeCompletoType }
-     *     
+     *
+     * @return possible object is {@link NomeCompletoType }
+     *
      */
     public NomeCompletoType getNome() {
         return nome;
@@ -112,11 +107,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade nome.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NomeCompletoType }
-     *     
+     *
+     * @param value allowed object is {@link NomeCompletoType }
+     *
      */
     public void setNome(NomeCompletoType value) {
         this.nome = value;
@@ -124,11 +117,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade cns.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CNSType }
-     *     
+     *
+     * @return possible object is {@link CNSType }
+     *
      */
     public CNSType getCNS() {
         return cns;
@@ -136,11 +127,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade cns.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CNSType }
-     *     
+     *
+     * @param value allowed object is {@link CNSType }
+     *
      */
     public void setCNS(CNSType value) {
         this.cns = value;
@@ -148,11 +137,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade cpf.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CPFType }
-     *     
+     *
+     * @return possible object is {@link CPFType }
+     *
      */
     public CPFType getCPF() {
         return cpf;
@@ -160,11 +147,9 @@ public class ProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade cpf.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CPFType }
-     *     
+     *
+     * @param value allowed object is {@link CPFType }
+     *
      */
     public void setCPF(CPFType value) {
         this.cpf = value;
@@ -172,25 +157,24 @@ public class ProfissionalSaudeType {
 
     /**
      * Gets the value of the cbo property.
-     * 
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cbo property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the cbo property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getCBO().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CBOType }
-     * 
-     * 
+     * Objects of the following type(s) are allowed in the list {@link CBOType }
+     *
+     *
      */
     public List<CBOType> getCBO() {
         if (cbo == null) {
@@ -201,25 +185,25 @@ public class ProfissionalSaudeType {
 
     /**
      * Gets the value of the cnes property.
-     * 
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cnes property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the cnes property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getCNES().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EstabelecimentoSaudeType }
-     * 
-     * 
+     *
+     *
      */
     public List<EstabelecimentoSaudeType> getCNES() {
         if (cnes == null) {
@@ -230,25 +214,25 @@ public class ProfissionalSaudeType {
 
     /**
      * Gets the value of the email property.
-     * 
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the email property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the email property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEmail().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EmailType }
-     * 
-     * 
+     *
+     *
      */
     public List<EmailType> getEmail() {
         if (email == null) {
@@ -259,25 +243,25 @@ public class ProfissionalSaudeType {
 
     /**
      * Gets the value of the endereco property.
-     * 
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the endereco property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the endereco property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEndereco().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EnderecoType }
-     * 
-     * 
+     *
+     *
      */
     public List<EnderecoType> getEndereco() {
         if (endereco == null) {

@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.complementoesferaadministrativa;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.esferaadministrativa.EsferaAdministrativaType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipogestao.TipoGestaoType;
 
-
 /**
- * <p>Classe Java de ComplementoEsferaAdministrativaType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ComplementoEsferaAdministrativaType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ComplementoEsferaAdministrativaType"&gt;
  *   &lt;complexContent&gt;
@@ -27,8 +28,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.tipogestao.TipoGestaoType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ComplementoEsferaAdministrativaType", propOrder = {
@@ -46,11 +47,9 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Obtém o valor da propriedade esferaAdministrativa.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EsferaAdministrativaType }
-     *     
+     *
+     * @return possible object is {@link EsferaAdministrativaType }
+     *
      */
     public EsferaAdministrativaType getEsferaAdministrativa() {
         return esferaAdministrativa;
@@ -58,11 +57,9 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Define o valor da propriedade esferaAdministrativa.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EsferaAdministrativaType }
-     *     
+     *
+     * @param value allowed object is {@link EsferaAdministrativaType }
+     *
      */
     public void setEsferaAdministrativa(EsferaAdministrativaType value) {
         this.esferaAdministrativa = value;
@@ -70,11 +67,9 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Obtém o valor da propriedade tipoGestao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoGestaoType }
-     *     
+     *
+     * @return possible object is {@link TipoGestaoType }
+     *
      */
     public TipoGestaoType getTipoGestao() {
         return tipoGestao;
@@ -82,11 +77,9 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Define o valor da propriedade tipoGestao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoGestaoType }
-     *     
+     *
+     * @param value allowed object is {@link TipoGestaoType }
+     *
      */
     public void setTipoGestao(TipoGestaoType value) {
         this.tipoGestao = value;
@@ -94,7 +87,7 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Obtém o valor da propriedade quantidadeEstabelecimentos.
-     * 
+     *
      */
     public int getQuantidadeEstabelecimentos() {
         return quantidadeEstabelecimentos;
@@ -102,7 +95,7 @@ public class ComplementoEsferaAdministrativaType {
 
     /**
      * Define o valor da propriedade quantidadeEstabelecimentos.
-     * 
+     *
      */
     public void setQuantidadeEstabelecimentos(int value) {
         this.quantidadeEstabelecimentos = value;

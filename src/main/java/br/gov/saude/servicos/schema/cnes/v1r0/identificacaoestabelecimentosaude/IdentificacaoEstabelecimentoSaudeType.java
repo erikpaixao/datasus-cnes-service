@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.identificacaoestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,12 +8,14 @@ import br.gov.saude.servicos.schema.cnes.v1r0.dadoscomplementaresestabelecimento
 import br.gov.saude.servicos.schema.cnes.v1r0.dadosprincipaisestabelecimentosaude.DadosPrincipaisType;
 import br.gov.saude.servicos.schema.corporativo.endereco.v1r2.endereco.EnderecoType;
 
-
 /**
- * <p>Classe Java de IdentificacaoEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de IdentificacaoEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="IdentificacaoEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +29,8 @@ import br.gov.saude.servicos.schema.corporativo.endereco.v1r2.endereco.EnderecoT
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "IdentificacaoEstabelecimentoSaudeType", propOrder = {
@@ -48,11 +49,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Dados Principais do Estabelecimento de Saúde.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DadosPrincipaisType }
-     *     
+     *
+     * @return possible object is {@link DadosPrincipaisType }
+     *
      */
     public DadosPrincipaisType getDadosPrincipais() {
         return dadosPrincipais;
@@ -60,11 +59,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade dadosPrincipais.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DadosPrincipaisType }
-     *     
+     *
+     * @param value allowed object is {@link DadosPrincipaisType }
+     *
      */
     public void setDadosPrincipais(DadosPrincipaisType value) {
         this.dadosPrincipais = value;
@@ -72,11 +69,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Dados Complementares do Estabelecimento de Saúde.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DadosComplementaresType }
-     *     
+     *
+     * @return possible object is {@link DadosComplementaresType }
+     *
      */
     public DadosComplementaresType getDadosComplementares() {
         return dadosComplementares;
@@ -84,11 +79,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade dadosComplementares.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DadosComplementaresType }
-     *     
+     *
+     * @param value allowed object is {@link DadosComplementaresType }
+     *
      */
     public void setDadosComplementares(DadosComplementaresType value) {
         this.dadosComplementares = value;
@@ -96,11 +89,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade endereco.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EnderecoType }
-     *     
+     *
+     * @return possible object is {@link EnderecoType }
+     *
      */
     public EnderecoType getEndereco() {
         return endereco;
@@ -108,11 +99,9 @@ public class IdentificacaoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade endereco.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EnderecoType }
-     *     
+     *
+     * @param value allowed object is {@link EnderecoType }
+     *
      */
     public void setEndereco(EnderecoType value) {
         this.endereco = value;

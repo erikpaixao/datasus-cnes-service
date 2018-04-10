@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.diretor;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
 import br.gov.saude.servicos.schema.corporativo.pessoafisica.v1r2.nomecompleto.NomeCompletoType;
 
-
 /**
- * <p>Classe Java de DiretorType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de DiretorType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="DiretorType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +27,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoafisica.v1r2.nomecompleto.N
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DiretorType", propOrder = {
@@ -43,11 +44,9 @@ public class DiretorType {
 
     /**
      * Obtém o valor da propriedade cpf.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CPFType }
-     *     
+     *
+     * @return possible object is {@link CPFType }
+     *
      */
     public CPFType getCPF() {
         return cpf;
@@ -55,11 +54,9 @@ public class DiretorType {
 
     /**
      * Define o valor da propriedade cpf.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CPFType }
-     *     
+     *
+     * @param value allowed object is {@link CPFType }
+     *
      */
     public void setCPF(CPFType value) {
         this.cpf = value;
@@ -67,11 +64,9 @@ public class DiretorType {
 
     /**
      * Obtém o valor da propriedade nome.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NomeCompletoType }
-     *     
+     *
+     * @return possible object is {@link NomeCompletoType }
+     *
      */
     public NomeCompletoType getNome() {
         return nome;
@@ -79,11 +74,9 @@ public class DiretorType {
 
     /**
      * Define o valor da propriedade nome.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NomeCompletoType }
-     *     
+     *
+     * @param value allowed object is {@link NomeCompletoType }
+     *
      */
     public void setNome(NomeCompletoType value) {
         this.nome = value;

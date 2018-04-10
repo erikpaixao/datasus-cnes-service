@@ -2,43 +2,43 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtrolocalizacaoestabelecimentosaude" xmlns:cnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" xmlns:tipounidade="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" xmlns:paginacao="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao" xmlns:localizacao="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtrolocalizacaoestabelecimentosaude">
 
 		
-	<xs:import id="cnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
+    <xs:import id="cnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
 		
-	<xs:import id="tipounidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipounidade.v1r0.xsd"/>		
+    <xs:import id="tipounidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipounidade.v1r0.xsd"/>		
 		
-	<xs:import id="paginacao" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fmensageria%2Fpaginacao.v1r0.xsd"/>	
+    <xs:import id="paginacao" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fmensageria%2Fpaginacao.v1r0.xsd"/>	
 					
-	<xs:import id="localizacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Flocalizacao.v1r0.xsd"/>
+    <xs:import id="localizacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Flocalizacao.v1r0.xsd"/>
 		
-	<xs:annotation>
-		<xs:documentation>Representa o objeto de filtro da localizacao do Estabelcimento de Saúde.</xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation>Representa o objeto de filtro da localizacao do Estabelcimento de Saúde.</xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="FiltroLocalizacaoEstabelecimentoSaude" type="FiltroLocalizacaoEstabelecimentoSaudeType"/>
+    <xs:element name="FiltroLocalizacaoEstabelecimentoSaude" type="FiltroLocalizacaoEstabelecimentoSaudeType"/>
 		
-	<xs:complexType name="FiltroLocalizacaoEstabelecimentoSaudeType">
-		<xs:sequence>
+    <xs:complexType name="FiltroLocalizacaoEstabelecimentoSaudeType">
+        <xs:sequence>
 		
-			<xs:element minOccurs="1" maxOccurs="1" ref="localizacao:Localizacao">
-				<xs:annotation>
-					<xs:documentation>Localização do estabelecimento.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="localizacao:Localizacao">
+                <xs:annotation>
+                    <xs:documentation>Localização do estabelecimento.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			
 			
-			<xs:element minOccurs="1" maxOccurs="1" ref="tipounidade:tipoUnidade">
-				<xs:annotation>
-					<xs:documentation>Tipo de Unidade do Estabelecimento de Saúde.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="tipounidade:tipoUnidade">
+                <xs:annotation>
+                    <xs:documentation>Tipo de Unidade do Estabelecimento de Saúde.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			
-			<xs:element minOccurs="0" maxOccurs="1" ref="paginacao:Paginacao">
-				<xs:annotation>
-					<xs:documentation>Paginação enviada para uma consulta.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="paginacao:Paginacao">
+                <xs:annotation>
+                    <xs:documentation>Paginação enviada para uma consulta.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
 			
-		</xs:sequence>	
-	</xs:complexType>
+        </xs:sequence>	
+    </xs:complexType>
 
 </xs:schema>

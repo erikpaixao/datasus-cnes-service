@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.profissionalsaude.v1r0.registroprofissionalsaude;
 
 import java.math.BigInteger;
@@ -10,12 +9,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.orgaoemissor.OrgaoEmissorType;
 import br.gov.saude.servicos.schema.corporativo.v1r1.uf.UFType;
 
-
 /**
- * <p>Classe Java de RegistroProfissionalSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de RegistroProfissionalSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="RegistroProfissionalSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -29,8 +30,8 @@ import br.gov.saude.servicos.schema.corporativo.v1r1.uf.UFType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RegistroProfissionalSaudeType", propOrder = {
@@ -50,11 +51,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade identificador.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getIdentificador() {
         return identificador;
@@ -62,11 +61,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade identificador.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setIdentificador(BigInteger value) {
         this.identificador = value;
@@ -74,11 +71,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade orgaoEmissor.
-     * 
-     * @return
-     *     possible object is
-     *     {@link OrgaoEmissorType }
-     *     
+     *
+     * @return possible object is {@link OrgaoEmissorType }
+     *
      */
     public OrgaoEmissorType getOrgaoEmissor() {
         return orgaoEmissor;
@@ -86,11 +81,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade orgaoEmissor.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link OrgaoEmissorType }
-     *     
+     *
+     * @param value allowed object is {@link OrgaoEmissorType }
+     *
      */
     public void setOrgaoEmissor(OrgaoEmissorType value) {
         this.orgaoEmissor = value;
@@ -98,11 +91,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Obtém o valor da propriedade uf.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UFType }
-     *     
+     *
+     * @return possible object is {@link UFType }
+     *
      */
     public UFType getUf() {
         return uf;
@@ -110,11 +101,9 @@ public class RegistroProfissionalSaudeType {
 
     /**
      * Define o valor da propriedade uf.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UFType }
-     *     
+     *
+     * @param value allowed object is {@link UFType }
+     *
      */
     public void setUf(UFType value) {
         this.uf = value;

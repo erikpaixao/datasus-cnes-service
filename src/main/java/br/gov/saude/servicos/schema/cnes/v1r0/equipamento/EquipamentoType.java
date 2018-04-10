@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.equipamento;
 
 import java.math.BigInteger;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipoequipamento.TipoEquipamentoType;
 
-
 /**
- * <p>Classe Java de EquipamentoType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de EquipamentoType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="EquipamentoType"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +32,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.tipoequipamento.TipoEquipamentoTyp
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EquipamentoType", propOrder = {
@@ -60,11 +61,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade codigo.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigo() {
         return codigo;
@@ -72,11 +71,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade codigo.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigo(String value) {
         this.codigo = value;
@@ -84,11 +81,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade descricao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDescricao() {
         return descricao;
@@ -96,11 +91,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade descricao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDescricao(String value) {
         this.descricao = value;
@@ -108,11 +101,9 @@ public class EquipamentoType {
 
     /**
      * Tipo de Equipamento do Estabelecimento de Saúde..
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoEquipamentoType }
-     *     
+     *
+     * @return possible object is {@link TipoEquipamentoType }
+     *
      */
     public TipoEquipamentoType getTipoEquipamento() {
         return tipoEquipamento;
@@ -120,11 +111,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade tipoEquipamento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoEquipamentoType }
-     *     
+     *
+     * @param value allowed object is {@link TipoEquipamentoType }
+     *
      */
     public void setTipoEquipamento(TipoEquipamentoType value) {
         this.tipoEquipamento = value;
@@ -132,11 +121,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade destinacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDestinacao() {
         return destinacao;
@@ -144,11 +131,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade destinacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDestinacao(String value) {
         this.destinacao = value;
@@ -156,11 +141,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeEquipamento.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getQuantidadeEquipamento() {
         return quantidadeEquipamento;
@@ -168,11 +151,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade quantidadeEquipamento.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setQuantidadeEquipamento(BigInteger value) {
         this.quantidadeEquipamento = value;
@@ -180,11 +161,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeUso.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getQuantidadeUso() {
         return quantidadeUso;
@@ -192,11 +171,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade quantidadeUso.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setQuantidadeUso(BigInteger value) {
         this.quantidadeUso = value;
@@ -204,11 +181,9 @@ public class EquipamentoType {
 
     /**
      * Obtém o valor da propriedade tpSUS.
-     * 
-     * @return
-     *     possible object is
-     *     {@link IndicadorSUSType }
-     *     
+     *
+     * @return possible object is {@link IndicadorSUSType }
+     *
      */
     public IndicadorSUSType getTpSUS() {
         return tpSUS;
@@ -216,11 +191,9 @@ public class EquipamentoType {
 
     /**
      * Define o valor da propriedade tpSUS.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link IndicadorSUSType }
-     *     
+     *
+     * @param value allowed object is {@link IndicadorSUSType }
+     *
      */
     public void setTpSUS(IndicadorSUSType value) {
         this.tpSUS = value;

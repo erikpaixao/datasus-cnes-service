@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.cnes.v1r0.estabelecimentosaudeservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprecadastrocnes.FiltroPesquisaPrecadastroCnesType;
 
-
 /**
- * <p>Classe Java de anonymous complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de anonymous complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -25,8 +26,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprecadastrocnes.
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -40,11 +41,9 @@ public class RequestConsultarPrecadastroCNES {
 
     /**
      * Filtro Pesquisa Precadastro CNES.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FiltroPesquisaPrecadastroCnesType }
-     *     
+     *
+     * @return possible object is {@link FiltroPesquisaPrecadastroCnesType }
+     *
      */
     public FiltroPesquisaPrecadastroCnesType getFiltroPesquisaPrecadastroCnes() {
         return filtroPesquisaPrecadastroCnes;
@@ -52,11 +51,9 @@ public class RequestConsultarPrecadastroCNES {
 
     /**
      * Define o valor da propriedade filtroPesquisaPrecadastroCnes.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FiltroPesquisaPrecadastroCnesType }
-     *     
+     *
+     * @param value allowed object is {@link FiltroPesquisaPrecadastroCnesType }
+     *
      */
     public void setFiltroPesquisaPrecadastroCnes(FiltroPesquisaPrecadastroCnesType value) {
         this.filtroPesquisaPrecadastroCnes = value;

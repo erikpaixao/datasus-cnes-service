@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.complementoestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipogestao.TipoGestaoType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipounidade.TipoUnidadeType;
 
-
 /**
- * <p>Classe Java de ComplementoEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ComplementoEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ComplementoEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -27,8 +28,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.tipounidade.TipoUnidadeType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ComplementoEstabelecimentoSaudeType", propOrder = {
@@ -46,11 +47,9 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade tipoGestao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoGestaoType }
-     *     
+     *
+     * @return possible object is {@link TipoGestaoType }
+     *
      */
     public TipoGestaoType getTipoGestao() {
         return tipoGestao;
@@ -58,11 +57,9 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade tipoGestao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoGestaoType }
-     *     
+     *
+     * @param value allowed object is {@link TipoGestaoType }
+     *
      */
     public void setTipoGestao(TipoGestaoType value) {
         this.tipoGestao = value;
@@ -70,11 +67,9 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade tipoUnidade.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @return possible object is {@link TipoUnidadeType }
+     *
      */
     public TipoUnidadeType getTipoUnidade() {
         return tipoUnidade;
@@ -82,11 +77,9 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade tipoUnidade.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @param value allowed object is {@link TipoUnidadeType }
+     *
      */
     public void setTipoUnidade(TipoUnidadeType value) {
         this.tipoUnidade = value;
@@ -94,7 +87,7 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade quantidadeEstabelecimentos.
-     * 
+     *
      */
     public int getQuantidadeEstabelecimentos() {
         return quantidadeEstabelecimentos;
@@ -102,7 +95,7 @@ public class ComplementoEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade quantidadeEstabelecimentos.
-     * 
+     *
      */
     public void setQuantidadeEstabelecimentos(int value) {
         this.quantidadeEstabelecimentos = value;

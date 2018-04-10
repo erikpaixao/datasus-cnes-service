@@ -11,8 +11,8 @@ import java.util.logging.Logger;
  *
  * @author erik
  */
-public class BaseService{
+public class BaseService {
 
     public static final Logger LOG = Logger.getLogger(BaseService.class.getName());
-    
+
 }

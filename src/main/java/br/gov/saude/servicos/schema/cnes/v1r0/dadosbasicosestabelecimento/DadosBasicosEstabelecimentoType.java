@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosestabelecimento;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.nomejuridico.NomeJuridicoType;
 
-
 /**
- * <p>Classe Java de DadosBasicosEstabelecimentoType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de DadosBasicosEstabelecimentoType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="DadosBasicosEstabelecimentoType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +27,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.nomejuridico
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosBasicosEstabelecimentoType", propOrder = {
@@ -43,11 +44,9 @@ public class DadosBasicosEstabelecimentoType {
 
     /**
      * Código do Estabelecimento de Saúde..
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodigoCNESType }
-     *     
+     *
+     * @return possible object is {@link CodigoCNESType }
+     *
      */
     public CodigoCNESType getCodigoCNES() {
         return codigoCNES;
@@ -55,11 +54,9 @@ public class DadosBasicosEstabelecimentoType {
 
     /**
      * Define o valor da propriedade codigoCNES.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodigoCNESType }
-     *     
+     *
+     * @param value allowed object is {@link CodigoCNESType }
+     *
      */
     public void setCodigoCNES(CodigoCNESType value) {
         this.codigoCNES = value;
@@ -67,11 +64,9 @@ public class DadosBasicosEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade nomeFantasia.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @return possible object is {@link NomeJuridicoType }
+     *
      */
     public NomeJuridicoType getNomeFantasia() {
         return nomeFantasia;
@@ -79,11 +74,9 @@ public class DadosBasicosEstabelecimentoType {
 
     /**
      * Define o valor da propriedade nomeFantasia.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @param value allowed object is {@link NomeJuridicoType }
+     *
      */
     public void setNomeFantasia(NomeJuridicoType value) {
         this.nomeFantasia = value;

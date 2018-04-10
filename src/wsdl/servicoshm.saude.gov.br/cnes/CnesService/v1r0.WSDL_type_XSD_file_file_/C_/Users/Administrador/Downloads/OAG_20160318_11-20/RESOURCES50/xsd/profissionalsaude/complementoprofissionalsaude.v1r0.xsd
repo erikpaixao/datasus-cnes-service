@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vinculo="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/vinculoempregaticio" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoprofissionalsaude" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoprofissionalsaude">
 
-	<xs:import id="vinculo" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/vinculoempregaticio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fvinculoempregaticio.v1r0.xsd"/>	
+    <xs:import id="vinculo" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/vinculoempregaticio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fvinculoempregaticio.v1r0.xsd"/>	
 		
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa um Profissional de Saúde (informação de Dados Complementares).]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa um Profissional de Saúde (informação de Dados Complementares).]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="ComplementoProfissionalSaude" type="ComplementoProfissionalSaudeType"/>
+    <xs:element name="ComplementoProfissionalSaude" type="ComplementoProfissionalSaudeType"/>
 
-	<xs:complexType name="ComplementoProfissionalSaudeType">
-		<xs:sequence>
-			<xs:element name="tipoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Tipo Vinculação (Código Vinculo Empregaticio + Código do Tipo do Vínculo Empregatício).]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="1" maxOccurs="1" ref="vinculo:vinculoempregaticio">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Vínculo Empregatício.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="quantidadeProfissionaisSaude" minOccurs="1" maxOccurs="1" type="xs:int">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de Profissionais de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="ComplementoProfissionalSaudeType">
+        <xs:sequence>
+            <xs:element name="tipoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Tipo Vinculação (Código Vinculo Empregaticio + Código do Tipo do Vínculo Empregatício).]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="vinculo:vinculoempregaticio">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Vínculo Empregatício.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="quantidadeProfissionaisSaude" minOccurs="1" maxOccurs="1" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de Profissionais de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

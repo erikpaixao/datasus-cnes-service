@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" xmlns:tipotelefone="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r1/tipotelefone" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa numero de telefone.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa numero de telefone.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:import id="tipotelefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r1/tipotelefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftipotelefone.v1r1.xsd"/>
+    <xs:import id="tipotelefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r1/tipotelefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftipotelefone.v1r1.xsd"/>
 
-	<xs:element name="Telefone" type="TelefoneType"/>
+    <xs:element name="Telefone" type="TelefoneType"/>
 
-	<xs:complexType name="TelefoneType">
-		<xs:sequence>
-			<xs:element name="identificador" minOccurs="0" maxOccurs="1" type="xs:nonNegativeInteger">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código de identificação.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" name="TipoTelefone" type="tipotelefone:TipoTelefoneType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Tipo de telefone.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="DDI" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[DDI do telefone.]]></xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:nonNegativeInteger">
-						<xs:maxInclusive value="999"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="DDD" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[DDD do telefone.]]></xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:nonNegativeInteger">
-						<xs:maxInclusive value="99"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="numeroTelefone" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Numero do telefone.]]></xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:nonNegativeInteger">
-						<xs:maxInclusive value="999999999"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="TelefoneType">
+        <xs:sequence>
+            <xs:element name="identificador" minOccurs="0" maxOccurs="1" type="xs:nonNegativeInteger">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código de identificação.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="TipoTelefone" type="tipotelefone:TipoTelefoneType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Tipo de telefone.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DDI" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[DDI do telefone.]]></xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:maxInclusive value="999"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="DDD" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[DDD do telefone.]]></xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:maxInclusive value="99"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="numeroTelefone" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Numero do telefone.]]></xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:nonNegativeInteger">
+                        <xs:maxInclusive value="999999999"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

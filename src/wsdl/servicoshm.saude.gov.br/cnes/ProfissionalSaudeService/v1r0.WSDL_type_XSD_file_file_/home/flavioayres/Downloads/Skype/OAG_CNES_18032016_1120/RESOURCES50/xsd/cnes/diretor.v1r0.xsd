@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cpf="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" xmlns:nome="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor">
 
-	<xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
+    <xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
 	
-	<xs:import id="nome" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoafisica%2Fnomecompleto.v1r2.xsd"/>	
+    <xs:import id="nome" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoafisica%2Fnomecompleto.v1r2.xsd"/>	
 		
 		
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o Diretor de Estabelecimento de Saúde no CNES.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o Diretor de Estabelecimento de Saúde no CNES.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="Diretor" type="DiretorType"/>
+    <xs:element name="Diretor" type="DiretorType"/>
 
-	<xs:complexType name="DiretorType">
-		<xs:sequence>
-			<xs:element name="CPF" minOccurs="1" maxOccurs="1" type="cpf:CPFType"/>
-			<xs:element name="nome" minOccurs="1" maxOccurs="1" type="nome:NomeCompletoType"/>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="DiretorType">
+        <xs:sequence>
+            <xs:element name="CPF" minOccurs="1" maxOccurs="1" type="cpf:CPFType"/>
+            <xs:element name="nome" minOccurs="1" maxOccurs="1" type="nome:NomeCompletoType"/>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

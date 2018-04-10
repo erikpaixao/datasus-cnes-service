@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.leito;
 
 import java.math.BigInteger;
@@ -9,12 +8,14 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-
 /**
- * <p>Classe Java de LeitoType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de LeitoType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="LeitoType"&gt;
  *   &lt;complexContent&gt;
@@ -30,8 +31,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "LeitoType", propOrder = {
@@ -54,11 +55,9 @@ public class LeitoType {
 
     /**
      * Obtém o valor da propriedade codigo.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigo() {
         return codigo;
@@ -66,11 +65,9 @@ public class LeitoType {
 
     /**
      * Define o valor da propriedade codigo.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigo(String value) {
         this.codigo = value;
@@ -78,11 +75,9 @@ public class LeitoType {
 
     /**
      * Obtém o valor da propriedade descricao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDescricao() {
         return descricao;
@@ -90,11 +85,9 @@ public class LeitoType {
 
     /**
      * Define o valor da propriedade descricao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDescricao(String value) {
         this.descricao = value;
@@ -102,11 +95,9 @@ public class LeitoType {
 
     /**
      * Obtém o valor da propriedade dataAtualizacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is {@link XMLGregorianCalendar }
+     *
      */
     public XMLGregorianCalendar getDataAtualizacao() {
         return dataAtualizacao;
@@ -114,11 +105,9 @@ public class LeitoType {
 
     /**
      * Define o valor da propriedade dataAtualizacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is {@link XMLGregorianCalendar }
+     *
      */
     public void setDataAtualizacao(XMLGregorianCalendar value) {
         this.dataAtualizacao = value;
@@ -126,11 +115,9 @@ public class LeitoType {
 
     /**
      * Obtém o valor da propriedade quantidadeLeito.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getQuantidadeLeito() {
         return quantidadeLeito;
@@ -138,11 +125,9 @@ public class LeitoType {
 
     /**
      * Define o valor da propriedade quantidadeLeito.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setQuantidadeLeito(BigInteger value) {
         this.quantidadeLeito = value;
@@ -150,11 +135,9 @@ public class LeitoType {
 
     /**
      * Obtém o valor da propriedade quantidadeLeitoSUS.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getQuantidadeLeitoSUS() {
         return quantidadeLeitoSUS;
@@ -162,11 +145,9 @@ public class LeitoType {
 
     /**
      * Define o valor da propriedade quantidadeLeitoSUS.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setQuantidadeLeitoSUS(BigInteger value) {
         this.quantidadeLeitoSUS = value;

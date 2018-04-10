@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa uma localizacao.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa uma localizacao.]]></xs:documentation>
+    </xs:annotation>
 	
-	<xs:element name="Localizacao" type="localizacaoType"/>
+    <xs:element name="Localizacao" type="localizacaoType"/>
 
-	<xs:complexType name="localizacaoType">
-		<xs:sequence>
-			<xs:element name="longitude" minOccurs="1" maxOccurs="1" type="xs:string">
-			</xs:element>
-			<xs:element name="latitude" minOccurs="1" maxOccurs="1" type="xs:string">
-			</xs:element>
-			<xs:element name="geoJson" minOccurs="0" maxOccurs="1" type="xs:string"/>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="localizacaoType">
+        <xs:sequence>
+            <xs:element name="longitude" minOccurs="1" maxOccurs="1" type="xs:string">
+            </xs:element>
+            <xs:element name="latitude" minOccurs="1" maxOccurs="1" type="xs:string">
+            </xs:element>
+            <xs:element name="geoJson" minOccurs="0" maxOccurs="1" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1.paginacao.PaginacaoType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.FiltroPesquisaVinculacaosType;
 
-
 /**
- * <p>Classe Java de RequestVinculacaos complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de RequestVinculacaos complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="RequestVinculacaos"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +27,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos.Filt
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RequestVinculacaos", propOrder = {
@@ -43,11 +44,9 @@ public class RequestVinculacaos {
 
     /**
      * Obtém o valor da propriedade filtroPesquisaVinculacaos.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FiltroPesquisaVinculacaosType }
-     *     
+     *
+     * @return possible object is {@link FiltroPesquisaVinculacaosType }
+     *
      */
     public FiltroPesquisaVinculacaosType getFiltroPesquisaVinculacaos() {
         return filtroPesquisaVinculacaos;
@@ -55,11 +54,9 @@ public class RequestVinculacaos {
 
     /**
      * Define o valor da propriedade filtroPesquisaVinculacaos.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FiltroPesquisaVinculacaosType }
-     *     
+     *
+     * @param value allowed object is {@link FiltroPesquisaVinculacaosType }
+     *
      */
     public void setFiltroPesquisaVinculacaos(FiltroPesquisaVinculacaosType value) {
         this.filtroPesquisaVinculacaos = value;
@@ -67,11 +64,9 @@ public class RequestVinculacaos {
 
     /**
      * Obtém o valor da propriedade paginacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     * @return possible object is {@link PaginacaoType }
+     *
      */
     public PaginacaoType getPaginacao() {
         return paginacao;
@@ -79,11 +74,9 @@ public class RequestVinculacaos {
 
     /**
      * Define o valor da propriedade paginacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PaginacaoType }
-     *     
+     *
+     * @param value allowed object is {@link PaginacaoType }
+     *
      */
     public void setPaginacao(PaginacaoType value) {
         this.paginacao = value;

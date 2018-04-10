@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisadadoscomplementarescnes;
 
 import java.util.ArrayList;
@@ -12,12 +11,14 @@ import br.gov.saude.servicos.schema.cnes.v1r0.complementoesferaadministrativa.Co
 import br.gov.saude.servicos.schema.cnes.v1r0.complementoestabelecimentosaude.ComplementoEstabelecimentoSaudeType;
 import br.gov.saude.servicos.schema.cnes.v1r0.complementoprofissionalsaude.ComplementoProfissionalSaudeType;
 
-
 /**
- * <p>Classe Java de ResultadoPesquisaDadosComplementaresCnesType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de ResultadoPesquisaDadosComplementaresCnesType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="ResultadoPesquisaDadosComplementaresCnesType"&gt;
  *   &lt;complexContent&gt;
@@ -33,8 +34,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.complementoprofissionalsaude.Compl
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResultadoPesquisaDadosComplementaresCnesType", propOrder = {
@@ -58,26 +59,27 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
     protected SumarioDadosComplementaresType sumario;
 
     /**
-     * Dados Complementares do Estabelecimento de Saúde.Gets the value of the complementoEstabelecimentoSaude property.
-     * 
+     * Dados Complementares do Estabelecimento de Saúde.Gets the value of the
+     * complementoEstabelecimentoSaude property.
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the complementoEstabelecimentoSaude property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the complementoEstabelecimentoSaude property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getComplementoEstabelecimentoSaude().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ComplementoEstabelecimentoSaudeType }
-     * 
-     * 
+     *
+     *
      */
     public List<ComplementoEstabelecimentoSaudeType> getComplementoEstabelecimentoSaude() {
         if (complementoEstabelecimentoSaude == null) {
@@ -87,26 +89,27 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
     }
 
     /**
-     * Dados Complementares da Esfera Administrativa.Gets the value of the complementoEsferaAdministrativa property.
-     * 
+     * Dados Complementares da Esfera Administrativa.Gets the value of the
+     * complementoEsferaAdministrativa property.
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the complementoEsferaAdministrativa property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the complementoEsferaAdministrativa property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getComplementoEsferaAdministrativa().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ComplementoEsferaAdministrativaType }
-     * 
-     * 
+     *
+     *
      */
     public List<ComplementoEsferaAdministrativaType> getComplementoEsferaAdministrativa() {
         if (complementoEsferaAdministrativa == null) {
@@ -116,26 +119,27 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
     }
 
     /**
-     * Dados Complementares dos Profissionais de Saúde.Gets the value of the complementoProfissionalSaude property.
-     * 
+     * Dados Complementares dos Profissionais de Saúde.Gets the value of the
+     * complementoProfissionalSaude property.
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the complementoProfissionalSaude property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the complementoProfissionalSaude property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getComplementoProfissionalSaude().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ComplementoProfissionalSaudeType }
-     * 
-     * 
+     *
+     *
      */
     public List<ComplementoProfissionalSaudeType> getComplementoProfissionalSaude() {
         if (complementoProfissionalSaude == null) {
@@ -146,11 +150,9 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
 
     /**
      * Ano do Exercício.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CmptType }
-     *     
+     *
+     * @return possible object is {@link CmptType }
+     *
      */
     public CmptType getCmpt() {
         return cmpt;
@@ -158,11 +160,9 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
 
     /**
      * Define o valor da propriedade cmpt.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CmptType }
-     *     
+     *
+     * @param value allowed object is {@link CmptType }
+     *
      */
     public void setCmpt(CmptType value) {
         this.cmpt = value;
@@ -170,11 +170,9 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
 
     /**
      * Obtém o valor da propriedade sumario.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SumarioDadosComplementaresType }
-     *     
+     *
+     * @return possible object is {@link SumarioDadosComplementaresType }
+     *
      */
     public SumarioDadosComplementaresType getSumario() {
         return sumario;
@@ -182,11 +180,9 @@ public class ResultadoPesquisaDadosComplementaresCnesType {
 
     /**
      * Define o valor da propriedade sumario.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SumarioDadosComplementaresType }
-     *     
+     *
+     * @param value allowed object is {@link SumarioDadosComplementaresType }
+     *
      */
     public void setSumario(SumarioDadosComplementaresType value) {
         this.sumario = value;

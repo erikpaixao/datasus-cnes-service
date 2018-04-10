@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosgeraiscnes" xmlns:nomejuridico="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" xmlns:cnpj="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" xmlns:endereco="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" xmlns:esferaadm="http://servicos.saude.gov.br/schema/cnes/v1r0/esferaadministrativa" xmlns:tipounidade="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" xmlns:municipio="http://servicos.saude.gov.br/schema/corporativo/v1r2/municipio" xmlns:diretor="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor" xmlns:counidade="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade" xmlns:cocnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" xmlns:telefone="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" xmlns:email="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" xmlns:localizacao="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosgeraiscnes">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa as informações gerais do Estabelecimento de Saúde.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa as informações gerais do Estabelecimento de Saúde.]]></xs:documentation>
+    </xs:annotation>
 	
-	<xs:import id="cocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
+    <xs:import id="cocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
 	
-	<xs:import id="counidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigounidade.v1r0.xsd"/>
+    <xs:import id="counidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigounidade.v1r0.xsd"/>
 	
-	<xs:import id="nomejuridico" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnomejuridico.v1r0.xsd"/>
+    <xs:import id="nomejuridico" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnomejuridico.v1r0.xsd"/>
 	
-	<xs:import id="cnpj" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnpj.v1r0.xsd"/>	
+    <xs:import id="cnpj" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnpj.v1r0.xsd"/>	
 	
-	<xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
+    <xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
 	
-	<xs:import id="esferaadm" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/esferaadministrativa" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fesferaadministrativa.v1r0.xsd"/>
+    <xs:import id="esferaadm" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/esferaadministrativa" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fesferaadministrativa.v1r0.xsd"/>
 		
-	<xs:import id="tipounidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipounidade.v1r0.xsd"/>	
+    <xs:import id="tipounidade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipounidade" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipounidade.v1r0.xsd"/>	
 	
-	<xs:import id="municipio" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/municipio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fmunicipio.v1r2.xsd"/>	
+    <xs:import id="municipio" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/municipio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fmunicipio.v1r2.xsd"/>	
 	
-	<xs:import id="diretor" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fdiretor.v1r0.xsd"/>
+    <xs:import id="diretor" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/diretor" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fdiretor.v1r0.xsd"/>
 		
-	<xs:import id="telefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftelefone.v1r2.xsd"/>	
+    <xs:import id="telefone" namespace="http://servicos.saude.gov.br/schema/corporativo/telefone/v1r2/telefone" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Ftelefone%2Ftelefone.v1r2.xsd"/>	
 	
-	<xs:import id="email" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Femail.v1r2.xsd"/>		
+    <xs:import id="email" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Femail.v1r2.xsd"/>		
 		
-		<xs:import id="localizacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Flocalizacao.v1r0.xsd"/>		
+    <xs:import id="localizacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/localizacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Flocalizacao.v1r0.xsd"/>		
 		
 	
-	<xs:element name="DadosGeraisEstabelecimentoSaude" type="DadosGeraisEstabelecimentoSaudeType"/>
+    <xs:element name="DadosGeraisEstabelecimentoSaude" type="DadosGeraisEstabelecimentoSaudeType"/>
 
-	<xs:complexType name="DadosGeraisEstabelecimentoSaudeType">
-		<xs:sequence>
-			<xs:element minOccurs="0" maxOccurs="1" ref="cocnes:CodigoCNES">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="counidade:CodigoUnidade">
-			</xs:element>
-			<xs:element name="nomeFantasia" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
-			</xs:element>
-			<xs:element name="nomeEmpresarial" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="cnpj:CNPJ">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="endereco:Endereco">
-			</xs:element>
-			<xs:element name="dataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:date">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="diretor:Diretor">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="tipounidade:tipoUnidade">
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="esferaadm:esferaAdministrativa">
-			</xs:element>
-			<xs:element name="MunicipioGestor" minOccurs="0" maxOccurs="1" type="municipio:MunicipioType">
-			</xs:element>
-			<xs:element name="Telefone" minOccurs="0" maxOccurs="2" type="telefone:TelefoneType">
-			</xs:element>
-			<xs:element name="Email" minOccurs="0" maxOccurs="1" type="email:EmailType">
-			</xs:element>
-			<xs:element name="Localizacao" minOccurs="0" maxOccurs="1" type="localizacao:localizacaoType">
-			</xs:element>
-			<xs:element name="perteceSistemaSUS" minOccurs="0" maxOccurs="1" type="xs:boolean">			
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="DadosGeraisEstabelecimentoSaudeType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" ref="cocnes:CodigoCNES">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="counidade:CodigoUnidade">
+            </xs:element>
+            <xs:element name="nomeFantasia" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
+            </xs:element>
+            <xs:element name="nomeEmpresarial" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="cnpj:CNPJ">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="endereco:Endereco">
+            </xs:element>
+            <xs:element name="dataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:date">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="diretor:Diretor">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="tipounidade:tipoUnidade">
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="esferaadm:esferaAdministrativa">
+            </xs:element>
+            <xs:element name="MunicipioGestor" minOccurs="0" maxOccurs="1" type="municipio:MunicipioType">
+            </xs:element>
+            <xs:element name="Telefone" minOccurs="0" maxOccurs="2" type="telefone:TelefoneType">
+            </xs:element>
+            <xs:element name="Email" minOccurs="0" maxOccurs="1" type="email:EmailType">
+            </xs:element>
+            <xs:element name="Localizacao" minOccurs="0" maxOccurs="1" type="localizacao:localizacaoType">
+            </xs:element>
+            <xs:element name="perteceSistemaSUS" minOccurs="0" maxOccurs="1" type="xs:boolean">			
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

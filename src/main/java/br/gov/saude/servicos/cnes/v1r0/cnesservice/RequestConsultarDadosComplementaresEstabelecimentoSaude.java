@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.cnes.v1r0.cnesservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,12 +8,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.cmpt.CmptType;
 import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
 
-
 /**
- * <p>Classe Java de anonymous complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de anonymous complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -27,8 +28,8 @@ import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -45,11 +46,9 @@ public class RequestConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Obtém o valor da propriedade municipioCNES.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @return possible object is {@link MunicipioType }
+     *
      */
     public MunicipioType getMunicipioCNES() {
         return municipioCNES;
@@ -57,11 +56,9 @@ public class RequestConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Define o valor da propriedade municipioCNES.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @param value allowed object is {@link MunicipioType }
+     *
      */
     public void setMunicipioCNES(MunicipioType value) {
         this.municipioCNES = value;
@@ -69,11 +66,9 @@ public class RequestConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Obtém o valor da propriedade cmpt.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CmptType }
-     *     
+     *
+     * @return possible object is {@link CmptType }
+     *
      */
     public CmptType getCmpt() {
         return cmpt;
@@ -81,11 +76,9 @@ public class RequestConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Define o valor da propriedade cmpt.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CmptType }
-     *     
+     *
+     * @param value allowed object is {@link CmptType }
+     *
      */
     public void setCmpt(CmptType value) {
         this.cmpt = value;

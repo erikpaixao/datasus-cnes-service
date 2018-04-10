@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o documento Cadastro Nacional de Pessoas Júridica (CNPJ) da Receita Federal do Brasil.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o documento Cadastro Nacional de Pessoas Júridica (CNPJ) da Receita Federal do Brasil.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="CNPJ" type="CNPJType"/>
+    <xs:element name="CNPJ" type="CNPJType"/>
 
-	<xs:complexType name="CNPJType">
-		<xs:sequence>
-			<xs:element name="numeroCNPJ" minOccurs="1" maxOccurs="1">
-				<xs:simpleType>
-					<xs:annotation>
-						<xs:documentation><![CDATA[Numero do CNPJ sem formatacao. Ex: 09999999999999]]></xs:documentation>
-					</xs:annotation>
-					<xs:restriction base="xs:string">
-						<xs:minLength value="14"/>
-						<xs:maxLength value="14"/>
-						<xs:pattern value="[0-9]*"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="CNPJType">
+        <xs:sequence>
+            <xs:element name="numeroCNPJ" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:annotation>
+                        <xs:documentation><![CDATA[Numero do CNPJ sem formatacao. Ex: 09999999999999]]></xs:documentation>
+                    </xs:annotation>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="14"/>
+                        <xs:maxLength value="14"/>
+                        <xs:pattern value="[0-9]*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

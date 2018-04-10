@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa endereco de email.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa endereco de email.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="Email" type="EmailType"/>
+    <xs:element name="Email" type="EmailType"/>
 
-	<xs:complexType name="EmailType">
-		<xs:sequence>
-			<xs:element name="identificador" minOccurs="0" maxOccurs="1" type="xs:nonNegativeInteger">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código de identificação.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="descricaoEmail" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Endereco de email.]]></xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="100"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="tipoEmail" minOccurs="1" maxOccurs="1" type="TipoEmailType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Tipos de email: P-Principal, A-Alternativo.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="validado" minOccurs="0" maxOccurs="1" type="xs:boolean">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Indica se o email ja foi validado]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="EmailType">
+        <xs:sequence>
+            <xs:element name="identificador" minOccurs="0" maxOccurs="1" type="xs:nonNegativeInteger">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código de identificação.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="descricaoEmail" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Endereco de email.]]></xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="100"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="tipoEmail" minOccurs="1" maxOccurs="1" type="TipoEmailType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Tipos de email: P-Principal, A-Alternativo.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="validado" minOccurs="0" maxOccurs="1" type="xs:boolean">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Indica se o email ja foi validado]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
-	<xs:simpleType name="TipoEmailType">
-		<xs:annotation>
-			<xs:documentation><![CDATA[Tipos de email: P-Principal, A-Alternativo.]]></xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<!-- PRINCIPAL -->
-			<xs:enumeration value="P"/>
-			<!-- ALTERNATIVO -->
-			<xs:enumeration value="A"/>
-		</xs:restriction>
-	</xs:simpleType>
+    <xs:simpleType name="TipoEmailType">
+        <xs:annotation>
+            <xs:documentation><![CDATA[Tipos de email: P-Principal, A-Alternativo.]]></xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <!-- PRINCIPAL -->
+            <xs:enumeration value="P"/>
+            <!-- ALTERNATIVO -->
+            <xs:enumeration value="A"/>
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>

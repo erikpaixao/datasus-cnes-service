@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosprincipaisestabelecimentosaude" xmlns:tipo="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoestabelecimentosaude" xmlns:atividade="http://servicos.saude.gov.br/schema/cnes/v1r0/atividadeensino" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosprincipaisestabelecimentosaude">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa os Dados Principais do Estabelecimento de Saúde no CNES.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa os Dados Principais do Estabelecimento de Saúde no CNES.]]></xs:documentation>
+    </xs:annotation>
 	
-	<xs:import id="tipo" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipoestabelecimentosaude.v1r0.xsd"/>
+    <xs:import id="tipo" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Ftipoestabelecimentosaude.v1r0.xsd"/>
 		
-	<xs:import id="atividade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/atividadeensino" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fatividadeensino.v1r0.xsd"/>
+    <xs:import id="atividade" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/atividadeensino" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fatividadeensino.v1r0.xsd"/>
 
-	<xs:element name="DadosPrincipais" type="DadosPrincipaisType"/>
+    <xs:element name="DadosPrincipais" type="DadosPrincipaisType"/>
 
-	<xs:complexType name="DadosPrincipaisType">
-		<xs:sequence>
-			<xs:element minOccurs="1" maxOccurs="1" ref="tipo:TipoEstabelecimentoSaude">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Tipo do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="1" maxOccurs="1" ref="atividade:AtividadeEnsino">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Atividade de Ensino.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="sitioInternet" minOccurs="0" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[sítio da internet (site do estabelecimento).]]>.</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="150"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="DadosPrincipaisType">
+        <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" ref="tipo:TipoEstabelecimentoSaude">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Tipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="atividade:AtividadeEnsino">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Atividade de Ensino.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sitioInternet" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[sítio da internet (site do estabelecimento).]]>.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="150"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

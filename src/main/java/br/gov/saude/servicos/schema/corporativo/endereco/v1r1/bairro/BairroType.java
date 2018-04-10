@@ -1,16 +1,17 @@
-
 package br.gov.saude.servicos.schema.corporativo.endereco.v1r1.bairro;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java de BairroType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de BairroType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="BairroType"&gt;
  *   &lt;complexContent&gt;
@@ -36,8 +37,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "BairroType", propOrder = {
@@ -51,11 +52,9 @@ public class BairroType {
 
     /**
      * Obtém o valor da propriedade codigoBairro.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoBairro() {
         return codigoBairro;
@@ -63,11 +62,9 @@ public class BairroType {
 
     /**
      * Define o valor da propriedade codigoBairro.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoBairro(String value) {
         this.codigoBairro = value;
@@ -75,11 +72,9 @@ public class BairroType {
 
     /**
      * Obtém o valor da propriedade descricaoBairro.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDescricaoBairro() {
         return descricaoBairro;
@@ -87,11 +82,9 @@ public class BairroType {
 
     /**
      * Define o valor da propriedade descricaoBairro.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDescricaoBairro(String value) {
         this.descricaoBairro = value;

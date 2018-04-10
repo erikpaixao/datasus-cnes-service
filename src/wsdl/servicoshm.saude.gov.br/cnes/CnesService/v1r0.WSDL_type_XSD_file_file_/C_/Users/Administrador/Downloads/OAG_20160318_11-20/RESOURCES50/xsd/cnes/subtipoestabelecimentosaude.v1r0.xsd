@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/subtipoestabelecimentosaude" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/subtipoestabelecimentosaude">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o Subtipo de Estabelecimento de Saúde no CNES.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o Subtipo de Estabelecimento de Saúde no CNES.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="SubtipoEstabelecimentoSaude" type="SubtipoEstabelecimentoSaudeType"/>
+    <xs:element name="SubtipoEstabelecimentoSaude" type="SubtipoEstabelecimentoSaudeType"/>
 
-	<xs:complexType name="SubtipoEstabelecimentoSaudeType">
-		<xs:sequence>
-			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código do subtipo do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="4"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element name="descricao" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Descrição do subtipo do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="70"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="SubtipoEstabelecimentoSaudeType">
+        <xs:sequence>
+            <xs:element name="codigo" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código do subtipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="4"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="descricao" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Descrição do subtipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="70"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

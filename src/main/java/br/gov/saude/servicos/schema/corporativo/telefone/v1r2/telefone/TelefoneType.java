@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.corporativo.telefone.v1r2.telefone;
 
 import java.math.BigInteger;
@@ -9,12 +8,14 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.corporativo.telefone.v1r1.tipotelefone.TipoTelefoneType;
 
-
 /**
- * <p>Classe Java de TelefoneType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de TelefoneType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="TelefoneType"&gt;
  *   &lt;complexContent&gt;
@@ -48,8 +49,8 @@ import br.gov.saude.servicos.schema.corporativo.telefone.v1r1.tipotelefone.TipoT
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TelefoneType", propOrder = {
@@ -73,11 +74,9 @@ public class TelefoneType {
 
     /**
      * Obtém o valor da propriedade identificador.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @return possible object is {@link BigInteger }
+     *
      */
     public BigInteger getIdentificador() {
         return identificador;
@@ -85,11 +84,9 @@ public class TelefoneType {
 
     /**
      * Define o valor da propriedade identificador.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
+     *
+     * @param value allowed object is {@link BigInteger }
+     *
      */
     public void setIdentificador(BigInteger value) {
         this.identificador = value;
@@ -97,11 +94,9 @@ public class TelefoneType {
 
     /**
      * Obtém o valor da propriedade tipoTelefone.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoTelefoneType }
-     *     
+     *
+     * @return possible object is {@link TipoTelefoneType }
+     *
      */
     public TipoTelefoneType getTipoTelefone() {
         return tipoTelefone;
@@ -109,11 +104,9 @@ public class TelefoneType {
 
     /**
      * Define o valor da propriedade tipoTelefone.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoTelefoneType }
-     *     
+     *
+     * @param value allowed object is {@link TipoTelefoneType }
+     *
      */
     public void setTipoTelefone(TipoTelefoneType value) {
         this.tipoTelefone = value;
@@ -121,11 +114,9 @@ public class TelefoneType {
 
     /**
      * Obtém o valor da propriedade ddi.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is {@link Integer }
+     *
      */
     public Integer getDDI() {
         return ddi;
@@ -133,11 +124,9 @@ public class TelefoneType {
 
     /**
      * Define o valor da propriedade ddi.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is {@link Integer }
+     *
      */
     public void setDDI(Integer value) {
         this.ddi = value;
@@ -145,11 +134,9 @@ public class TelefoneType {
 
     /**
      * Obtém o valor da propriedade ddd.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is {@link Integer }
+     *
      */
     public Integer getDDD() {
         return ddd;
@@ -157,11 +144,9 @@ public class TelefoneType {
 
     /**
      * Define o valor da propriedade ddd.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is {@link Integer }
+     *
      */
     public void setDDD(Integer value) {
         this.ddd = value;
@@ -169,11 +154,9 @@ public class TelefoneType {
 
     /**
      * Obtém o valor da propriedade numeroTelefone.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is {@link Integer }
+     *
      */
     public Integer getNumeroTelefone() {
         return numeroTelefone;
@@ -181,11 +164,9 @@ public class TelefoneType {
 
     /**
      * Define o valor da propriedade numeroTelefone.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is {@link Integer }
+     *
      */
     public void setNumeroTelefone(Integer value) {
         this.numeroTelefone = value;

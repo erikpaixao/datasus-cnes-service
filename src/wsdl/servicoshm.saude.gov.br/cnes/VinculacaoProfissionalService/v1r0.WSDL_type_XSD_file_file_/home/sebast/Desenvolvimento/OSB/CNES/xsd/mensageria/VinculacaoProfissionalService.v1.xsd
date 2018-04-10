@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice" xmlns:vinc="http://servicos.saude.gov.br/schema/cnes/v1r0/vinculacao" xmlns:filvincs="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacaos" xmlns:filvinc="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacao" xmlns:pag="http://servicos.saude.gov.br/wsdl/mensageria/v1/paginacao" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice">
 	
-	<xs:import id="filvincs" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacaos" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffiltropesquisavinculacaos.v1r0.xsd"/>	
-	<xs:import id="filvinc" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffiltropesquisavinculacao.v1r0.xsd"/>	
-	<xs:import id="vinc" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/vinculacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcnes%2Fvinculacao%2Fvinculacao.v1r0.xsd"/>
-	<xs:import id="pag" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1/paginacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Fpaginacao.v1.xsd"/>
+    <xs:import id="filvincs" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacaos" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffiltropesquisavinculacaos.v1r0.xsd"/>	
+    <xs:import id="filvinc" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffiltropesquisavinculacao.v1r0.xsd"/>	
+    <xs:import id="vinc" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/vinculacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcnes%2Fvinculacao%2Fvinculacao.v1r0.xsd"/>
+    <xs:import id="pag" namespace="http://servicos.saude.gov.br/wsdl/mensageria/v1/paginacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Fpaginacao.v1.xsd"/>
 	
-	<xs:element name="RequestVinculacaos" type="tns:RequestVinculacaos"/>
-	<xs:element name="ResponseVinculacaos" type="tns:ResponseVinculacaos"/>	
-	<xs:element name="RequestVinculacao" type="tns:RequestVinculacao"/>
-	<xs:element name="ResponseVinculacao" type="tns:ResponseVinculacao"/>
+    <xs:element name="RequestVinculacaos" type="tns:RequestVinculacaos"/>
+    <xs:element name="ResponseVinculacaos" type="tns:ResponseVinculacaos"/>	
+    <xs:element name="RequestVinculacao" type="tns:RequestVinculacao"/>
+    <xs:element name="ResponseVinculacao" type="tns:ResponseVinculacao"/>
 
-	<xs:complexType name="RequestVinculacaos">
-		<xs:sequence>
-			<xs:element ref="filvincs:FiltroPesquisaVinculacaos" minOccurs="0"/>
-				<xs:element name="Paginacao" type="pag:PaginacaoType"/>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="ResponseVinculacaos">
-		<xs:sequence>
-			<xs:element ref="vinc:Vinculacaos" minOccurs="0" maxOccurs="1"/>
-				<xs:element name="Paginacao" type="pag:PaginacaoType"/>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="RequestVinculacao">
-		<xs:sequence>
-			<xs:element ref="filvinc:FiltroPesquisaVinculacao" minOccurs="0"/>
+    <xs:complexType name="RequestVinculacaos">
+        <xs:sequence>
+            <xs:element ref="filvincs:FiltroPesquisaVinculacaos" minOccurs="0"/>
+            <xs:element name="Paginacao" type="pag:PaginacaoType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ResponseVinculacaos">
+        <xs:sequence>
+            <xs:element ref="vinc:Vinculacaos" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="Paginacao" type="pag:PaginacaoType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RequestVinculacao">
+        <xs:sequence>
+            <xs:element ref="filvinc:FiltroPesquisaVinculacao" minOccurs="0"/>
 		
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="ResponseVinculacao">
-		<xs:sequence>
-			<xs:element ref="vinc:Vinculacaos" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ResponseVinculacao">
+        <xs:sequence>
+            <xs:element ref="vinc:Vinculacaos" minOccurs="0" maxOccurs="1"/>
 			
-		</xs:sequence>
-	</xs:complexType>
+        </xs:sequence>
+    </xs:complexType>
 	
 </xs:schema>

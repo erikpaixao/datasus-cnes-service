@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.naturezajuridica;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,12 +6,14 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.tiponaturezajuridica.TipoNaturezaJuridicaType;
 
-
 /**
- * <p>Classe Java de NaturezaJuridicaType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de NaturezaJuridicaType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="NaturezaJuridicaType"&gt;
  *   &lt;complexContent&gt;
@@ -45,8 +46,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.tiponatureza
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NaturezaJuridicaType", propOrder = {
@@ -68,11 +69,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Obtém o valor da propriedade codigoNaturezaJuridica.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoNaturezaJuridica() {
         return codigoNaturezaJuridica;
@@ -80,11 +79,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Define o valor da propriedade codigoNaturezaJuridica.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoNaturezaJuridica(String value) {
         this.codigoNaturezaJuridica = value;
@@ -92,11 +89,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Obtém o valor da propriedade descricaoNaturezaJuridica.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getDescricaoNaturezaJuridica() {
         return descricaoNaturezaJuridica;
@@ -104,11 +99,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Define o valor da propriedade descricaoNaturezaJuridica.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setDescricaoNaturezaJuridica(String value) {
         this.descricaoNaturezaJuridica = value;
@@ -116,11 +109,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Obtém o valor da propriedade codigoNaturezaJuridicaConcla.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoNaturezaJuridicaConcla() {
         return codigoNaturezaJuridicaConcla;
@@ -128,11 +119,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Define o valor da propriedade codigoNaturezaJuridicaConcla.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoNaturezaJuridicaConcla(String value) {
         this.codigoNaturezaJuridicaConcla = value;
@@ -140,11 +129,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Obtém o valor da propriedade tipoNaturezaJuridica.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoNaturezaJuridicaType }
-     *     
+     *
+     * @return possible object is {@link TipoNaturezaJuridicaType }
+     *
      */
     public TipoNaturezaJuridicaType getTipoNaturezaJuridica() {
         return tipoNaturezaJuridica;
@@ -152,11 +139,9 @@ public class NaturezaJuridicaType {
 
     /**
      * Define o valor da propriedade tipoNaturezaJuridica.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoNaturezaJuridicaType }
-     *     
+     *
+     * @param value allowed object is {@link TipoNaturezaJuridicaType }
+     *
      */
     public void setTipoNaturezaJuridica(TipoNaturezaJuridicaType value) {
         this.tipoNaturezaJuridica = value;

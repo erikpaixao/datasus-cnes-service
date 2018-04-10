@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/vinculoempregaticio" xmlns:tipovinculo="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/tipovinculoempregaticio" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/vinculoempregaticio">
 	
-	<xs:import id="tipovinculo" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/tipovinculoempregaticio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Ftipovinculoempregaticio.v1r0.xsd"/>
+    <xs:import id="tipovinculo" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/tipovinculoempregaticio" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Ftipovinculoempregaticio.v1r0.xsd"/>
 	
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o Vinculo com o Estabelecimento.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o Vinculo com o Estabelecimento.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="vinculoempregaticio" type="VinculoEmpregaticioType"/>
+    <xs:element name="vinculoempregaticio" type="VinculoEmpregaticioType"/>
 
-	<xs:complexType name="VinculoEmpregaticioType">
-		<xs:sequence>
-			<xs:element name="codigoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código da Vinculação.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="descricaoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Descrição da Vinculação.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="1" maxOccurs="1" ref="tipovinculo:tipoVinculoEmpregaticio">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Tipo do Vínculo Empregatício.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="VinculoEmpregaticioType">
+        <xs:sequence>
+            <xs:element name="codigoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código da Vinculação.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="descricaoVinculacao" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Descrição da Vinculação.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="tipovinculo:tipoVinculoEmpregaticio">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Tipo do Vínculo Empregatício.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

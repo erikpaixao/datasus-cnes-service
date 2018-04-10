@@ -14,23 +14,23 @@ public class Application {
         SpringApplication.run(Application.class, args);
         Cnes cnes = new Cnes();
         Gson gson = new Gson();
-        
+
         String json = gson.toJson(cnes.getEstabelecimentoSaudeServiceByCnes("7161158"));
-        
+
         System.out.println("Teste de getEstabelecimentoSaudeServiceByCnes ====================> " + json);
-        
+
         String json1 = gson.toJson(cnes.getEquipamentoServiceByCnes("7161158"));
-        
+
         System.out.println("Teste de getEquipamentoServiceByCnes ====================> " + json1);
-        
+
         String json2 = gson.toJson(cnes.getEstabelecimentoServiceByCnes("7161158", null));
-        
+
         System.out.println("Teste de getEstabelecimentoServiceByCnes ====================> " + json2);
-        
+
         String json4 = gson.toJson(cnes.getLeitosByCnes("7161158"));
-        
+
         System.out.println("Teste de getLeitosByCnes ====================> " + json4);
-        
+
     }
 
 }

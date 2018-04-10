@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,12 +5,14 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java de CPFType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de CPFType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="CPFType"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +32,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CPFType", propOrder = {
@@ -45,11 +46,9 @@ public class CPFType {
 
     /**
      * Obtém o valor da propriedade numeroCPF.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getNumeroCPF() {
         return numeroCPF;
@@ -57,11 +56,9 @@ public class CPFType {
 
     /**
      * Define o valor da propriedade numeroCPF.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setNumeroCPF(String value) {
         this.numeroCPF = value;

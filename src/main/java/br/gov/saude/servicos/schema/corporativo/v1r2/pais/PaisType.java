@@ -1,16 +1,17 @@
-
 package br.gov.saude.servicos.schema.corporativo.v1r2.pais;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java de PaisType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de PaisType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="PaisType"&gt;
  *   &lt;complexContent&gt;
@@ -36,8 +37,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaisType", propOrder = {
@@ -53,11 +54,9 @@ public class PaisType {
 
     /**
      * Obtém o valor da propriedade codigoPais.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoPais() {
         return codigoPais;
@@ -65,11 +64,9 @@ public class PaisType {
 
     /**
      * Define o valor da propriedade codigoPais.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoPais(String value) {
         this.codigoPais = value;
@@ -77,11 +74,9 @@ public class PaisType {
 
     /**
      * Obtém o valor da propriedade codigoPaisAntigo.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getCodigoPaisAntigo() {
         return codigoPaisAntigo;
@@ -89,11 +84,9 @@ public class PaisType {
 
     /**
      * Define o valor da propriedade codigoPaisAntigo.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setCodigoPaisAntigo(String value) {
         this.codigoPaisAntigo = value;
@@ -101,11 +94,9 @@ public class PaisType {
 
     /**
      * Obtém o valor da propriedade nomePais.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getNomePais() {
         return nomePais;
@@ -113,11 +104,9 @@ public class PaisType {
 
     /**
      * Define o valor da propriedade nomePais.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setNomePais(String value) {
         this.nomePais = value;

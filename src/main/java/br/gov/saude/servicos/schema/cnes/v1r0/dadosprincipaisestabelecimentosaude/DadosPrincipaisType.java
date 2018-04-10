@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.dadosprincipaisestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.atividadeensino.AtividadeEnsinoType;
 import br.gov.saude.servicos.schema.cnes.v1r0.tipoestabelecimentosaude.TipoEstabelecimentoSaudeType;
 
-
 /**
- * <p>Classe Java de DadosPrincipaisType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de DadosPrincipaisType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="DadosPrincipaisType"&gt;
  *   &lt;complexContent&gt;
@@ -33,8 +34,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.tipoestabelecimentosaude.TipoEstab
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosPrincipaisType", propOrder = {
@@ -52,11 +53,9 @@ public class DadosPrincipaisType {
 
     /**
      * Tipo do Estabelecimento de Saúde..
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoEstabelecimentoSaudeType }
-     *     
+     *
+     * @return possible object is {@link TipoEstabelecimentoSaudeType }
+     *
      */
     public TipoEstabelecimentoSaudeType getTipoEstabelecimentoSaude() {
         return tipoEstabelecimentoSaude;
@@ -64,11 +63,9 @@ public class DadosPrincipaisType {
 
     /**
      * Define o valor da propriedade tipoEstabelecimentoSaude.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoEstabelecimentoSaudeType }
-     *     
+     *
+     * @param value allowed object is {@link TipoEstabelecimentoSaudeType }
+     *
      */
     public void setTipoEstabelecimentoSaude(TipoEstabelecimentoSaudeType value) {
         this.tipoEstabelecimentoSaude = value;
@@ -76,11 +73,9 @@ public class DadosPrincipaisType {
 
     /**
      * Atividade de Ensino..
-     * 
-     * @return
-     *     possible object is
-     *     {@link AtividadeEnsinoType }
-     *     
+     *
+     * @return possible object is {@link AtividadeEnsinoType }
+     *
      */
     public AtividadeEnsinoType getAtividadeEnsino() {
         return atividadeEnsino;
@@ -88,11 +83,9 @@ public class DadosPrincipaisType {
 
     /**
      * Define o valor da propriedade atividadeEnsino.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AtividadeEnsinoType }
-     *     
+     *
+     * @param value allowed object is {@link AtividadeEnsinoType }
+     *
      */
     public void setAtividadeEnsino(AtividadeEnsinoType value) {
         this.atividadeEnsino = value;
@@ -100,11 +93,9 @@ public class DadosPrincipaisType {
 
     /**
      * Obtém o valor da propriedade sitioInternet.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is {@link String }
+     *
      */
     public String getSitioInternet() {
         return sitioInternet;
@@ -112,11 +103,9 @@ public class DadosPrincipaisType {
 
     /**
      * Define o valor da propriedade sitioInternet.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is {@link String }
+     *
      */
     public void setSitioInternet(String value) {
         this.sitioInternet = value;

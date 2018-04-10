@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:endereco="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" xmlns:nomejuridico="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" xmlns:identificacao="http://servicos.saude.gov.br/schema/cnes/v1r0/identificacaoestabelecimentosaude" xmlns:codigocnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" xmlns="http://servicos.saude.gov.br/schema/cnes/v2r0/estabelecimentosaude" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v2r0/estabelecimentosaude">
 
-	<xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
+    <xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
 	
-	<xs:import id="identificacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/identificacaoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fidentificacaoestabelecimentosaude.v1r0.xsd"/>
+    <xs:import id="identificacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/identificacaoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fidentificacaoestabelecimentosaude.v1r0.xsd"/>
 		
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa um Estabelecimento de Saúde no CNES.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa um Estabelecimento de Saúde no CNES.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="EstabelecimentoSaude" type="EstabelecimentoSaudeType"/>
+    <xs:element name="EstabelecimentoSaude" type="EstabelecimentoSaudeType"/>
 
-	<xs:complexType name="EstabelecimentoSaudeType">
-		<xs:sequence>
-			<xs:element name="codigoCNES" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="15"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="1" ref="identificacao:IdentificacaoEstabelecimentoSaude">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Identificação do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="EstabelecimentoSaudeType">
+        <xs:sequence>
+            <xs:element name="codigoCNES" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="15"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" ref="identificacao:IdentificacaoEstabelecimentoSaude">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Identificação do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 
 </xs:schema>

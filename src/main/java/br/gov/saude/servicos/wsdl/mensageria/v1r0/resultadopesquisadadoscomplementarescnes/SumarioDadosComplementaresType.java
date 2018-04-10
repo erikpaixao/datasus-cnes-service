@@ -1,16 +1,17 @@
-
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisadadoscomplementarescnes;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
-
 /**
- * <p>Classe Java de SumarioDadosComplementaresType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de SumarioDadosComplementaresType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="SumarioDadosComplementaresType"&gt;
  *   &lt;complexContent&gt;
@@ -24,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SumarioDadosComplementaresType", propOrder = {
@@ -41,7 +42,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Obtém o valor da propriedade quantidadeEstabelecimentosSaude.
-     * 
+     *
      */
     public int getQuantidadeEstabelecimentosSaude() {
         return quantidadeEstabelecimentosSaude;
@@ -49,7 +50,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Define o valor da propriedade quantidadeEstabelecimentosSaude.
-     * 
+     *
      */
     public void setQuantidadeEstabelecimentosSaude(int value) {
         this.quantidadeEstabelecimentosSaude = value;
@@ -57,7 +58,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Obtém o valor da propriedade quantidadeEsferasAdministrativas.
-     * 
+     *
      */
     public int getQuantidadeEsferasAdministrativas() {
         return quantidadeEsferasAdministrativas;
@@ -65,7 +66,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Define o valor da propriedade quantidadeEsferasAdministrativas.
-     * 
+     *
      */
     public void setQuantidadeEsferasAdministrativas(int value) {
         this.quantidadeEsferasAdministrativas = value;
@@ -73,7 +74,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Obtém o valor da propriedade quantidadeProfissionaisSaude.
-     * 
+     *
      */
     public int getQuantidadeProfissionaisSaude() {
         return quantidadeProfissionaisSaude;
@@ -81,7 +82,7 @@ public class SumarioDadosComplementaresType {
 
     /**
      * Define o valor da propriedade quantidadeProfissionaisSaude.
-     * 
+     *
      */
     public void setQuantidadeProfissionaisSaude(int value) {
         this.quantidadeProfissionaisSaude = value;

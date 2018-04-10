@@ -1,134 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wsdl:definitions xmlns:tns="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msfalha="http://servicos.saude.gov.br/wsdl/mensageria/falha/v5r0/msfalha" name="VinculacaoProficionalService" targetNamespace="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice">
 
-	<wsdl:types>
-		<xs:schema>
-		   <xs:import namespace="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FCNES%2Fxsd%2Fmensageria%2FVinculacaoProfissionalService.v1.xsd"/>
-		   <xs:import namespace="http://servicos.saude.gov.br/wsdl/mensageria/falha/v5r0/msfalha" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffalha%2Fmsfalha.v5r0.xsd"/>
+    <wsdl:types>
+        <xs:schema>
+            <xs:import namespace="http://servicos.saude.gov.br/cnes/v1r0/vinculacaoprofissionalservice" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FCNES%2Fxsd%2Fmensageria%2FVinculacaoProfissionalService.v1.xsd"/>
+            <xs:import namespace="http://servicos.saude.gov.br/wsdl/mensageria/falha/v5r0/msfalha" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fmensageria%2Ffalha%2Fmsfalha.v5r0.xsd"/>
 		
-		</xs:schema>
-	</wsdl:types>
+        </xs:schema>
+    </wsdl:types>
 
-	<wsdl:message name="RequestVinculacaos">
-		<wsdl:part element="tns:RequestVinculacaos" name="RequestVinculacaos"/>
-	</wsdl:message>
-	<wsdl:message name="ResponseVinculacaos">
-		<wsdl:part element="tns:ResponseVinculacaos" name="ResponseVinculacaos"/>
-	</wsdl:message>
-	<wsdl:message name="RequestVinculacao">
-		<wsdl:part element="tns:RequestVinculacao" name="RequestVinculacao"/>
-	</wsdl:message>
-	<wsdl:message name="ResponseVinculacao">
-		<wsdl:part element="tns:ResponseVinculacao" name="ResponseVinculacao"/>
-	</wsdl:message>
+    <wsdl:message name="RequestVinculacaos">
+        <wsdl:part element="tns:RequestVinculacaos" name="RequestVinculacaos"/>
+    </wsdl:message>
+    <wsdl:message name="ResponseVinculacaos">
+        <wsdl:part element="tns:ResponseVinculacaos" name="ResponseVinculacaos"/>
+    </wsdl:message>
+    <wsdl:message name="RequestVinculacao">
+        <wsdl:part element="tns:RequestVinculacao" name="RequestVinculacao"/>
+    </wsdl:message>
+    <wsdl:message name="ResponseVinculacao">
+        <wsdl:part element="tns:ResponseVinculacao" name="ResponseVinculacao"/>
+    </wsdl:message>
 
-	<wsdl:message name="VinculacaoFault">
-		<wsdl:part name="fault" element="msfalha:MSFalha"/>
-	</wsdl:message>
+    <wsdl:message name="VinculacaoFault">
+        <wsdl:part name="fault" element="msfalha:MSFalha"/>
+    </wsdl:message>
 
 
-	<wsdl:portType name="VinculacaoPortType">
+    <wsdl:portType name="VinculacaoPortType">
 
-		<wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 pesquisarVinculacaoProfissionalSaude 
-			</wsdl:documentation>
-			<wsdl:input name="RequestVinculacaos" message="tns:RequestVinculacaos"/>
-			<wsdl:output name="ResponseVinculacaos" message="tns:ResponseVinculacaos"/>
-			<wsdl:fault name="VinculacaoFault" message="tns:VinculacaoFault"/>
-		</wsdl:operation>
-	   <wsdl:operation name="detalharVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 detalharVinculacaoProfissionalSaude 
-			</wsdl:documentation>
-			<wsdl:input name="RequestVinculacao" message="tns:RequestVinculacao"/>
-			<wsdl:output name="ResponseVinculacao" message="tns:ResponseVinculacao"/>
-			<wsdl:fault name="VinculacaoFault" message="tns:VinculacaoFault"/>
-		</wsdl:operation>
+        <wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                pesquisarVinculacaoProfissionalSaude 
+            </wsdl:documentation>
+            <wsdl:input name="RequestVinculacaos" message="tns:RequestVinculacaos"/>
+            <wsdl:output name="ResponseVinculacaos" message="tns:ResponseVinculacaos"/>
+            <wsdl:fault name="VinculacaoFault" message="tns:VinculacaoFault"/>
+        </wsdl:operation>
+        <wsdl:operation name="detalharVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                detalharVinculacaoProfissionalSaude 
+            </wsdl:documentation>
+            <wsdl:input name="RequestVinculacao" message="tns:RequestVinculacao"/>
+            <wsdl:output name="ResponseVinculacao" message="tns:ResponseVinculacao"/>
+            <wsdl:fault name="VinculacaoFault" message="tns:VinculacaoFault"/>
+        </wsdl:operation>
 
-	</wsdl:portType>
+    </wsdl:portType>
 
-	<wsdl:binding name="VinculacaoProfissionalServiceSOAP12Binding" type="tns:VinculacaoPortType">
-		<soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:binding name="VinculacaoProfissionalServiceSOAP12Binding" type="tns:VinculacaoPortType">
+        <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 
-		<wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 pesquisar Vinculacao para um profissional e estabelecimento. 
-			</wsdl:documentation>
-			<soap12:operation soapAction=""/>
-			<wsdl:input>
-				<soap12:body use="literal"/>
-			</wsdl:input>
-			<wsdl:output>
-				<soap12:body use="literal"/>
-			</wsdl:output>
-			<wsdl:fault name="VinculacaoFault">
-				<soap12:fault name="VinculacaoFault" use="literal"/>
-			</wsdl:fault>
-		</wsdl:operation>
-		<wsdl:operation name="detalharVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 detalhar Vinculacao para um profissional, estabelecimento e ind de vinculacao 6 digitos. 
-			</wsdl:documentation>
-			<soap12:operation soapAction=""/>
-			<wsdl:input>
-				<soap12:body use="literal"/>
-			</wsdl:input>
-			<wsdl:output>
-				<soap12:body use="literal"/>
-			</wsdl:output>
-			<wsdl:fault name="VinculacaoFault">
-				<soap12:fault name="VinculacaoFault" use="literal"/>
-			</wsdl:fault>
-		</wsdl:operation>
+        <wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                pesquisar Vinculacao para um profissional e estabelecimento. 
+            </wsdl:documentation>
+            <soap12:operation soapAction=""/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="VinculacaoFault">
+                <soap12:fault name="VinculacaoFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="detalharVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                detalhar Vinculacao para um profissional, estabelecimento e ind de vinculacao 6 digitos. 
+            </wsdl:documentation>
+            <soap12:operation soapAction=""/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="VinculacaoFault">
+                <soap12:fault name="VinculacaoFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
 
-	</wsdl:binding>
+    </wsdl:binding>
 
-	<wsdl:binding name="VinculacaoProfissionalServiceSOAP11Binding" type="tns:VinculacaoPortType">
-		<soap11:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:binding name="VinculacaoProfissionalServiceSOAP11Binding" type="tns:VinculacaoPortType">
+        <soap11:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 
-		<wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 Pesquisar Vinculacao para um profissional e estabelecimento.  
-			</wsdl:documentation>
-			<soap11:operation soapAction=""/>
-			<wsdl:input>
-				<soap11:body use="literal"/>
+        <wsdl:operation name="pesquisarVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                Pesquisar Vinculacao para um profissional e estabelecimento.  
+            </wsdl:documentation>
+            <soap11:operation soapAction=""/>
+            <wsdl:input>
+                <soap11:body use="literal"/>
 				
-			</wsdl:input>
-			<wsdl:output>
-				<soap11:body use="literal"/>
-			</wsdl:output>
-			<wsdl:fault name="VinculacaoFault">
-				<soap11:fault name="VinculacaoFault" use="literal"/>
-			</wsdl:fault>
-		</wsdl:operation>
-		<wsdl:operation name="detalharVinculacaoProfissionalSaude">
-			<wsdl:documentation>
-				 detalhar Vinculacao para um profissional, estabelecimento e ind de vinculacao 6 digitos. 
-			</wsdl:documentation>
-			<soap11:operation soapAction=""/>
-			<wsdl:input>
-				<soap11:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap11:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="VinculacaoFault">
+                <soap11:fault name="VinculacaoFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="detalharVinculacaoProfissionalSaude">
+            <wsdl:documentation>
+                detalhar Vinculacao para um profissional, estabelecimento e ind de vinculacao 6 digitos. 
+            </wsdl:documentation>
+            <soap11:operation soapAction=""/>
+            <wsdl:input>
+                <soap11:body use="literal"/>
 				
-			</wsdl:input>
-			<wsdl:output>
-				<soap11:body use="literal"/>
-			</wsdl:output>
-			<wsdl:fault name="VinculacaoFault">
-				<soap11:fault name="VinculacaoFault" use="literal"/>
-			</wsdl:fault>
-		</wsdl:operation>
+            </wsdl:input>
+            <wsdl:output>
+                <soap11:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="VinculacaoFault">
+                <soap11:fault name="VinculacaoFault" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
 
-	</wsdl:binding>
+    </wsdl:binding>
 
-	<wsdl:service name="VinculacaoProfissionalService">
-		<wsdl:port binding="tns:VinculacaoProfissionalServiceSOAP12Binding" name="VinculacaoProfissionalServicePort">
-			<soap12:address location="http://servicos.saude.gov.br/cnes/VinculacaoProfissionalService/v1"/>
-		</wsdl:port>
-		<wsdl:port binding="tns:VinculacaoProfissionalServiceSOAP11Binding" name="VinculacaoProfissionalServiceSOAP11Port">
-			<soap11:address location="http://servicos.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0"/>
-		</wsdl:port>
-	</wsdl:service>
+    <wsdl:service name="VinculacaoProfissionalService">
+        <wsdl:port binding="tns:VinculacaoProfissionalServiceSOAP12Binding" name="VinculacaoProfissionalServicePort">
+            <soap12:address location="http://servicos.saude.gov.br/cnes/VinculacaoProfissionalService/v1"/>
+        </wsdl:port>
+        <wsdl:port binding="tns:VinculacaoProfissionalServiceSOAP11Binding" name="VinculacaoProfissionalServiceSOAP11Port">
+            <soap11:address location="http://servicos.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0"/>
+        </wsdl:port>
+    </wsdl:service>
 
 </wsdl:definitions>

@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.cnes.v1r0.profissionalsaudeservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,12 +7,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprofissionalsaude.FiltroPesquisaProfissionalSaudeType;
 
-
 /**
- * <p>Classe Java de anonymous complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de anonymous complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -25,8 +26,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprofissionalsaud
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -40,11 +41,9 @@ public class RequestConsultarProfissionalSaude {
 
     /**
      * Filtro de Pesquisa do Profissional por CNS e CPF.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FiltroPesquisaProfissionalSaudeType }
-     *     
+     *
+     * @return possible object is {@link FiltroPesquisaProfissionalSaudeType }
+     *
      */
     public FiltroPesquisaProfissionalSaudeType getFiltroPesquisaProfissionalSaude() {
         return filtroPesquisaProfissionalSaude;
@@ -52,11 +51,10 @@ public class RequestConsultarProfissionalSaude {
 
     /**
      * Define o valor da propriedade filtroPesquisaProfissionalSaude.
-     * 
-     * @param value
-     *     allowed object is
+     *
+     * @param value allowed object is
      *     {@link FiltroPesquisaProfissionalSaudeType }
-     *     
+     *
      */
     public void setFiltroPesquisaProfissionalSaude(FiltroPesquisaProfissionalSaudeType value) {
         this.filtroPesquisaProfissionalSaude = value;

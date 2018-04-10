@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/leito" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/leito">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o Leito do Estabelecimento de Saúde.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o Leito do Estabelecimento de Saúde.]]></xs:documentation>
+    </xs:annotation>
 	
-	<xs:element name="leito" type="LeitoType"/>
+    <xs:element name="leito" type="LeitoType"/>
 
-	<xs:complexType name="LeitoType">
-		<xs:sequence>
-			<xs:element name="codigo" minOccurs="1" maxOccurs="1" type="xs:string">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Código do Leito do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="descricao" minOccurs="1" maxOccurs="1" type="xs:string">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Descrição do Leito do Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="dataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:dateTime">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Data de Atualização da informação.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="quantidadeLeito" minOccurs="0" maxOccurs="1" type="xs:integer">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de Leitos no Estabelecimento de Saúde.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="quantidadeLeitoSUS" minOccurs="0" maxOccurs="1" type="xs:integer">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de Leitos do SUS.]]>.</xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="LeitoType">
+        <xs:sequence>
+            <xs:element name="codigo" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Código do Leito do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="descricao" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Descrição do Leito do Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:dateTime">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Data de Atualização da informação.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="quantidadeLeito" minOccurs="0" maxOccurs="1" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de Leitos no Estabelecimento de Saúde.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="quantidadeLeitoSUS" minOccurs="0" maxOccurs="1" type="xs:integer">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de Leitos do SUS.]]>.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>

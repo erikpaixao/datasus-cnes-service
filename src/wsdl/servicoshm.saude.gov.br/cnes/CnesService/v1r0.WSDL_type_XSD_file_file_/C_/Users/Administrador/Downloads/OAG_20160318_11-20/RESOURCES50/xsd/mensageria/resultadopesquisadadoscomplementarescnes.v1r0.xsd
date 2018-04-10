@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadopesquisadadoscomplementarescnes" xmlns:compestabelecimentoSaude="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoestabelecimentosaude" xmlns:compprofissionalsaude="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoprofissionalsaude" xmlns:compesferaadm="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoesferaadministrativa" xmlns:cmpt="http://servicos.saude.gov.br/schema/cnes/v1r0/cmpt" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadopesquisadadoscomplementarescnes">
 
-	<xs:import id="compestabelecimentoSaude" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcomplementoestabelecimentosaude.v1r0.xsd"/>	
+    <xs:import id="compestabelecimentoSaude" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcomplementoestabelecimentosaude.v1r0.xsd"/>	
 
-	<xs:import id="compprofissionalsaude" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoprofissionalsaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fcomplementoprofissionalsaude.v1r0.xsd"/>	
+    <xs:import id="compprofissionalsaude" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoprofissionalsaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fcomplementoprofissionalsaude.v1r0.xsd"/>	
 	
-	<xs:import id="compesferaadm" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoesferaadministrativa" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcomplementoesferaadministrativa.v1r0.xsd"/>	
+    <xs:import id="compesferaadm" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/complementoesferaadministrativa" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcomplementoesferaadministrativa.v1r0.xsd"/>	
 	
 		
-	<xs:import id="cmpt" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/cmpt" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcmpt.v1r0.xsd"/>	
+    <xs:import id="cmpt" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/cmpt" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcmpt.v1r0.xsd"/>	
 	
-	<xs:annotation>
-		<xs:documentation>Representa o schema de resultado da pesquisa dos Dados complementares do 
-			Estabelecimento de Saúde, pelo código do CNES.
-		</xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation>Representa o schema de resultado da pesquisa dos Dados complementares do 
+            Estabelecimento de Saúde, pelo código do CNES.
+        </xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="ResultadoPesquisaDadosComplementaresCnes" type="ResultadoPesquisaDadosComplementaresCnesType"/>
+    <xs:element name="ResultadoPesquisaDadosComplementaresCnes" type="ResultadoPesquisaDadosComplementaresCnesType"/>
 
-	<xs:complexType name="ResultadoPesquisaDadosComplementaresCnesType">
-		<xs:sequence>
-			<xs:element minOccurs="0" maxOccurs="unbounded" ref="compestabelecimentoSaude:ComplementoEstabelecimentoSaude">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Dados Complementares do Estabelecimento de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="unbounded" ref="compesferaadm:ComplementoEsferaAdministrativa">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Dados Complementares da Esfera Administrativa.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="0" maxOccurs="unbounded" ref="compprofissionalsaude:ComplementoProfissionalSaude">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Dados Complementares dos Profissionais de Saúde.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element minOccurs="1" maxOccurs="1" ref="cmpt:cmpt">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Ano do Exercício.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="sumario" minOccurs="1" maxOccurs="1" type="SumarioDadosComplementaresType">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Sumário com a quantidade de registros de cada complemento.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="ResultadoPesquisaDadosComplementaresCnesType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="compestabelecimentoSaude:ComplementoEstabelecimentoSaude">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Dados Complementares do Estabelecimento de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="compesferaadm:ComplementoEsferaAdministrativa">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Dados Complementares da Esfera Administrativa.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" ref="compprofissionalsaude:ComplementoProfissionalSaude">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Dados Complementares dos Profissionais de Saúde.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" ref="cmpt:cmpt">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Ano do Exercício.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sumario" minOccurs="1" maxOccurs="1" type="SumarioDadosComplementaresType">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Sumário com a quantidade de registros de cada complemento.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 		
-	<xs:complexType name="SumarioDadosComplementaresType">
-		<xs:sequence>
-			<xs:element name="quantidadeEstabelecimentosSaude" minOccurs="1" maxOccurs="1" type="xs:int">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de complementos de Estabelecimentos e Saúde retornados.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>
-			<xs:element name="quantidadeEsferasAdministrativas" minOccurs="1" maxOccurs="1" type="xs:int">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de complementos de Esferas Administrativas retornados.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element> 
-			<xs:element name="quantidadeProfissionaisSaude" minOccurs="1" maxOccurs="1" type="xs:int">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Quantidade de complementos de Profissionais de Saúde retornados.]]></xs:documentation>
-				</xs:annotation>
-			</xs:element>  
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="SumarioDadosComplementaresType">
+        <xs:sequence>
+            <xs:element name="quantidadeEstabelecimentosSaude" minOccurs="1" maxOccurs="1" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de complementos de Estabelecimentos e Saúde retornados.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="quantidadeEsferasAdministrativas" minOccurs="1" maxOccurs="1" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de complementos de Esferas Administrativas retornados.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element> 
+            <xs:element name="quantidadeProfissionaisSaude" minOccurs="1" maxOccurs="1" type="xs:int">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Quantidade de complementos de Profissionais de Saúde retornados.]]></xs:documentation>
+                </xs:annotation>
+            </xs:element>  
+        </xs:sequence>
+    </xs:complexType>
 	
 </xs:schema>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa o nome de uma pessoa jurídica.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa o nome de uma pessoa jurídica.]]></xs:documentation>
+    </xs:annotation>
 
-	<xs:element name="NomeJuridico" type="NomeJuridicoType"/>
+    <xs:element name="NomeJuridico" type="NomeJuridicoType"/>
 
-	<xs:complexType name="NomeJuridicoType">
-		<xs:sequence>
-			<xs:element name="Nome" minOccurs="1" maxOccurs="1">
-				<xs:annotation>
-					<xs:documentation><![CDATA[Nomes atribuidos da pessoa jurídica (Empresarial e Fantasia).]]></xs:documentation>
-				</xs:annotation>
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:maxLength value="150"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="NomeJuridicoType">
+        <xs:sequence>
+            <xs:element name="Nome" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation><![CDATA[Nomes atribuidos da pessoa jurídica (Empresarial e Fantasia).]]></xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="150"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

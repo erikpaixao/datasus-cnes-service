@@ -1,4 +1,3 @@
-
 package br.gov.saude.servicos.schema.cnes.v1r0.dadosgeraiscnes;
 
 import java.util.ArrayList;
@@ -22,12 +21,14 @@ import br.gov.saude.servicos.schema.corporativo.telefone.v1r2.telefone.TelefoneT
 import br.gov.saude.servicos.schema.corporativo.v1r2.email.EmailType;
 import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
 
-
 /**
- * <p>Classe Java de DadosGeraisEstabelecimentoSaudeType complex type.
- * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
- * 
+ * <p>
+ * Classe Java de DadosGeraisEstabelecimentoSaudeType complex type.
+ *
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
+ *
  * <pre>
  * &lt;complexType name="DadosGeraisEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -53,8 +54,8 @@ import br.gov.saude.servicos.schema.corporativo.v1r2.municipio.MunicipioType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
+ *
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosGeraisEstabelecimentoSaudeType", propOrder = {
@@ -106,11 +107,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade codigoCNES.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodigoCNESType }
-     *     
+     *
+     * @return possible object is {@link CodigoCNESType }
+     *
      */
     public CodigoCNESType getCodigoCNES() {
         return codigoCNES;
@@ -118,11 +117,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade codigoCNES.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodigoCNESType }
-     *     
+     *
+     * @param value allowed object is {@link CodigoCNESType }
+     *
      */
     public void setCodigoCNES(CodigoCNESType value) {
         this.codigoCNES = value;
@@ -130,11 +127,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade codigoUnidade.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CodigoUnidadeType }
-     *     
+     *
+     * @return possible object is {@link CodigoUnidadeType }
+     *
      */
     public CodigoUnidadeType getCodigoUnidade() {
         return codigoUnidade;
@@ -142,11 +137,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade codigoUnidade.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CodigoUnidadeType }
-     *     
+     *
+     * @param value allowed object is {@link CodigoUnidadeType }
+     *
      */
     public void setCodigoUnidade(CodigoUnidadeType value) {
         this.codigoUnidade = value;
@@ -154,11 +147,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade nomeFantasia.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @return possible object is {@link NomeJuridicoType }
+     *
      */
     public NomeJuridicoType getNomeFantasia() {
         return nomeFantasia;
@@ -166,11 +157,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade nomeFantasia.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @param value allowed object is {@link NomeJuridicoType }
+     *
      */
     public void setNomeFantasia(NomeJuridicoType value) {
         this.nomeFantasia = value;
@@ -178,11 +167,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade nomeEmpresarial.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @return possible object is {@link NomeJuridicoType }
+     *
      */
     public NomeJuridicoType getNomeEmpresarial() {
         return nomeEmpresarial;
@@ -190,11 +177,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade nomeEmpresarial.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NomeJuridicoType }
-     *     
+     *
+     * @param value allowed object is {@link NomeJuridicoType }
+     *
      */
     public void setNomeEmpresarial(NomeJuridicoType value) {
         this.nomeEmpresarial = value;
@@ -202,11 +187,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade cnpj.
-     * 
-     * @return
-     *     possible object is
-     *     {@link CNPJType }
-     *     
+     *
+     * @return possible object is {@link CNPJType }
+     *
      */
     public CNPJType getCNPJ() {
         return cnpj;
@@ -214,11 +197,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade cnpj.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link CNPJType }
-     *     
+     *
+     * @param value allowed object is {@link CNPJType }
+     *
      */
     public void setCNPJ(CNPJType value) {
         this.cnpj = value;
@@ -226,11 +207,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade endereco.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EnderecoType }
-     *     
+     *
+     * @return possible object is {@link EnderecoType }
+     *
      */
     public EnderecoType getEndereco() {
         return endereco;
@@ -238,11 +217,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade endereco.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EnderecoType }
-     *     
+     *
+     * @param value allowed object is {@link EnderecoType }
+     *
      */
     public void setEndereco(EnderecoType value) {
         this.endereco = value;
@@ -250,11 +227,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade dataAtualizacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is {@link XMLGregorianCalendar }
+     *
      */
     public XMLGregorianCalendar getDataAtualizacao() {
         return dataAtualizacao;
@@ -262,11 +237,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade dataAtualizacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is {@link XMLGregorianCalendar }
+     *
      */
     public void setDataAtualizacao(XMLGregorianCalendar value) {
         this.dataAtualizacao = value;
@@ -274,11 +247,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade diretor.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DiretorType }
-     *     
+     *
+     * @return possible object is {@link DiretorType }
+     *
      */
     public DiretorType getDiretor() {
         return diretor;
@@ -286,11 +257,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade diretor.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DiretorType }
-     *     
+     *
+     * @param value allowed object is {@link DiretorType }
+     *
      */
     public void setDiretor(DiretorType value) {
         this.diretor = value;
@@ -298,11 +267,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade tipoUnidade.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @return possible object is {@link TipoUnidadeType }
+     *
      */
     public TipoUnidadeType getTipoUnidade() {
         return tipoUnidade;
@@ -310,11 +277,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade tipoUnidade.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TipoUnidadeType }
-     *     
+     *
+     * @param value allowed object is {@link TipoUnidadeType }
+     *
      */
     public void setTipoUnidade(TipoUnidadeType value) {
         this.tipoUnidade = value;
@@ -322,11 +287,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade esferaAdministrativa.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EsferaAdministrativaType }
-     *     
+     *
+     * @return possible object is {@link EsferaAdministrativaType }
+     *
      */
     public EsferaAdministrativaType getEsferaAdministrativa() {
         return esferaAdministrativa;
@@ -334,11 +297,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade esferaAdministrativa.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EsferaAdministrativaType }
-     *     
+     *
+     * @param value allowed object is {@link EsferaAdministrativaType }
+     *
      */
     public void setEsferaAdministrativa(EsferaAdministrativaType value) {
         this.esferaAdministrativa = value;
@@ -346,11 +307,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade municipioGestor.
-     * 
-     * @return
-     *     possible object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @return possible object is {@link MunicipioType }
+     *
      */
     public MunicipioType getMunicipioGestor() {
         return municipioGestor;
@@ -358,11 +317,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade municipioGestor.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link MunicipioType }
-     *     
+     *
+     * @param value allowed object is {@link MunicipioType }
+     *
      */
     public void setMunicipioGestor(MunicipioType value) {
         this.municipioGestor = value;
@@ -370,25 +327,25 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the telefone property.
-     * 
+     *
      * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the telefone property.
-     * 
+     * This accessor method returns a reference to the live list, not a
+     * snapshot. Therefore any modification you make to the returned list will
+     * be present inside the JAXB object. This is why there is not a
+     * <CODE>set</CODE> method for the telefone property.
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getTelefone().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link TelefoneType }
-     * 
-     * 
+     *
+     *
      */
     public List<TelefoneType> getTelefone() {
         if (telefone == null) {
@@ -399,11 +356,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade email.
-     * 
-     * @return
-     *     possible object is
-     *     {@link EmailType }
-     *     
+     *
+     * @return possible object is {@link EmailType }
+     *
      */
     public EmailType getEmail() {
         return email;
@@ -411,11 +366,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade email.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link EmailType }
-     *     
+     *
+     * @param value allowed object is {@link EmailType }
+     *
      */
     public void setEmail(EmailType value) {
         this.email = value;
@@ -423,11 +376,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade localizacao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LocalizacaoType }
-     *     
+     *
+     * @return possible object is {@link LocalizacaoType }
+     *
      */
     public LocalizacaoType getLocalizacao() {
         return localizacao;
@@ -435,11 +386,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade localizacao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LocalizacaoType }
-     *     
+     *
+     * @param value allowed object is {@link LocalizacaoType }
+     *
      */
     public void setLocalizacao(LocalizacaoType value) {
         this.localizacao = value;
@@ -447,11 +396,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade perteceSistemaSUS.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is {@link Boolean }
+     *
      */
     public Boolean isPerteceSistemaSUS() {
         return perteceSistemaSUS;
@@ -459,11 +406,9 @@ public class DadosGeraisEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade perteceSistemaSUS.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is {@link Boolean }
+     *
      */
     public void setPerteceSistemaSUS(Boolean value) {
         this.perteceSistemaSUS = value;

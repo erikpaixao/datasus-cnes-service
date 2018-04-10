@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigounidade">
 
-	<xs:annotation>
-		<xs:documentation><![CDATA[Este esquema representa a Código da Unidade de Saúde no CNES.]]></xs:documentation>
-	</xs:annotation>
+    <xs:annotation>
+        <xs:documentation><![CDATA[Este esquema representa a Código da Unidade de Saúde no CNES.]]></xs:documentation>
+    </xs:annotation>
 	
-	<xs:element name="CodigoUnidade" type="CodigoUnidadeType"/>
+    <xs:element name="CodigoUnidade" type="CodigoUnidadeType"/>
 
-	<xs:complexType name="CodigoUnidadeType">
-		<xs:sequence>
-			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
-				<xs:simpleType>
-					<xs:annotation>
-						<xs:documentation><![CDATA[Código da Unidade.]]></xs:documentation>
-					</xs:annotation>
-					<xs:restriction base="xs:string">
-						<xs:minLength value="1"/>
-						<xs:maxLength value="31"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="CodigoUnidadeType">
+        <xs:sequence>
+            <xs:element name="codigo" minOccurs="1" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:annotation>
+                        <xs:documentation><![CDATA[Código da Unidade.]]></xs:documentation>
+                    </xs:annotation>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="1"/>
+                        <xs:maxLength value="31"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
