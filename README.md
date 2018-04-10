@@ -10,4 +10,4 @@ cnes.consultarEstabelecimentoSaude([codCNES]);
 
 cnes.consultarProfissionaisSaude([codCNES], [codCNPJ]);
 
-Dentre outros
+Endpoints para SIGTAP, HORUS e outros
