@@ -3,7 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.e3ti.cadsus.config;
+package br.e3ti.cadsus.handlers;
+
+/**
+ *
+ * @author erik
+ */
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 import java.util.Set;
 import javax.xml.namespace.QName;
@@ -26,7 +36,7 @@ import org.springframework.stereotype.Component;
  * @author erik
  */
 @Component
-public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
+public class HeaderSigTAP implements SOAPHandler<SOAPMessageContext> {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -60,10 +70,10 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
                 tokenElem.addAttribute(QName.valueOf("xmlns:wsu"), "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd");
 
                 SOAPElement aElem = factory.createElement("Username", prefix, uri);
-                aElem.addTextNode("CNES.PUBLICO");
+                aElem.addTextNode("SIGTAP.PUBLICO");
 
                 SOAPElement bElem = factory.createElement("Password", prefix, uri);
-                bElem.addTextNode("cnes#2015public");
+                bElem.addTextNode("sigtap#2015public");
                 bElem.addAttribute(QName.valueOf("Type"), "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText");
 
                 tokenElem.addChildElement(aElem);
@@ -103,3 +113,4 @@ public class HeaderHandler implements SOAPHandler<SOAPMessageContext> {
         return null;
     }
 }
+

@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.dadoscomplementaresestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.alvarasanitario.AlvaraSanitarioType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnae.CNAEType;
 
+
 /**
- * <p>
- * Classe Java de DadosComplementaresType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de DadosComplementaresType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="DadosComplementaresType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +27,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnae.CNAETyp
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosComplementaresType", propOrder = {
@@ -48,9 +47,11 @@ public class DadosComplementaresType {
 
     /**
      * Obtém o valor da propriedade cnaePrincipal.
-     *
-     * @return possible object is {@link CNAEType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CNAEType }
+     *     
      */
     public CNAEType getCnaePrincipal() {
         return cnaePrincipal;
@@ -58,9 +59,11 @@ public class DadosComplementaresType {
 
     /**
      * Define o valor da propriedade cnaePrincipal.
-     *
-     * @param value allowed object is {@link CNAEType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CNAEType }
+     *     
      */
     public void setCnaePrincipal(CNAEType value) {
         this.cnaePrincipal = value;
@@ -68,9 +71,11 @@ public class DadosComplementaresType {
 
     /**
      * Obtém o valor da propriedade cnaeSecundario.
-     *
-     * @return possible object is {@link CNAEType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CNAEType }
+     *     
      */
     public CNAEType getCnaeSecundario() {
         return cnaeSecundario;
@@ -78,9 +83,11 @@ public class DadosComplementaresType {
 
     /**
      * Define o valor da propriedade cnaeSecundario.
-     *
-     * @param value allowed object is {@link CNAEType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CNAEType }
+     *     
      */
     public void setCnaeSecundario(CNAEType value) {
         this.cnaeSecundario = value;
@@ -88,9 +95,11 @@ public class DadosComplementaresType {
 
     /**
      * Alvará Sanitário.
-     *
-     * @return possible object is {@link AlvaraSanitarioType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link AlvaraSanitarioType }
+     *     
      */
     public AlvaraSanitarioType getAlvaraSanitario() {
         return alvaraSanitario;
@@ -98,9 +107,11 @@ public class DadosComplementaresType {
 
     /**
      * Define o valor da propriedade alvaraSanitario.
-     *
-     * @param value allowed object is {@link AlvaraSanitarioType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link AlvaraSanitarioType }
+     *     
      */
     public void setAlvaraSanitario(AlvaraSanitarioType value) {
         this.alvaraSanitario = value;

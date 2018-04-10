@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de FiltroPesquisaVinculacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de FiltroPesquisaVinculacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="FiltroPesquisaVinculacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FiltroPesquisaVinculacaoType", propOrder = {
@@ -46,9 +45,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Obtém o valor da propriedade identificacaoProfissional.
-     *
-     * @return possible object is {@link ProfissionalVinculacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link ProfissionalVinculacaoType }
+     *     
      */
     public ProfissionalVinculacaoType getIdentificacaoProfissional() {
         return identificacaoProfissional;
@@ -56,9 +57,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Define o valor da propriedade identificacaoProfissional.
-     *
-     * @param value allowed object is {@link ProfissionalVinculacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ProfissionalVinculacaoType }
+     *     
      */
     public void setIdentificacaoProfissional(ProfissionalVinculacaoType value) {
         this.identificacaoProfissional = value;
@@ -66,9 +69,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Obtém o valor da propriedade identificacaoEstabelecimento.
-     *
-     * @return possible object is {@link EstabelecimentoVinculacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link EstabelecimentoVinculacaoType }
+     *     
      */
     public EstabelecimentoVinculacaoType getIdentificacaoEstabelecimento() {
         return identificacaoEstabelecimento;
@@ -76,9 +81,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Define o valor da propriedade identificacaoEstabelecimento.
-     *
-     * @param value allowed object is {@link EstabelecimentoVinculacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EstabelecimentoVinculacaoType }
+     *     
      */
     public void setIdentificacaoEstabelecimento(EstabelecimentoVinculacaoType value) {
         this.identificacaoEstabelecimento = value;
@@ -86,9 +93,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Obtém o valor da propriedade identificacaoVinculacao.
-     *
-     * @return possible object is {@link TipoVinculacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoVinculacaoType }
+     *     
      */
     public TipoVinculacaoType getIdentificacaoVinculacao() {
         return identificacaoVinculacao;
@@ -96,9 +105,11 @@ public class FiltroPesquisaVinculacaoType {
 
     /**
      * Define o valor da propriedade identificacaoVinculacao.
-     *
-     * @param value allowed object is {@link TipoVinculacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoVinculacaoType }
+     *     
      */
     public void setIdentificacaoVinculacao(TipoVinculacaoType value) {
         this.identificacaoVinculacao = value;

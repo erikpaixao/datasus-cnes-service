@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.alvarasanitario;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,14 +7,12 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+
 /**
- * <p>
- * Classe Java de AlvaraSanitarioType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de AlvaraSanitarioType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="AlvaraSanitarioType"&gt;
  *   &lt;complexContent&gt;
@@ -34,8 +33,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AlvaraSanitarioType", propOrder = {
@@ -53,9 +52,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Obtém o valor da propriedade numeroAlvara.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNumeroAlvara() {
         return numeroAlvara;
@@ -63,9 +64,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Define o valor da propriedade numeroAlvara.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumeroAlvara(String value) {
         this.numeroAlvara = value;
@@ -73,9 +76,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Obtém o valor da propriedade dataVigenciaInicial.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataVigenciaInicial() {
         return dataVigenciaInicial;
@@ -83,9 +88,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Define o valor da propriedade dataVigenciaInicial.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataVigenciaInicial(XMLGregorianCalendar value) {
         this.dataVigenciaInicial = value;
@@ -93,9 +100,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Obtém o valor da propriedade dataVigenciaFinal.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataVigenciaFinal() {
         return dataVigenciaFinal;
@@ -103,9 +112,11 @@ public class AlvaraSanitarioType {
 
     /**
      * Define o valor da propriedade dataVigenciaFinal.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataVigenciaFinal(XMLGregorianCalendar value) {
         this.dataVigenciaFinal = value;

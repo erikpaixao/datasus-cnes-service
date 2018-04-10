@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.tipounidade;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de TipoUnidadeType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de TipoUnidadeType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="TipoUnidadeType"&gt;
  *   &lt;complexContent&gt;
@@ -32,8 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TipoUnidadeType", propOrder = {
@@ -49,9 +48,11 @@ public class TipoUnidadeType {
 
     /**
      * Obtém o valor da propriedade codigo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigo() {
         return codigo;
@@ -59,9 +60,11 @@ public class TipoUnidadeType {
 
     /**
      * Define o valor da propriedade codigo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigo(String value) {
         this.codigo = value;
@@ -69,9 +72,11 @@ public class TipoUnidadeType {
 
     /**
      * Obtém o valor da propriedade descricao.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescricao() {
         return descricao;
@@ -79,9 +84,11 @@ public class TipoUnidadeType {
 
     /**
      * Define o valor da propriedade descricao.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescricao(String value) {
         this.descricao = value;

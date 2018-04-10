@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.falha.v5r0.msfalha;
 
 import java.util.ArrayList;
@@ -11,14 +12,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.falha.v5r0.mensagem.MensagemType;
 
+
 /**
- * <p>
- * Classe Java de anonymous complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de anonymous complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +30,8 @@ import br.gov.saude.servicos.wsdl.mensageria.falha.v5r0.mensagem.MensagemType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -49,10 +48,11 @@ public class MSFalha {
 
     /**
      * Obtém o valor da propriedade identificador.
-     *
-     * @return possible object is
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
      */
     public JAXBElement<String> getIdentificador() {
         return identificador;
@@ -60,10 +60,11 @@ public class MSFalha {
 
     /**
      * Define o valor da propriedade identificador.
-     *
-     * @param value allowed object is
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
      */
     public void setIdentificador(JAXBElement<String> value) {
         this.identificador = value;
@@ -71,25 +72,25 @@ public class MSFalha {
 
     /**
      * Gets the value of the mensagem property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the mensagem property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the mensagem property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getMensagem().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link MensagemType }
-     *
-     *
+     * 
+     * 
      */
     public List<MensagemType> getMensagem() {
         if (mensagem == null) {

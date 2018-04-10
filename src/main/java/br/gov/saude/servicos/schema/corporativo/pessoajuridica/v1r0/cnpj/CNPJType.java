@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnpj;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de CNPJType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de CNPJType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="CNPJType"&gt;
  *   &lt;complexContent&gt;
@@ -32,8 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CNPJType", propOrder = {
@@ -46,9 +45,11 @@ public class CNPJType {
 
     /**
      * Obtém o valor da propriedade numeroCNPJ.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNumeroCNPJ() {
         return numeroCNPJ;
@@ -56,9 +57,11 @@ public class CNPJType {
 
     /**
      * Define o valor da propriedade numeroCNPJ.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumeroCNPJ(String value) {
         this.numeroCNPJ = value;

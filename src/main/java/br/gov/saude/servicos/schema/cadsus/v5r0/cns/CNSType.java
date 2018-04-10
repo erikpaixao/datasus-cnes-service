@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cadsus.v5r0.cns;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+
 /**
- * <p>
- * Classe Java de CNSType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de CNSType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="CNSType"&gt;
  *   &lt;complexContent&gt;
@@ -38,8 +37,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CNSType", propOrder = {
@@ -62,9 +61,11 @@ public class CNSType {
 
     /**
      * Obtém o valor da propriedade numeroCNS.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNumeroCNS() {
         return numeroCNS;
@@ -72,9 +73,11 @@ public class CNSType {
 
     /**
      * Define o valor da propriedade numeroCNS.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumeroCNS(String value) {
         this.numeroCNS = value;
@@ -82,9 +85,11 @@ public class CNSType {
 
     /**
      * Obtém o valor da propriedade dataAtribuicao.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataAtribuicao() {
         return dataAtribuicao;
@@ -92,9 +97,11 @@ public class CNSType {
 
     /**
      * Define o valor da propriedade dataAtribuicao.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataAtribuicao(XMLGregorianCalendar value) {
         this.dataAtribuicao = value;
@@ -102,9 +109,11 @@ public class CNSType {
 
     /**
      * Obtém o valor da propriedade tipoCartao.
-     *
-     * @return possible object is {@link TipoCNSType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoCNSType }
+     *     
      */
     public TipoCNSType getTipoCartao() {
         return tipoCartao;
@@ -112,9 +121,11 @@ public class CNSType {
 
     /**
      * Define o valor da propriedade tipoCartao.
-     *
-     * @param value allowed object is {@link TipoCNSType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoCNSType }
+     *     
      */
     public void setTipoCartao(TipoCNSType value) {
         this.tipoCartao = value;
@@ -122,9 +133,11 @@ public class CNSType {
 
     /**
      * Obtém o valor da propriedade manual.
-     *
-     * @return possible object is {@link Boolean }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isManual() {
         return manual;
@@ -132,9 +145,11 @@ public class CNSType {
 
     /**
      * Define o valor da propriedade manual.
-     *
-     * @param value allowed object is {@link Boolean }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setManual(Boolean value) {
         this.manual = value;
@@ -142,9 +157,11 @@ public class CNSType {
 
     /**
      * Obtém o valor da propriedade justificativaManual.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getJustificativaManual() {
         return justificativaManual;
@@ -152,9 +169,11 @@ public class CNSType {
 
     /**
      * Define o valor da propriedade justificativaManual.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setJustificativaManual(String value) {
         this.justificativaManual = value;

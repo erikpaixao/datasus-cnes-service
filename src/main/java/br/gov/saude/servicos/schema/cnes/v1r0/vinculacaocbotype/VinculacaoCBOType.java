@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.vinculacaocbotype;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
+
 /**
- * <p>
- * Classe Java de VinculacaoCBOType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de VinculacaoCBOType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="VinculacaoCBOType"&gt;
  *   &lt;complexContent&gt;
@@ -32,8 +31,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VinculacaoCBOType", propOrder = {
@@ -62,9 +61,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade codigoCBO.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoCBO() {
         return codigoCBO;
@@ -72,9 +73,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade codigoCBO.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoCBO(String value) {
         this.codigoCBO = value;
@@ -82,9 +85,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade descricaoCBO.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescricaoCBO() {
         return descricaoCBO;
@@ -92,9 +97,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade descricaoCBO.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescricaoCBO(String value) {
         this.descricaoCBO = value;
@@ -102,9 +109,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade qtCargaHorariaAmbulatotial.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQtCargaHorariaAmbulatotial() {
         return qtCargaHorariaAmbulatotial;
@@ -112,9 +121,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade qtCargaHorariaAmbulatotial.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQtCargaHorariaAmbulatotial(String value) {
         this.qtCargaHorariaAmbulatotial = value;
@@ -122,9 +133,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade qtCargaHorariaOutros.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQtCargaHorariaOutros() {
         return qtCargaHorariaOutros;
@@ -132,9 +145,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade qtCargaHorariaOutros.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQtCargaHorariaOutros(String value) {
         this.qtCargaHorariaOutros = value;
@@ -142,9 +157,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade qtCargaHorariaHospSus.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQtCargaHorariaHospSus() {
         return qtCargaHorariaHospSus;
@@ -152,9 +169,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade qtCargaHorariaHospSus.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQtCargaHorariaHospSus(String value) {
         this.qtCargaHorariaHospSus = value;
@@ -162,9 +181,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade comptInicio.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getComptInicio() {
         return comptInicio;
@@ -172,9 +193,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade comptInicio.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setComptInicio(XMLGregorianCalendar value) {
         this.comptInicio = value;
@@ -182,9 +205,11 @@ public class VinculacaoCBOType {
 
     /**
      * Obtém o valor da propriedade comptFin.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getComptFin() {
         return comptFin;
@@ -192,9 +217,11 @@ public class VinculacaoCBOType {
 
     /**
      * Define o valor da propriedade comptFin.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setComptFin(XMLGregorianCalendar value) {
         this.comptFin = value;

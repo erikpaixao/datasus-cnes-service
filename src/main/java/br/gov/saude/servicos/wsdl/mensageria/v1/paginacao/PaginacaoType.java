@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1.paginacao;
 
 import java.math.BigInteger;
@@ -6,14 +7,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de PaginacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de PaginacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="PaginacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -46,8 +45,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaginacaoType", propOrder = {
@@ -64,9 +63,11 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade registroInicial.
-     *
-     * @return possible object is {@link BigInteger }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getRegistroInicial() {
         return registroInicial;
@@ -74,9 +75,11 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade registroInicial.
-     *
-     * @param value allowed object is {@link BigInteger }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setRegistroInicial(BigInteger value) {
         this.registroInicial = value;
@@ -84,7 +87,7 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade quantidadeRegistros.
-     *
+     * 
      */
     public int getQuantidadeRegistros() {
         return quantidadeRegistros;
@@ -92,7 +95,7 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade quantidadeRegistros.
-     *
+     * 
      */
     public void setQuantidadeRegistros(int value) {
         this.quantidadeRegistros = value;
@@ -100,9 +103,11 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade totalRegistros.
-     *
-     * @return possible object is {@link BigInteger }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getTotalRegistros() {
         return totalRegistros;
@@ -110,9 +115,11 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade totalRegistros.
-     *
-     * @param value allowed object is {@link BigInteger }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setTotalRegistros(BigInteger value) {
         this.totalRegistros = value;

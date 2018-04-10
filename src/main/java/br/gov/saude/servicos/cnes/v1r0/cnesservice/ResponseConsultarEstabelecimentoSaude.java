@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.cnes.v1r0.cnesservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisaestabelecimentosaude.ResultadoPesquisaEstabelecimentoSaudeType;
 
+
 /**
- * <p>
- * Classe Java de anonymous complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de anonymous complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisaestabelecimen
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -41,10 +40,11 @@ public class ResponseConsultarEstabelecimentoSaude {
 
     /**
      * Obtém o valor da propriedade resultadoPesquisaEstabelecimentoSaude.
-     *
-     * @return possible object is
+     * 
+     * @return
+     *     possible object is
      *     {@link ResultadoPesquisaEstabelecimentoSaudeType }
-     *
+     *     
      */
     public ResultadoPesquisaEstabelecimentoSaudeType getResultadoPesquisaEstabelecimentoSaude() {
         return resultadoPesquisaEstabelecimentoSaude;
@@ -52,10 +52,11 @@ public class ResponseConsultarEstabelecimentoSaude {
 
     /**
      * Define o valor da propriedade resultadoPesquisaEstabelecimentoSaude.
-     *
-     * @param value allowed object is
+     * 
+     * @param value
+     *     allowed object is
      *     {@link ResultadoPesquisaEstabelecimentoSaudeType }
-     *
+     *     
      */
     public void setResultadoPesquisaEstabelecimentoSaude(ResultadoPesquisaEstabelecimentoSaudeType value) {
         this.resultadoPesquisaEstabelecimentoSaude = value;

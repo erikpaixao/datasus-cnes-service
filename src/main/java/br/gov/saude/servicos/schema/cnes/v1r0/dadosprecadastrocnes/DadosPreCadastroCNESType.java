@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.dadosprecadastrocnes;
 
 import java.util.ArrayList;
@@ -17,14 +18,12 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.nomejuridico
 import br.gov.saude.servicos.schema.corporativo.telefone.v1r2.telefone.TelefoneType;
 import br.gov.saude.servicos.schema.corporativo.v1r2.email.EmailType;
 
+
 /**
- * <p>
- * Classe Java de DadosPreCadastroCNESType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de DadosPreCadastroCNESType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="DadosPreCadastroCNESType"&gt;
  *   &lt;complexContent&gt;
@@ -47,8 +46,8 @@ import br.gov.saude.servicos.schema.corporativo.v1r2.email.EmailType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosPreCadastroCNESType", propOrder = {
@@ -95,9 +94,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Código do Estabelecimento de Saúde.
-     *
-     * @return possible object is {@link CodigoCNESType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public CodigoCNESType getCodigoCNES() {
         return codigoCNES;
@@ -105,9 +106,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade codigoCNES.
-     *
-     * @param value allowed object is {@link CodigoCNESType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public void setCodigoCNES(CodigoCNESType value) {
         this.codigoCNES = value;
@@ -115,9 +118,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * CPF do Estabelecimento de Saúde.
-     *
-     * @return possible object is {@link CPFType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CPFType }
+     *     
      */
     public CPFType getCPF() {
         return cpf;
@@ -125,9 +130,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade cpf.
-     *
-     * @param value allowed object is {@link CPFType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CPFType }
+     *     
      */
     public void setCPF(CPFType value) {
         this.cpf = value;
@@ -135,9 +142,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * CNPJ do Estabelecimento de Saúde.
-     *
-     * @return possible object is {@link CNPJType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CNPJType }
+     *     
      */
     public CNPJType getCNPJ() {
         return cnpj;
@@ -145,9 +154,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade cnpj.
-     *
-     * @param value allowed object is {@link CNPJType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CNPJType }
+     *     
      */
     public void setCNPJ(CNPJType value) {
         this.cnpj = value;
@@ -155,9 +166,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Obtém o valor da propriedade nomeFantasia.
-     *
-     * @return possible object is {@link NomeJuridicoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link NomeJuridicoType }
+     *     
      */
     public NomeJuridicoType getNomeFantasia() {
         return nomeFantasia;
@@ -165,9 +178,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade nomeFantasia.
-     *
-     * @param value allowed object is {@link NomeJuridicoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NomeJuridicoType }
+     *     
      */
     public void setNomeFantasia(NomeJuridicoType value) {
         this.nomeFantasia = value;
@@ -175,9 +190,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Obtém o valor da propriedade nomeEmpresarial.
-     *
-     * @return possible object is {@link NomeJuridicoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link NomeJuridicoType }
+     *     
      */
     public NomeJuridicoType getNomeEmpresarial() {
         return nomeEmpresarial;
@@ -185,9 +202,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade nomeEmpresarial.
-     *
-     * @param value allowed object is {@link NomeJuridicoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NomeJuridicoType }
+     *     
      */
     public void setNomeEmpresarial(NomeJuridicoType value) {
         this.nomeEmpresarial = value;
@@ -195,25 +214,25 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Gets the value of the naturezaJuridica property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the naturezaJuridica property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the naturezaJuridica property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getNaturezaJuridica().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link NaturezaJuridicaType }
-     *
-     *
+     * 
+     * 
      */
     public List<NaturezaJuridicaType> getNaturezaJuridica() {
         if (naturezaJuridica == null) {
@@ -224,9 +243,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Obtém o valor da propriedade cnpjMantenedora.
-     *
-     * @return possible object is {@link CNPJType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CNPJType }
+     *     
      */
     public CNPJType getCNPJMantenedora() {
         return cnpjMantenedora;
@@ -234,9 +255,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade cnpjMantenedora.
-     *
-     * @param value allowed object is {@link CNPJType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CNPJType }
+     *     
      */
     public void setCNPJMantenedora(CNPJType value) {
         this.cnpjMantenedora = value;
@@ -244,25 +267,25 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Gets the value of the naturezaJuridicaMantenedora property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the naturezaJuridicaMantenedora property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the naturezaJuridicaMantenedora property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getNaturezaJuridicaMantenedora().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link NaturezaJuridicaType }
-     *
-     *
+     * 
+     * 
      */
     public List<NaturezaJuridicaType> getNaturezaJuridicaMantenedora() {
         if (naturezaJuridicaMantenedora == null) {
@@ -273,9 +296,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Obtém o valor da propriedade dataAtualizacao.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataAtualizacao() {
         return dataAtualizacao;
@@ -283,9 +308,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade dataAtualizacao.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataAtualizacao(XMLGregorianCalendar value) {
         this.dataAtualizacao = value;
@@ -293,9 +320,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Endereço do Estabelecimetno de Saúde.
-     *
-     * @return possible object is {@link EnderecoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link EnderecoType }
+     *     
      */
     public EnderecoType getEndereco() {
         return endereco;
@@ -303,9 +332,11 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Define o valor da propriedade endereco.
-     *
-     * @param value allowed object is {@link EnderecoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EnderecoType }
+     *     
      */
     public void setEndereco(EnderecoType value) {
         this.endereco = value;
@@ -313,25 +344,25 @@ public class DadosPreCadastroCNESType {
 
     /**
      * Gets the value of the telefones property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the telefones property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the telefones property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getTelefones().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link TelefoneType }
-     *
-     *
+     * 
+     * 
      */
     public List<TelefoneType> getTelefones() {
         if (telefones == null) {
@@ -341,27 +372,26 @@ public class DadosPreCadastroCNESType {
     }
 
     /**
-     * Email(s) do Estabelecimento de Saúde Gets the value of the email
-     * property.
-     *
+     * Email(s) do Estabelecimento de Saúde Gets the value of the email property.
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the email property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the email property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEmail().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EmailType }
-     *
-     *
+     * 
+     * 
      */
     public List<EmailType> getEmail() {
         if (email == null) {

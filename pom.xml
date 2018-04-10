@@ -81,6 +81,11 @@
                                     <extendedSoapHeaders>true</extendedSoapHeaders>
                                     
                                 </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/sigtap/ProcedimentoService/v1?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                    
+                                </wsdlOption>
                             </wsdlOptions>
                         </configuration>
                         <goals>

@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.vinculacao;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de VinculacaoServiceType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de VinculacaoServiceType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="VinculacaoServiceType"&gt;
  *   &lt;complexContent&gt;
@@ -24,8 +23,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VinculacaoServiceType", propOrder = {
@@ -38,9 +37,11 @@ public class VinculacaoServiceType {
 
     /**
      * Obtém o valor da propriedade vinculacaos.
-     *
-     * @return possible object is {@link VinculacaosType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link VinculacaosType }
+     *     
      */
     public VinculacaosType getVinculacaos() {
         return vinculacaos;
@@ -48,9 +49,11 @@ public class VinculacaoServiceType {
 
     /**
      * Define o valor da propriedade vinculacaos.
-     *
-     * @param value allowed object is {@link VinculacaosType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link VinculacaosType }
+     *     
      */
     public void setVinculacaos(VinculacaosType value) {
         this.vinculacaos = value;

@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacao;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,14 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cadsus.v5r0.cns.NumeroCNSType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
 
+
 /**
- * <p>
- * Classe Java de ProfissionalVinculacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de ProfissionalVinculacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="ProfissionalVinculacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ProfissionalVinculacaoType", propOrder = {
@@ -41,9 +40,11 @@ public class ProfissionalVinculacaoType {
 
     /**
      * Obtém o valor da propriedade cpf.
-     *
-     * @return possible object is {@link CPFType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CPFType }
+     *     
      */
     public CPFType getCpf() {
         return cpf;
@@ -51,9 +52,11 @@ public class ProfissionalVinculacaoType {
 
     /**
      * Define o valor da propriedade cpf.
-     *
-     * @param value allowed object is {@link CPFType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CPFType }
+     *     
      */
     public void setCpf(CPFType value) {
         this.cpf = value;
@@ -61,9 +64,11 @@ public class ProfissionalVinculacaoType {
 
     /**
      * Obtém o valor da propriedade cns.
-     *
-     * @return possible object is {@link NumeroCNSType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link NumeroCNSType }
+     *     
      */
     public NumeroCNSType getCns() {
         return cns;
@@ -71,9 +76,11 @@ public class ProfissionalVinculacaoType {
 
     /**
      * Define o valor da propriedade cns.
-     *
-     * @param value allowed object is {@link NumeroCNSType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NumeroCNSType }
+     *     
      */
     public void setCns(NumeroCNSType value) {
         this.cns = value;

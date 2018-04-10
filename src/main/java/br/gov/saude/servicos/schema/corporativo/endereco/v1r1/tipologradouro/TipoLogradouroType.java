@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.corporativo.endereco.v1r1.tipologradouro;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de TipoLogradouroType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de TipoLogradouroType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="TipoLogradouroType"&gt;
  *   &lt;complexContent&gt;
@@ -32,8 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "TipoLogradouroType", propOrder = {
@@ -48,9 +47,11 @@ public class TipoLogradouroType {
 
     /**
      * Obtém o valor da propriedade codigoTipoLogradouro.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoTipoLogradouro() {
         return codigoTipoLogradouro;
@@ -58,9 +59,11 @@ public class TipoLogradouroType {
 
     /**
      * Define o valor da propriedade codigoTipoLogradouro.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoTipoLogradouro(String value) {
         this.codigoTipoLogradouro = value;
@@ -68,9 +71,11 @@ public class TipoLogradouroType {
 
     /**
      * Obtém o valor da propriedade descricaoTipoLogradouro.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescricaoTipoLogradouro() {
         return descricaoTipoLogradouro;
@@ -78,9 +83,11 @@ public class TipoLogradouroType {
 
     /**
      * Define o valor da propriedade descricaoTipoLogradouro.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescricaoTipoLogradouro(String value) {
         this.descricaoTipoLogradouro = value;

@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.vinculacao;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,14 +9,12 @@ import br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosestabelecimento.DadosB
 import br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosprofissional.DadosBasicosProfissionalType;
 import br.gov.saude.servicos.schema.cnes.v1r0.vinculacaocbotype.ListaVinculacaoCBOType;
 
+
 /**
- * <p>
- * Classe Java de VinculacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de VinculacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="VinculacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -36,8 +35,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.vinculacaocbotype.ListaVinculacaoC
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "VinculacaoType", propOrder = {
@@ -77,9 +76,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade profissional.
-     *
-     * @return possible object is {@link DadosBasicosProfissionalType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link DadosBasicosProfissionalType }
+     *     
      */
     public DadosBasicosProfissionalType getProfissional() {
         return profissional;
@@ -87,9 +88,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade profissional.
-     *
-     * @param value allowed object is {@link DadosBasicosProfissionalType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DadosBasicosProfissionalType }
+     *     
      */
     public void setProfissional(DadosBasicosProfissionalType value) {
         this.profissional = value;
@@ -97,9 +100,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade estabelecimento.
-     *
-     * @return possible object is {@link DadosBasicosEstabelecimentoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link DadosBasicosEstabelecimentoType }
+     *     
      */
     public DadosBasicosEstabelecimentoType getEstabelecimento() {
         return estabelecimento;
@@ -107,9 +112,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade estabelecimento.
-     *
-     * @param value allowed object is {@link DadosBasicosEstabelecimentoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link DadosBasicosEstabelecimentoType }
+     *     
      */
     public void setEstabelecimento(DadosBasicosEstabelecimentoType value) {
         this.estabelecimento = value;
@@ -117,9 +124,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade indVinculacao.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIndVinculacao() {
         return indVinculacao;
@@ -127,9 +136,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade indVinculacao.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setIndVinculacao(String value) {
         this.indVinculacao = value;
@@ -137,9 +148,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade codigoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoModVinculo() {
         return codigoModVinculo;
@@ -147,9 +160,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade codigoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoModVinculo(String value) {
         this.codigoModVinculo = value;
@@ -157,9 +172,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade desCodigoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDesCodigoModVinculo() {
         return desCodigoModVinculo;
@@ -167,9 +184,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade desCodigoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDesCodigoModVinculo(String value) {
         this.desCodigoModVinculo = value;
@@ -177,9 +196,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade codigoTipoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoTipoModVinculo() {
         return codigoTipoModVinculo;
@@ -187,9 +208,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade codigoTipoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoTipoModVinculo(String value) {
         this.codigoTipoModVinculo = value;
@@ -197,9 +220,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade desTipoCodigoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDesTipoCodigoModVinculo() {
         return desTipoCodigoModVinculo;
@@ -207,9 +232,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade desTipoCodigoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDesTipoCodigoModVinculo(String value) {
         this.desTipoCodigoModVinculo = value;
@@ -217,9 +244,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade codigoSubTipoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoSubTipoModVinculo() {
         return codigoSubTipoModVinculo;
@@ -227,9 +256,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade codigoSubTipoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoSubTipoModVinculo(String value) {
         this.codigoSubTipoModVinculo = value;
@@ -237,9 +268,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade desSubTipoCodigoModVinculo.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDesSubTipoCodigoModVinculo() {
         return desSubTipoCodigoModVinculo;
@@ -247,9 +280,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade desSubTipoCodigoModVinculo.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDesSubTipoCodigoModVinculo(String value) {
         this.desSubTipoCodigoModVinculo = value;
@@ -257,9 +292,11 @@ public class VinculacaoType {
 
     /**
      * Obtém o valor da propriedade cbOs.
-     *
-     * @return possible object is {@link ListaVinculacaoCBOType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link ListaVinculacaoCBOType }
+     *     
      */
     public ListaVinculacaoCBOType getCBOs() {
         return cbOs;
@@ -267,9 +304,11 @@ public class VinculacaoType {
 
     /**
      * Define o valor da propriedade cbOs.
-     *
-     * @param value allowed object is {@link ListaVinculacaoCBOType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ListaVinculacaoCBOType }
+     *     
      */
     public void setCBOs(ListaVinculacaoCBOType value) {
         this.cbOs = value;

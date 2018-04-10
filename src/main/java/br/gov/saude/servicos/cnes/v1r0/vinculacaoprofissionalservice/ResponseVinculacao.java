@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,14 +7,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.vinculacao.VinculacaosType;
 
+
 /**
- * <p>
- * Classe Java de ResponseVinculacao complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de ResponseVinculacao complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="ResponseVinculacao"&gt;
  *   &lt;complexContent&gt;
@@ -25,8 +24,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.vinculacao.VinculacaosType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResponseVinculacao", propOrder = {
@@ -39,9 +38,11 @@ public class ResponseVinculacao {
 
     /**
      * Obtém o valor da propriedade vinculacaos.
-     *
-     * @return possible object is {@link VinculacaosType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link VinculacaosType }
+     *     
      */
     public VinculacaosType getVinculacaos() {
         return vinculacaos;
@@ -49,9 +50,11 @@ public class ResponseVinculacao {
 
     /**
      * Define o valor da propriedade vinculacaos.
-     *
-     * @param value allowed object is {@link VinculacaosType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link VinculacaosType }
+     *     
      */
     public void setVinculacaos(VinculacaosType value) {
         this.vinculacaos = value;

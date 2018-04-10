@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cadsus.v5r0.cns;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de NumeroCNSType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de NumeroCNSType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="NumeroCNSType"&gt;
  *   &lt;complexContent&gt;
@@ -24,8 +23,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "NumeroCNSType", propOrder = {
@@ -38,9 +37,11 @@ public class NumeroCNSType {
 
     /**
      * Obtém o valor da propriedade numeroCNS.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNumeroCNS() {
         return numeroCNS;
@@ -48,9 +49,11 @@ public class NumeroCNSType {
 
     /**
      * Define o valor da propriedade numeroCNS.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNumeroCNS(String value) {
         this.numeroCNS = value;

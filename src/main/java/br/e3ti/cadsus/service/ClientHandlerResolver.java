@@ -5,7 +5,7 @@
  */
 package br.e3ti.cadsus.service;
 
-import br.e3ti.cadsus.config.HeaderHandler;
+import br.e3ti.cadsus.handlers.HeaderCnes;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.ws.handler.Handler;
@@ -22,7 +22,7 @@ class ClientHandlerResolver implements HandlerResolver {
     public List<javax.xml.ws.handler.Handler> getHandlerChain(PortInfo pi) {
 
         List<Handler> hchain = new ArrayList<>();
-        hchain.add(new HeaderHandler()); //  soap handler defined in TestHandler.java dumps messages to stdout
+        hchain.add(new HeaderCnes()); //  soap handler defined in TestHandler.java dumps messages to stdout
         return hchain;
 
     }

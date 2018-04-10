@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisaprecadastrocnes;
 
 import javax.xml.bind.JAXBElement;
@@ -8,14 +9,12 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
 
+
 /**
- * <p>
- * Classe Java de FiltroPesquisaPrecadastroCnesType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de FiltroPesquisaPrecadastroCnesType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="FiltroPesquisaPrecadastroCnesType"&gt;
  *   &lt;complexContent&gt;
@@ -36,8 +35,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FiltroPesquisaPrecadastroCnesType", propOrder = {
@@ -53,9 +52,11 @@ public class FiltroPesquisaPrecadastroCnesType {
 
     /**
      * Código do CNES.
-     *
-     * @return possible object is {@link CodigoCNESType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public CodigoCNESType getCodigoCNES() {
         return codigoCNES;
@@ -63,9 +64,11 @@ public class FiltroPesquisaPrecadastroCnesType {
 
     /**
      * Define o valor da propriedade codigoCNES.
-     *
-     * @param value allowed object is {@link CodigoCNESType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public void setCodigoCNES(CodigoCNESType value) {
         this.codigoCNES = value;
@@ -73,10 +76,11 @@ public class FiltroPesquisaPrecadastroCnesType {
 
     /**
      * Obtém o valor da propriedade situacao.
-     *
-     * @return possible object is
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
      */
     public JAXBElement<String> getSituacao() {
         return situacao;
@@ -84,10 +88,11 @@ public class FiltroPesquisaPrecadastroCnesType {
 
     /**
      * Define o valor da propriedade situacao.
-     *
-     * @param value allowed object is
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
      */
     public void setSituacao(JAXBElement<String> value) {
         this.situacao = value;

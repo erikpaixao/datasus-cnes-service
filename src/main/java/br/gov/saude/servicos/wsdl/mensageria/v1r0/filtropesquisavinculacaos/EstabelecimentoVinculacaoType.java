@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.filtropesquisavinculacaos;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,14 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.codigocnes.CodigoCNESType;
 import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnpj.CNPJType;
 
+
 /**
- * <p>
- * Classe Java de EstabelecimentoVinculacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de EstabelecimentoVinculacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="EstabelecimentoVinculacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoajuridica.v1r0.cnpj.CNPJTyp
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EstabelecimentoVinculacaoType", propOrder = {
@@ -41,9 +40,11 @@ public class EstabelecimentoVinculacaoType {
 
     /**
      * Obtém o valor da propriedade cnes.
-     *
-     * @return possible object is {@link CodigoCNESType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public CodigoCNESType getCnes() {
         return cnes;
@@ -51,9 +52,11 @@ public class EstabelecimentoVinculacaoType {
 
     /**
      * Define o valor da propriedade cnes.
-     *
-     * @param value allowed object is {@link CodigoCNESType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CodigoCNESType }
+     *     
      */
     public void setCnes(CodigoCNESType value) {
         this.cnes = value;
@@ -61,9 +64,11 @@ public class EstabelecimentoVinculacaoType {
 
     /**
      * Obtém o valor da propriedade cnpj.
-     *
-     * @return possible object is {@link CNPJType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CNPJType }
+     *     
      */
     public CNPJType getCnpj() {
         return cnpj;
@@ -71,9 +76,11 @@ public class EstabelecimentoVinculacaoType {
 
     /**
      * Define o valor da propriedade cnpj.
-     *
-     * @param value allowed object is {@link CNPJType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CNPJType }
+     *     
      */
     public void setCnpj(CNPJType value) {
         this.cnpj = value;

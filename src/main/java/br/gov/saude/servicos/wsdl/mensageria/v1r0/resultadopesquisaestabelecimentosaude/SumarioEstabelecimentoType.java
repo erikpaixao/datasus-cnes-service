@@ -1,17 +1,16 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisaestabelecimentosaude;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de SumarioEstabelecimentoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de SumarioEstabelecimentoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="SumarioEstabelecimentoType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +27,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "SumarioEstabelecimentoType", propOrder = {
@@ -51,7 +50,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeProfissionaisSaude.
-     *
+     * 
      */
     public int getQuantidadeProfissionaisSaude() {
         return quantidadeProfissionaisSaude;
@@ -59,7 +58,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeProfissionaisSaude.
-     *
+     * 
      */
     public void setQuantidadeProfissionaisSaude(int value) {
         this.quantidadeProfissionaisSaude = value;
@@ -67,7 +66,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeCBOS.
-     *
+     * 
      */
     public int getQuantidadeCBOS() {
         return quantidadeCBOS;
@@ -75,7 +74,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeCBOS.
-     *
+     * 
      */
     public void setQuantidadeCBOS(int value) {
         this.quantidadeCBOS = value;
@@ -83,7 +82,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeLeitos.
-     *
+     * 
      */
     public int getQuantidadeLeitos() {
         return quantidadeLeitos;
@@ -91,7 +90,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeLeitos.
-     *
+     * 
      */
     public void setQuantidadeLeitos(int value) {
         this.quantidadeLeitos = value;
@@ -99,7 +98,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeHabilitacoes.
-     *
+     * 
      */
     public int getQuantidadeHabilitacoes() {
         return quantidadeHabilitacoes;
@@ -107,7 +106,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeHabilitacoes.
-     *
+     * 
      */
     public void setQuantidadeHabilitacoes(int value) {
         this.quantidadeHabilitacoes = value;
@@ -115,7 +114,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeEquipamentos.
-     *
+     * 
      */
     public int getQuantidadeEquipamentos() {
         return quantidadeEquipamentos;
@@ -123,7 +122,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeEquipamentos.
-     *
+     * 
      */
     public void setQuantidadeEquipamentos(int value) {
         this.quantidadeEquipamentos = value;
@@ -131,7 +130,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Obtém o valor da propriedade quantidadeSamus.
-     *
+     * 
      */
     public int getQuantidadeSamus() {
         return quantidadeSamus;
@@ -139,7 +138,7 @@ public class SumarioEstabelecimentoType {
 
     /**
      * Define o valor da propriedade quantidadeSamus.
-     *
+     * 
      */
     public void setQuantidadeSamus(int value) {
         this.quantidadeSamus = value;

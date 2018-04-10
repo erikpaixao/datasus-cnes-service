@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.corporativo.v1r2.email;
 
 import java.math.BigInteger;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de EmailType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de EmailType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="EmailType"&gt;
  *   &lt;complexContent&gt;
@@ -35,8 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EmailType", propOrder = {
@@ -58,9 +57,11 @@ public class EmailType {
 
     /**
      * Obtém o valor da propriedade identificador.
-     *
-     * @return possible object is {@link BigInteger }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getIdentificador() {
         return identificador;
@@ -68,9 +69,11 @@ public class EmailType {
 
     /**
      * Define o valor da propriedade identificador.
-     *
-     * @param value allowed object is {@link BigInteger }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setIdentificador(BigInteger value) {
         this.identificador = value;
@@ -78,9 +81,11 @@ public class EmailType {
 
     /**
      * Obtém o valor da propriedade descricaoEmail.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getDescricaoEmail() {
         return descricaoEmail;
@@ -88,9 +93,11 @@ public class EmailType {
 
     /**
      * Define o valor da propriedade descricaoEmail.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setDescricaoEmail(String value) {
         this.descricaoEmail = value;
@@ -98,9 +105,11 @@ public class EmailType {
 
     /**
      * Obtém o valor da propriedade tipoEmail.
-     *
-     * @return possible object is {@link TipoEmailType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link TipoEmailType }
+     *     
      */
     public TipoEmailType getTipoEmail() {
         return tipoEmail;
@@ -108,9 +117,11 @@ public class EmailType {
 
     /**
      * Define o valor da propriedade tipoEmail.
-     *
-     * @param value allowed object is {@link TipoEmailType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link TipoEmailType }
+     *     
      */
     public void setTipoEmail(TipoEmailType value) {
         this.tipoEmail = value;
@@ -118,9 +129,11 @@ public class EmailType {
 
     /**
      * Obtém o valor da propriedade validado.
-     *
-     * @return possible object is {@link Boolean }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link Boolean }
+     *     
      */
     public Boolean isValidado() {
         return validado;
@@ -128,9 +141,11 @@ public class EmailType {
 
     /**
      * Define o valor da propriedade validado.
-     *
-     * @param value allowed object is {@link Boolean }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Boolean }
+     *     
      */
     public void setValidado(Boolean value) {
         this.validado = value;

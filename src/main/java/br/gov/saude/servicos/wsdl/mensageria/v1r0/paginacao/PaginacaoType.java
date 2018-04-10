@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.paginacao;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de PaginacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de PaginacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="PaginacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "PaginacaoType", propOrder = {
@@ -45,9 +44,11 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade posicaoRegistroInicio.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getPosicaoRegistroInicio() {
         return posicaoRegistroInicio;
@@ -55,9 +56,11 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade posicaoRegistroInicio.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setPosicaoRegistroInicio(String value) {
         this.posicaoRegistroInicio = value;
@@ -65,9 +68,11 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade quantidadeRegistrosPorPagina.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQuantidadeRegistrosPorPagina() {
         return quantidadeRegistrosPorPagina;
@@ -75,9 +80,11 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade quantidadeRegistrosPorPagina.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQuantidadeRegistrosPorPagina(String value) {
         this.quantidadeRegistrosPorPagina = value;
@@ -85,9 +92,11 @@ public class PaginacaoType {
 
     /**
      * Obtém o valor da propriedade quantidadeRegistros.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getQuantidadeRegistros() {
         return quantidadeRegistros;
@@ -95,9 +104,11 @@ public class PaginacaoType {
 
     /**
      * Define o valor da propriedade quantidadeRegistros.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setQuantidadeRegistros(String value) {
         this.quantidadeRegistros = value;

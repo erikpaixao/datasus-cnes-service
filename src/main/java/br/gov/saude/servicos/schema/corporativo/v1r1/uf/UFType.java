@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.corporativo.v1r1.uf;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,14 +6,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Classe Java de UFType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de UFType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="UFType"&gt;
  *   &lt;complexContent&gt;
@@ -27,8 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "UFType", propOrder = {
@@ -47,9 +46,11 @@ public class UFType {
 
     /**
      * Obtém o valor da propriedade codigoUF.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoUF() {
         return codigoUF;
@@ -57,9 +58,11 @@ public class UFType {
 
     /**
      * Define o valor da propriedade codigoUF.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoUF(String value) {
         this.codigoUF = value;
@@ -67,9 +70,11 @@ public class UFType {
 
     /**
      * Obtém o valor da propriedade siglaUF.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getSiglaUF() {
         return siglaUF;
@@ -77,9 +82,11 @@ public class UFType {
 
     /**
      * Define o valor da propriedade siglaUF.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setSiglaUF(String value) {
         this.siglaUF = value;
@@ -87,9 +94,11 @@ public class UFType {
 
     /**
      * Obtém o valor da propriedade codigoRegiao.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getCodigoRegiao() {
         return codigoRegiao;
@@ -97,9 +106,11 @@ public class UFType {
 
     /**
      * Define o valor da propriedade codigoRegiao.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setCodigoRegiao(String value) {
         this.codigoRegiao = value;
@@ -107,9 +118,11 @@ public class UFType {
 
     /**
      * Obtém o valor da propriedade nomeUF.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNomeUF() {
         return nomeUF;
@@ -117,9 +130,11 @@ public class UFType {
 
     /**
      * Define o valor da propriedade nomeUF.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNomeUF(String value) {
         this.nomeUF = value;

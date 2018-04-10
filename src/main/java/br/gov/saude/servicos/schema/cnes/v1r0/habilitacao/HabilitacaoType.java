@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.habilitacao;
 
 import java.math.BigInteger;
@@ -11,14 +12,12 @@ import br.gov.saude.servicos.schema.cnes.v1r0.cmpt.CmptType;
 import br.gov.saude.servicos.schema.cnes.v1r0.grupohabilitacao.GrupoHabilitacaoType;
 import br.gov.saude.servicos.schema.cnes.v1r0.subgrupohabilitacao.SubGrupoHabilitacaoType;
 
+
 /**
- * <p>
- * Classe Java de HabilitacaoType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de HabilitacaoType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="HabilitacaoType"&gt;
  *   &lt;complexContent&gt;
@@ -37,8 +36,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.subgrupohabilitacao.SubGrupoHabili
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "HabilitacaoType", propOrder = {
@@ -69,9 +68,11 @@ public class HabilitacaoType {
 
     /**
      * Grupo de Habilitação do Estabelecimento de Saúde..
-     *
-     * @return possible object is {@link GrupoHabilitacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link GrupoHabilitacaoType }
+     *     
      */
     public GrupoHabilitacaoType getGrupoHabilitacao() {
         return grupoHabilitacao;
@@ -79,9 +80,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade grupoHabilitacao.
-     *
-     * @param value allowed object is {@link GrupoHabilitacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link GrupoHabilitacaoType }
+     *     
      */
     public void setGrupoHabilitacao(GrupoHabilitacaoType value) {
         this.grupoHabilitacao = value;
@@ -89,9 +92,11 @@ public class HabilitacaoType {
 
     /**
      * Sub-Grupo de Habilitação do Estabelecimento de Saúde..
-     *
-     * @return possible object is {@link SubGrupoHabilitacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link SubGrupoHabilitacaoType }
+     *     
      */
     public SubGrupoHabilitacaoType getSubGrupoHabilitacao() {
         return subGrupoHabilitacao;
@@ -99,9 +104,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade subGrupoHabilitacao.
-     *
-     * @param value allowed object is {@link SubGrupoHabilitacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link SubGrupoHabilitacaoType }
+     *     
      */
     public void setSubGrupoHabilitacao(SubGrupoHabilitacaoType value) {
         this.subGrupoHabilitacao = value;
@@ -109,9 +116,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade dataAtualizacao.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataAtualizacao() {
         return dataAtualizacao;
@@ -119,9 +128,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade dataAtualizacao.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataAtualizacao(XMLGregorianCalendar value) {
         this.dataAtualizacao = value;
@@ -129,9 +140,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade cmptInicio.
-     *
-     * @return possible object is {@link CmptType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CmptType }
+     *     
      */
     public CmptType getCmptInicio() {
         return cmptInicio;
@@ -139,9 +152,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade cmptInicio.
-     *
-     * @param value allowed object is {@link CmptType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CmptType }
+     *     
      */
     public void setCmptInicio(CmptType value) {
         this.cmptInicio = value;
@@ -149,9 +164,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade cmptFim.
-     *
-     * @return possible object is {@link CmptType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CmptType }
+     *     
      */
     public CmptType getCmptFim() {
         return cmptFim;
@@ -159,9 +176,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade cmptFim.
-     *
-     * @param value allowed object is {@link CmptType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CmptType }
+     *     
      */
     public void setCmptFim(CmptType value) {
         this.cmptFim = value;
@@ -169,9 +188,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade nomePortaria.
-     *
-     * @return possible object is {@link String }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getNomePortaria() {
         return nomePortaria;
@@ -179,9 +200,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade nomePortaria.
-     *
-     * @param value allowed object is {@link String }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
     public void setNomePortaria(String value) {
         this.nomePortaria = value;
@@ -189,9 +212,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade dataPortaria.
-     *
-     * @return possible object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public XMLGregorianCalendar getDataPortaria() {
         return dataPortaria;
@@ -199,9 +224,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade dataPortaria.
-     *
-     * @param value allowed object is {@link XMLGregorianCalendar }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
      */
     public void setDataPortaria(XMLGregorianCalendar value) {
         this.dataPortaria = value;
@@ -209,9 +236,11 @@ public class HabilitacaoType {
 
     /**
      * Obtém o valor da propriedade quantidadeLeito.
-     *
-     * @return possible object is {@link BigInteger }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigInteger }
+     *     
      */
     public BigInteger getQuantidadeLeito() {
         return quantidadeLeito;
@@ -219,9 +248,11 @@ public class HabilitacaoType {
 
     /**
      * Define o valor da propriedade quantidadeLeito.
-     *
-     * @param value allowed object is {@link BigInteger }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigInteger }
+     *     
      */
     public void setQuantidadeLeito(BigInteger value) {
         this.quantidadeLeito = value;

@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosprofissional;
 
 import java.util.ArrayList;
@@ -10,14 +11,12 @@ import br.gov.saude.servicos.schema.cadsus.v5r0.cns.CNSType;
 import br.gov.saude.servicos.schema.corporativo.documento.v1r2.cpf.CPFType;
 import br.gov.saude.servicos.schema.corporativo.pessoafisica.v1r2.nomecompleto.NomeCompletoType;
 
+
 /**
- * <p>
- * Classe Java de DadosBasicosProfissionalType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de DadosBasicosProfissionalType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="DadosBasicosProfissionalType"&gt;
  *   &lt;complexContent&gt;
@@ -31,8 +30,8 @@ import br.gov.saude.servicos.schema.corporativo.pessoafisica.v1r2.nomecompleto.N
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DadosBasicosProfissionalType", propOrder = {
@@ -51,9 +50,11 @@ public class DadosBasicosProfissionalType {
 
     /**
      * Obtém o valor da propriedade nome.
-     *
-     * @return possible object is {@link NomeCompletoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link NomeCompletoType }
+     *     
      */
     public NomeCompletoType getNome() {
         return nome;
@@ -61,9 +62,11 @@ public class DadosBasicosProfissionalType {
 
     /**
      * Define o valor da propriedade nome.
-     *
-     * @param value allowed object is {@link NomeCompletoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link NomeCompletoType }
+     *     
      */
     public void setNome(NomeCompletoType value) {
         this.nome = value;
@@ -71,9 +74,11 @@ public class DadosBasicosProfissionalType {
 
     /**
      * Obtém o valor da propriedade cpf.
-     *
-     * @return possible object is {@link CPFType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link CPFType }
+     *     
      */
     public CPFType getCPF() {
         return cpf;
@@ -81,9 +86,11 @@ public class DadosBasicosProfissionalType {
 
     /**
      * Define o valor da propriedade cpf.
-     *
-     * @param value allowed object is {@link CPFType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link CPFType }
+     *     
      */
     public void setCPF(CPFType value) {
         this.cpf = value;
@@ -91,24 +98,25 @@ public class DadosBasicosProfissionalType {
 
     /**
      * Gets the value of the cns property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the cns property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the cns property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getCNS().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
-     * Objects of the following type(s) are allowed in the list {@link CNSType }
-     *
-     *
+     * Objects of the following type(s) are allowed in the list
+     * {@link CNSType }
+     * 
+     * 
      */
     public List<CNSType> getCNS() {
         if (cns == null) {

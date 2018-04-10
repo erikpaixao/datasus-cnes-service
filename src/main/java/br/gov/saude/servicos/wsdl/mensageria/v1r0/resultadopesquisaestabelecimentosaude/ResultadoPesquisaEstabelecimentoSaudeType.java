@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisaestabelecimentosaude;
 
 import java.util.ArrayList;
@@ -13,14 +14,12 @@ import br.gov.saude.servicos.schema.cnes.v1r0.leito.LeitoType;
 import br.gov.saude.servicos.schema.cnes.v1r0.samu.SamuType;
 import br.gov.saude.servicos.schema.profissionalsaude.v1r0.profissionalsaude.ProfissionalSaudeType;
 
+
 /**
- * <p>
- * Classe Java de ResultadoPesquisaEstabelecimentoSaudeType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de ResultadoPesquisaEstabelecimentoSaudeType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="ResultadoPesquisaEstabelecimentoSaudeType"&gt;
  *   &lt;complexContent&gt;
@@ -38,8 +37,8 @@ import br.gov.saude.servicos.schema.profissionalsaude.v1r0.profissionalsaude.Pro
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResultadoPesquisaEstabelecimentoSaudeType", propOrder = {
@@ -65,9 +64,11 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade estabelecimentoSaude.
-     *
-     * @return possible object is {@link DadosGeraisEstabelecimentoSaudeType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link DadosGeraisEstabelecimentoSaudeType }
+     *     
      */
     public DadosGeraisEstabelecimentoSaudeType getEstabelecimentoSaude() {
         return estabelecimentoSaude;
@@ -75,10 +76,11 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade estabelecimentoSaude.
-     *
-     * @param value allowed object is
+     * 
+     * @param value
+     *     allowed object is
      *     {@link DadosGeraisEstabelecimentoSaudeType }
-     *
+     *     
      */
     public void setEstabelecimentoSaude(DadosGeraisEstabelecimentoSaudeType value) {
         this.estabelecimentoSaude = value;
@@ -86,25 +88,25 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the profissional property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the profissional property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the profissional property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getProfissional().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ProfissionalSaudeType }
-     *
-     *
+     * 
+     * 
      */
     public List<ProfissionalSaudeType> getProfissional() {
         if (profissional == null) {
@@ -115,25 +117,25 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the leito property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the leito property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the leito property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getLeito().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link LeitoType }
-     *
-     *
+     * 
+     * 
      */
     public List<LeitoType> getLeito() {
         if (leito == null) {
@@ -144,25 +146,25 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the habilitacao property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the habilitacao property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the habilitacao property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getHabilitacao().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link HabilitacaoType }
-     *
-     *
+     * 
+     * 
      */
     public List<HabilitacaoType> getHabilitacao() {
         if (habilitacao == null) {
@@ -173,25 +175,25 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the equipamento property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the equipamento property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the equipamento property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEquipamento().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link EquipamentoType }
-     *
-     *
+     * 
+     * 
      */
     public List<EquipamentoType> getEquipamento() {
         if (equipamento == null) {
@@ -202,25 +204,25 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Gets the value of the samu property.
-     *
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the samu property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the samu property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getSamu().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link SamuType }
-     *
-     *
+     * 
+     * 
      */
     public List<SamuType> getSamu() {
         if (samu == null) {
@@ -231,9 +233,11 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Obtém o valor da propriedade sumario.
-     *
-     * @return possible object is {@link SumarioEstabelecimentoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link SumarioEstabelecimentoType }
+     *     
      */
     public SumarioEstabelecimentoType getSumario() {
         return sumario;
@@ -241,9 +245,11 @@ public class ResultadoPesquisaEstabelecimentoSaudeType {
 
     /**
      * Define o valor da propriedade sumario.
-     *
-     * @param value allowed object is {@link SumarioEstabelecimentoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link SumarioEstabelecimentoType }
+     *     
      */
     public void setSumario(SumarioEstabelecimentoType value) {
         this.sumario = value;

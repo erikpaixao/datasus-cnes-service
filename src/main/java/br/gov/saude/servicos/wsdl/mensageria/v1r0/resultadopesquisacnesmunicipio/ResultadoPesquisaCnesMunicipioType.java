@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisacnesmunicipio;
 
 import java.util.ArrayList;
@@ -8,14 +9,12 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosestabelecimento.DadosBasicosEstabelecimentoType;
 
+
 /**
- * <p>
- * Classe Java de ResultadoPesquisaCnesMunicipioType complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de ResultadoPesquisaCnesMunicipioType complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="ResultadoPesquisaCnesMunicipioType"&gt;
  *   &lt;complexContent&gt;
@@ -28,8 +27,8 @@ import br.gov.saude.servicos.schema.cnes.v1r0.dadosbasicosestabelecimento.DadosB
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResultadoPesquisaCnesMunicipioType", propOrder = {
@@ -43,27 +42,26 @@ public class ResultadoPesquisaCnesMunicipioType {
     protected int sumario;
 
     /**
-     * Dados Básicos do Estabelecimento de Saúde..Gets the value of the
-     * dadosBasicosEstabelecimento property.
-     *
+     * Dados Básicos do Estabelecimento de Saúde..Gets the value of the dadosBasicosEstabelecimento property.
+     * 
      * <p>
-     * This accessor method returns a reference to the live list, not a
-     * snapshot. Therefore any modification you make to the returned list will
-     * be present inside the JAXB object. This is why there is not a
-     * <CODE>set</CODE> method for the dadosBasicosEstabelecimento property.
-     *
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the dadosBasicosEstabelecimento property.
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDadosBasicosEstabelecimento().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DadosBasicosEstabelecimentoType }
-     *
-     *
+     * 
+     * 
      */
     public List<DadosBasicosEstabelecimentoType> getDadosBasicosEstabelecimento() {
         if (dadosBasicosEstabelecimento == null) {
@@ -74,7 +72,7 @@ public class ResultadoPesquisaCnesMunicipioType {
 
     /**
      * Obtém o valor da propriedade sumario.
-     *
+     * 
      */
     public int getSumario() {
         return sumario;
@@ -82,7 +80,7 @@ public class ResultadoPesquisaCnesMunicipioType {
 
     /**
      * Define o valor da propriedade sumario.
-     *
+     * 
      */
     public void setSumario(int value) {
         this.sumario = value;

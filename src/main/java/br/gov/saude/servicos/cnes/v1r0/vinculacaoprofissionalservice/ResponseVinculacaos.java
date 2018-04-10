@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.cnes.v1r0.vinculacaoprofissionalservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.schema.cnes.v1r0.vinculacao.VinculacaosType;
 import br.gov.saude.servicos.wsdl.mensageria.v1.paginacao.PaginacaoType;
 
+
 /**
- * <p>
- * Classe Java de ResponseVinculacaos complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de ResponseVinculacaos complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType name="ResponseVinculacaos"&gt;
  *   &lt;complexContent&gt;
@@ -27,8 +26,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1.paginacao.PaginacaoType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ResponseVinculacaos", propOrder = {
@@ -44,9 +43,11 @@ public class ResponseVinculacaos {
 
     /**
      * Obtém o valor da propriedade vinculacaos.
-     *
-     * @return possible object is {@link VinculacaosType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link VinculacaosType }
+     *     
      */
     public VinculacaosType getVinculacaos() {
         return vinculacaos;
@@ -54,9 +55,11 @@ public class ResponseVinculacaos {
 
     /**
      * Define o valor da propriedade vinculacaos.
-     *
-     * @param value allowed object is {@link VinculacaosType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link VinculacaosType }
+     *     
      */
     public void setVinculacaos(VinculacaosType value) {
         this.vinculacaos = value;
@@ -64,9 +67,11 @@ public class ResponseVinculacaos {
 
     /**
      * Obtém o valor da propriedade paginacao.
-     *
-     * @return possible object is {@link PaginacaoType }
-     *
+     * 
+     * @return
+     *     possible object is
+     *     {@link PaginacaoType }
+     *     
      */
     public PaginacaoType getPaginacao() {
         return paginacao;
@@ -74,9 +79,11 @@ public class ResponseVinculacaos {
 
     /**
      * Define o valor da propriedade paginacao.
-     *
-     * @param value allowed object is {@link PaginacaoType }
-     *
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link PaginacaoType }
+     *     
      */
     public void setPaginacao(PaginacaoType value) {
         this.paginacao = value;

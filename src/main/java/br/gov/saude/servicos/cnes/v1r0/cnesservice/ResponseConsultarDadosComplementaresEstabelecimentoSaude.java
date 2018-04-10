@@ -1,3 +1,4 @@
+
 package br.gov.saude.servicos.cnes.v1r0.cnesservice;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -7,14 +8,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisadadoscomplementarescnes.ResultadoPesquisaDadosComplementaresCnesType;
 
+
 /**
- * <p>
- * Classe Java de anonymous complex type.
- *
- * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
- *
+ * <p>Classe Java de anonymous complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
  * <pre>
  * &lt;complexType&gt;
  *   &lt;complexContent&gt;
@@ -26,8 +25,8 @@ import br.gov.saude.servicos.wsdl.mensageria.v1r0.resultadopesquisadadoscompleme
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
@@ -41,10 +40,11 @@ public class ResponseConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Obtém o valor da propriedade resultadoPesquisaDadosComplementaresCnes.
-     *
-     * @return possible object is
+     * 
+     * @return
+     *     possible object is
      *     {@link ResultadoPesquisaDadosComplementaresCnesType }
-     *
+     *     
      */
     public ResultadoPesquisaDadosComplementaresCnesType getResultadoPesquisaDadosComplementaresCnes() {
         return resultadoPesquisaDadosComplementaresCnes;
@@ -52,10 +52,11 @@ public class ResponseConsultarDadosComplementaresEstabelecimentoSaude {
 
     /**
      * Define o valor da propriedade resultadoPesquisaDadosComplementaresCnes.
-     *
-     * @param value allowed object is
+     * 
+     * @param value
+     *     allowed object is
      *     {@link ResultadoPesquisaDadosComplementaresCnesType }
-     *
+     *     
      */
     public void setResultadoPesquisaDadosComplementaresCnes(ResultadoPesquisaDadosComplementaresCnesType value) {
         this.resultadoPesquisaDadosComplementaresCnes = value;
