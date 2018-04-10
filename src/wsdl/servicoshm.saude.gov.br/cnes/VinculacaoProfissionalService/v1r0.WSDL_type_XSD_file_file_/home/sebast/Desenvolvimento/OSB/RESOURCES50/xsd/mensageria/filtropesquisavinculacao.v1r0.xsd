@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacao" xmlns:codigocnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" xmlns:cnpj="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" xmlns:cns="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" xmlns:cpf="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisavinculacao" elementFormDefault="qualified">
+	<xs:import id="codigocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>		
+	<xs:import id="cnpj" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnpj" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnpj.v1r0.xsd"/>	
+	<xs:import id="cns" namespace="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcadsus%2Fcns.v5r0.xsd"/>	
+	<xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
+	<xs:annotation>
+		<xs:documentation>Representa o objeto de filtro da pesquisa da vinculacao de um profissional com um estabelecimento</xs:documentation>
+	</xs:annotation>
+	<xs:element name="FiltroPesquisaVinculacao" type="FiltroPesquisaVinculacaoType"/>
+	<xs:complexType name="FiltroPesquisaVinculacaoType">
+		<xs:sequence>
+			<xs:element name="IdentificacaoProfissional" type="ProfissionalVinculacaoType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IdentificacaoEstabelecimento" type="EstabelecimentoVinculacaoType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="IdentificacaoVinculacao" type="TipoVinculacaoType" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProfissionalVinculacaoType">
+		<xs:choice>
+			<xs:element name="cpf" type="cpf:CPFType"/>
+			<xs:element name="cns" type="cns:NumeroCNSType"/>	
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="EstabelecimentoVinculacaoType">
+		<xs:choice>
+			<xs:element name="cnes" type="codigocnes:CodigoCNESType"/>
+			<xs:element name="cnpj" type="cnpj:CNPJType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="TipoVinculacaoType">
+		<xs:sequence>
+			<xs:element name="tipoVinculacao">		
+					<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>1.Vinculo empregaticio 2.Autonomo 3.Cooperativa 4.Outros 5.Residencia 6.Estagio 7.Bolsa 8.Intermediado 9.Informal</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1"/>  
+						<xs:pattern value="[1-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>	
+				</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:subtipo="http://servicos.saude.gov.br/schema/cnes/v1r0/subtipoestabelecimentosaude" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoestabelecimentosaude" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoestabelecimentosaude">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa o Tipo de Estabelecimento de Saúde no CNES.]]></xs:documentation>
+	</xs:annotation>
+	
+	<xs:import id="subtipo" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/subtipoestabelecimentosaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fsubtipoestabelecimentosaude.v1r0.xsd"/>
+
+	<xs:element name="TipoEstabelecimentoSaude" type="TipoEstabelecimentoSaudeType"/>
+
+	<xs:complexType name="TipoEstabelecimentoSaudeType">
+		<xs:sequence>
+			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Código do Tipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="descricao" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Descrição do Tipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element minOccurs="1" maxOccurs="unbounded" ref="subtipo:SubtipoEstabelecimentoSaude">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Subtipo do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

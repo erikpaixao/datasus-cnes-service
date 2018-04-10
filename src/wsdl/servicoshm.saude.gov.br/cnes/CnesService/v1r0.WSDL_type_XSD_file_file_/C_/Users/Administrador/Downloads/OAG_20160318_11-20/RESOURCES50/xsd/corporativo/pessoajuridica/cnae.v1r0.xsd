@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnae" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnae">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa a Classificação Nacional de Atividades Econômicas (CNAE).]]></xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="CNAE" type="CNAEType"/>
+
+	<xs:complexType name="CNAEType">
+		<xs:sequence>
+			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation><![CDATA[Código do CNAE. Este codigo representa a Subclasse da CONCLA(http://www.cnae.ibge.gov.br/)]]></xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="7"/>
+						<xs:maxLength value="7"/>
+						<xs:pattern value="[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="descricao" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Descrição do CNAE.]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="tipo" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Tipo do CNAE (PRINCIPAL ou SECUNDARIO.]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<!-- PRINCIPAL -->
+						<xs:enumeration value="PRINCIPAL"/>
+						<!-- SECUNDARIO -->
+						<xs:enumeration value="SECUNDARIO"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

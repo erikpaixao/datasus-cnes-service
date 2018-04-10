@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/equipamento" xmlns:tipoequipamento="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoequipamento" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/equipamento">
+
+	<xs:import id="tipoequipamento" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/tipoequipamento" schemaLocation="https://servicoshm.saude.gov.br/cnes/EquipamentoService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fequipamentos%2Ftipoequipamento.v1r0.xsd"/>
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa o Equipamento do Estabelecimento de Saúde.]]></xs:documentation>
+	</xs:annotation>
+	
+	<xs:element name="Equipamento" type="EquipamentoType"/>
+
+	<xs:complexType name="EquipamentoType">
+		<xs:sequence>
+			<xs:element name="codigo" minOccurs="1" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Código do Equipamento do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="descricao" minOccurs="1" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Descrição Equipamento do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="1" maxOccurs="1" ref="tipoequipamento:tipoEquipamento">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Tipo de Equipamento do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="destinacao" minOccurs="0" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Destinação do Equipamento - SUS, NÃO SUS, AMBOS.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantidadeEquipamento" minOccurs="0" maxOccurs="1" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de Equipamentos no Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantidadeUso" minOccurs="0" maxOccurs="1" type="xs:integer">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de Equipamentos em uso no Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="TpSUS" minOccurs="0" maxOccurs="1" type="indicadorSUSType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Indica se o Equipamento está disponível para o SUS. 1- SIM. 2 - NÃO]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="indicadorSUSType">
+		<xs:sequence>
+			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Indica se o Equipamento está disponível para o SUS. 1- SIM. 2 - NÃO]]>.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

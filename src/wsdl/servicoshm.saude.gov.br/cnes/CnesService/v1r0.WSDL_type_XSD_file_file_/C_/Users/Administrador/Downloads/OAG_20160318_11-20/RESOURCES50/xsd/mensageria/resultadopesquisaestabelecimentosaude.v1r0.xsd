@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadopesquisaestabelecimentosaude" xmlns:profissional="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/profissionalsaude" xmlns:leito="http://servicos.saude.gov.br/schema/cnes/v1r0/leito" xmlns:habilitacao="http://servicos.saude.gov.br/schema/cnes/v1r0/habilitacao" xmlns:equipamento="http://servicos.saude.gov.br/schema/cnes/v1r0/equipamento" xmlns:samu="http://servicos.saude.gov.br/schema/cnes/v1r0/samu" xmlns:estab="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosgeraiscnes" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/resultadopesquisaestabelecimentosaude">
+
+	<xs:import id="profissional" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/profissionalsaude" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fprofissionalsaude.v1r0.xsd"/>	
+
+	<xs:import id="leito" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/leito" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fleitos%2Fleito.v1r0.xsd"/>
+		
+	<xs:import id="habilitacao" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/habilitacao" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fhabilitacoes%2Fhabilitacao.v1r0.xsd"/>
+		
+	<xs:import id="equipamento" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/equipamento" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fequipamentos%2Fequipamento.v1r0.xsd"/>
+		
+	<xs:import id="samu" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/samu" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fsamu%2Fsamu.v1r0.xsd"/>
+	
+	<xs:import id="estab" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosgeraiscnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fdadosgeraisestabelecimento%2Fdadosgeraiscnes.v1r0.xsd"/>		
+	
+			
+	<xs:annotation>
+		<xs:documentation>Representa o esquema de resultado da pesquisa de um 
+			Estabelecimento de Saúde, pelo código do CNES.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="ResultadoPesquisaEstabelecimentoSaude" type="ResultadoPesquisaEstabelecimentoSaudeType"/>
+
+	<xs:complexType name="ResultadoPesquisaEstabelecimentoSaudeType">
+		<xs:sequence>
+			<xs:element name="EstabelecimentoSaude" minOccurs="0" maxOccurs="1" type="estab:DadosGeraisEstabelecimentoSaudeType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Informações do Estebelecimento de Saúde.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="profissional" minOccurs="0" maxOccurs="unbounded" type="profissional:ProfissionalSaudeType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Informações dos Profissionais deste Estebelecimento de Saúde.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="leito" minOccurs="0" maxOccurs="unbounded" type="leito:LeitoType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Informações dos Leitos deste Estebelecimento de Saúde.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="habilitacao" minOccurs="0" maxOccurs="unbounded" type="habilitacao:HabilitacaoType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Informações das Habilitações deste Estebelecimento de Saúde.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="equipamento" minOccurs="0" maxOccurs="unbounded" type="equipamento:EquipamentoType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="samu" minOccurs="0" maxOccurs="unbounded" type="samu:SamuType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Informações dos SAMU's deste Estebelecimento de Saúde.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			
+			<xs:element name="sumario" minOccurs="1" maxOccurs="1" type="SumarioEstabelecimentoType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Sumário com a quantidade de registros encontrados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+		
+	<xs:complexType name="SumarioEstabelecimentoType">
+		<xs:sequence>
+			<xs:element name="quantidadeProfissionaisSaude" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade Profissionais e Saúde retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantidadeCBOS" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade CBO's retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantidadeLeitos" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de Leitos retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element> 
+			<xs:element name="quantidadeHabilitacoes" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de Habilitações retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantidadeEquipamentos" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de Equipamentos retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>  
+			<xs:element name="quantidadeSamus" minOccurs="1" maxOccurs="1" type="xs:int">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Quantidade de SAMU's retornados.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>  
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

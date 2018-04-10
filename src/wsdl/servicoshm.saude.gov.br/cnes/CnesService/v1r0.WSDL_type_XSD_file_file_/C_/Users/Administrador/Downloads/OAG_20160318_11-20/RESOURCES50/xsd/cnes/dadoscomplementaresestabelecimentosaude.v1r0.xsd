@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadoscomplementaresestabelecimentosaude" xmlns:cnae="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnae" xmlns:alvarasanitario="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/alvarasanitario" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadoscomplementaresestabelecimentosaude">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa os Dados Complementares do Estabelecimento de Saúde no CNES.]]></xs:documentation>
+	</xs:annotation>
+	
+	<xs:import id="cnae" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/cnae" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fcnae.v1r0.xsd"/>
+	<xs:import id="alvarasanitario" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/alvarasanitario" schemaLocation="https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Falvarasanitario.v1r0.xsd"/>
+	
+	
+	<xs:element name="DadosComplementares" type="DadosComplementaresType"/>
+
+	<xs:complexType name="DadosComplementaresType">
+		<xs:sequence>
+			<xs:element name="CnaePrincipal" minOccurs="1" maxOccurs="1" type="cnae:CNAEType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[CNAE Principal.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CnaeSecundario" minOccurs="1" maxOccurs="1" type="cnae:CNAEType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[CNAE Secundario.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="1" maxOccurs="1" ref="alvarasanitario:AlvaraSanitario">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Alvará Sanitário.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+<!-- 			<xs:element minOccurs="1" maxOccurs="1" ></xs:element> -->
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

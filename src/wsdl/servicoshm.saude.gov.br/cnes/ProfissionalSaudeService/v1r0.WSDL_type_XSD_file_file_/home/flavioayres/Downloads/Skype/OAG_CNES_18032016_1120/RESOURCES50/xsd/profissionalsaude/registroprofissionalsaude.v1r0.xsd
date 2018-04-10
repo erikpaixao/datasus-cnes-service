@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/registroprofissionalsaude" xmlns:orgaoemissor="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/orgaoemissor" xmlns:uf="http://servicos.saude.gov.br/schema/corporativo/v1r1/uf" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/registroprofissionalsaude">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa o registro de um Profissional de Saúde no CNES. (CRM, CRN, COREN) ]]></xs:documentation>
+	</xs:annotation>
+
+	<xs:import id="uf" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r1/uf" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fuf.v1r1.xsd"/>
+	<xs:import id="orgaoemissor" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/orgaoemissor" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Forgaoemissor.v1r2.xsd">
+	</xs:import>
+
+	<xs:element name="RegistroProfissionalSaude" type="RegistroProfissionalSaudeType"/>
+
+	<xs:complexType name="RegistroProfissionalSaudeType">
+		<xs:sequence>
+
+			<xs:element name="identificador" minOccurs="1" maxOccurs="1" type="xs:nonNegativeInteger">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Código de identificação.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="1" maxOccurs="1" name="OrgaoEmissor" type="orgaoemissor:OrgaoEmissorType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Orgao emissor do documento.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uf" minOccurs="1" maxOccurs="1" type="uf:UFType"/>
+
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

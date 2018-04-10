@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cns="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" xmlns:cbo="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/cbo" xmlns:nome="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" xmlns:cnes="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosestabelecimento" xmlns:cpf="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" xmlns="http://servicos.saude.gov.br/schema/profissionalsaude/v2r0/profissionalsaude" xmlns:endereco="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" xmlns:email="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/profissionalsaude/v2r0/profissionalsaude">
+
+	<xs:import id="cbo" namespace="http://servicos.saude.gov.br/schema/profissionalsaude/v1r0/cbo" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fprofissionalsaude%2Fcbo.v1r0.xsd"/>
+	
+	<xs:import id="cns" namespace="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcadsus%2Fcns.v5r0.xsd"/>
+	
+	<xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
+	
+	<xs:import id="nome" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoafisica%2Fnomecompleto.v1r2.xsd"/>
+		
+	<xs:import id="cnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosestabelecimento" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcnes%2Fdadosbasicosestabelecimento%2Fdadosbasicosestabelecimento.v1r0.xsd"/>
+		
+	<xs:import id="endereco" namespace="http://servicos.saude.gov.br/schema/corporativo/endereco/v1r2/endereco" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fendereco%2Fendereco.v1r2.xsd"/>
+		
+	<xs:import id="email" namespace="http://servicos.saude.gov.br/schema/corporativo/v1r2/email" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Femail.v1r2.xsd"/>
+		
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa um Profissional de Saúde no CNES.]]></xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="ProfissionalSaude" type="ProfissionalSaudeType"/>
+
+	<xs:complexType name="ProfissionalSaudeType">
+		<xs:sequence>
+			
+			<xs:element name="dataAtualizacao" minOccurs="0" maxOccurs="1" type="xs:date"/>
+			
+			<xs:element name="Nome" minOccurs="1" maxOccurs="1" type="nome:NomeCompletoType"/>
+			
+			<xs:element name="CNS" minOccurs="1" maxOccurs="unbounded" type="cns:CNSType"/>
+			
+			<xs:element name="CPF" minOccurs="1" maxOccurs="1" type="cpf:CPFType"/>
+			
+			<xs:element name="CBO" minOccurs="0" maxOccurs="unbounded" type="cbo:CBOType"/>
+			
+			<xs:element name="CNES" minOccurs="0" maxOccurs="unbounded" type="cnes:DadosBasicosEstabelecimentoType"/>
+			
+			<xs:element name="Email" minOccurs="0" maxOccurs="unbounded" type="email:EmailType"/>
+			
+			<xs:element name="Endereco" minOccurs="0" maxOccurs="unbounded" type="endereco:EnderecoType"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

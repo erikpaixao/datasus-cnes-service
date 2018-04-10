@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cns="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" xmlns:nome="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" xmlns:cpf="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosprofissional" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosprofissional">
+
+	<xs:import id="cns" namespace="http://servicos.saude.gov.br/schema/cadsus/v5r0/cns" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcadsus%2Fcns.v5r0.xsd"/>
+	
+	<xs:import id="cpf" namespace="http://servicos.saude.gov.br/schema/corporativo/documento/v1r2/cpf" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fdocumento%2Fcpf.v1r2.xsd"/>
+	
+	<xs:import id="nome" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoafisica/v1r2/nomecompleto" schemaLocation="https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fsebast%2FDesenvolvimento%2FOSB%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoafisica%2Fnomecompleto.v1r2.xsd"/>		
+		
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa os dados basicos do profissional.]]></xs:documentation>
+	</xs:annotation>
+	
+	
+	<xs:element name="DadosBasicosProfissionais" type="DadosBasicosProfissionaisType"/>
+	
+	<xs:complexType name="DadosBasicosProfissionaisType">
+		<xs:sequence>
+
+			<xs:element name="DadosBasicosProfissional" minOccurs="0" maxOccurs="unbounded" type="DadosBasicosProfissionalType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:element name="DadosBasicosProfissional" type="DadosBasicosProfissionalType"/>
+
+	<xs:complexType name="DadosBasicosProfissionalType">
+		<xs:sequence>
+			<xs:element name="Nome" minOccurs="1" maxOccurs="1" type="nome:NomeCompletoType"/>
+			<xs:element name="CPF" minOccurs="1" maxOccurs="1" type="cpf:CPFType"/>
+			<xs:element name="CNS" minOccurs="1" maxOccurs="unbounded" type="cns:CNSType"/>	
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

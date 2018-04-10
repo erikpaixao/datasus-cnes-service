@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/cmpt" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/cmpt">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa o ano de exercício do Estabelecimento de Saúde.]]></xs:documentation>
+	</xs:annotation>
+	
+	<xs:element name="cmpt" type="cmptType"/>
+
+	<xs:complexType name="cmptType">
+		<xs:sequence>
+			<xs:element name="cmpt" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation><![CDATA[Ano e mês de Exercício. Formato: ANO+MES ex:200501 (ano 2005 mês 01)]]></xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="6"/>
+						<xs:maxLength value="6"/>
+						<xs:pattern value="[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

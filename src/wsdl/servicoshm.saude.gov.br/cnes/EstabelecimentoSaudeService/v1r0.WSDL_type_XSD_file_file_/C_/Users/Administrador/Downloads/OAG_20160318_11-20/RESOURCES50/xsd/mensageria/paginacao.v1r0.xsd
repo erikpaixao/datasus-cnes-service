@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/paginacao">
+
+	<xsd:annotation>
+		<xsd:documentation><![CDATA[Schema para representar a paginação retornada de uma consulta. 
+		Deve ser infomado a posição do registro inicial e final]]></xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:element name="Paginacao" type="PaginacaoType">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[Referência ao Type do schema.]]></xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+	<xsd:complexType name="PaginacaoType">
+		<xsd:sequence>
+			<xsd:element minOccurs="1" maxOccurs="1" name="posicaoRegistroInicio" type="numero">
+				<xsd:annotation>
+					<xsd:documentation><![CDATA[Posição de inicio do registro.]]></xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element minOccurs="1" maxOccurs="1" name="quantidadeRegistrosPorPagina" type="numero">
+				<xsd:annotation>
+					<xsd:documentation><![CDATA[Quantidade de registros por página.]]></xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element minOccurs="0" maxOccurs="1" name="quantidadeRegistros" type="numero">
+				<xsd:annotation>
+					<xsd:documentation><![CDATA[Quantidade de registros total da consulta.]]></xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="numero">
+		<xsd:annotation>
+			<xsd:documentation><![CDATA[Número padrão utilizado pelos campos de paginação. Até 7 casas decimais.]]></xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="1"/>
+			<xsd:maxLength value="7"/>
+			<xsd:pattern value="[0-9]*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+</xsd:schema>

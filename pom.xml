@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.springframework</groupId>
+    <artifactId>gs-consuming-web-service</artifactId>
+    <version>0.1.0</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.1.RELEASE</version>
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.ws</groupId>
+            <artifactId>spring-ws-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!-- tag::wsdl[] -->
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>3.1.10</version>
+                <executions>
+                    <execution>
+                        <id>generate-sources</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceRoot>${basedir}/src/main/java</sourceRoot>
+                            <wsdlOptions>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?wsdl</wsdl>
+                                    <extendedSoapHeaders>true</extendedSoapHeaders> 
+                                   
+                                </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                    
+                                </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                   
+                                </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/EquipamentoService/v1r0?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                    
+                                </wsdlOption>
+                                <wsdlOption>                                                                                                                                
+                                    <wsdl>https://servicoshm.saude.gov.br/cnes/LeitoService/v1r0?wsdl</wsdl> 
+                                    <extendedSoapHeaders>true</extendedSoapHeaders>
+                                    
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- end::wsdl[] -->
+        </plugins>
+    </build>
+
+</project>

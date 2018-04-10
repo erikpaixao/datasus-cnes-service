@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosestabelecimento" xmlns:nomejuridico="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" xmlns:codigocnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/cnes/v1r0/dadosbasicosestabelecimento">
+
+	
+	<xs:import id="nomejuridico" namespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/nomejuridico" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcorporativo%2Fpessoajuridica%2Fnomejuridico.v1r0.xsd"/>
+	
+	<xs:import id="codigocnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2Fhome%2Fflavioayres%2FDownloads%2FSkype%2FOAG_CNES_18032016_1120%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>	
+
+	<xs:annotation>
+		<xs:documentation>Representa o objeto a informação básica Estabelecimento de Saúde.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="DadosBasicosEstabelecimento" type="DadosBasicosEstabelecimentoType"/>
+
+	<xs:complexType name="DadosBasicosEstabelecimentoType">
+		<xs:sequence>
+			<xs:element minOccurs="1" maxOccurs="1" ref="codigocnes:CodigoCNES">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Código do Estabelecimento de Saúde.]]>.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NomeFantasia" minOccurs="0" maxOccurs="1" type="nomejuridico:NomeJuridicoType">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Nome fantasia da empresa.]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

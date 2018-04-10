@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisaprecadastrocnes" xmlns:cnes="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/wsdl/mensageria/v1r0/filtropesquisaprecadastrocnes">
+		
+	<xs:import id="cnes" namespace="http://servicos.saude.gov.br/schema/cnes/v1r0/codigocnes" schemaLocation="https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?WSDL&amp;type=XSD&amp;file=file%3A%2FC%3A%2FUsers%2FAdministrador%2FDownloads%2FOAG_20160318_11-20%2FRESOURCES50%2Fxsd%2Fcnes%2Fcodigocnes.v1r0.xsd"/>
+	
+	<xs:annotation>
+		<xs:documentation>Representa o objeto de filtro da pesquisa do Pre cadastro do Estabelcimento de Saúde.</xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="FiltroPesquisaPrecadastroCnes" type="FiltroPesquisaPrecadastroCnesType"/>
+		
+	<xs:complexType name="FiltroPesquisaPrecadastroCnesType">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="1" ref="cnes:CodigoCNES">
+				<xs:annotation>
+					<xs:documentation>Código do CNES.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="situacao" minOccurs="0" maxOccurs="1" nillable="true">
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>Situação: Ativo A, Desativado D, Excluido E.</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<!-- ATIVO -->
+						<xs:enumeration value="A"/>
+						<!-- DESATIVADO -->
+						<xs:enumeration value="D"/>
+						<!-- EXCLUIDO -->
+						<xs:enumeration value="E"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>	
+	</xs:complexType>
+</xs:schema>

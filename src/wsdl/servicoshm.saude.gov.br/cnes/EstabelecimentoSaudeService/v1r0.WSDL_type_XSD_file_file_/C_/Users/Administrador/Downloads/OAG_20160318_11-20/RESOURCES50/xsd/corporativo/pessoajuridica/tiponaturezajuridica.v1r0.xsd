@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/tiponaturezajuridica" elementFormDefault="qualified" targetNamespace="http://servicos.saude.gov.br/schema/corporativo/pessoajuridica/v1r0/tiponaturezajuridica">
+
+	<xs:annotation>
+		<xs:documentation><![CDATA[Este esquema representa o tipo da natureza juridica.]]></xs:documentation>
+	</xs:annotation>
+
+	<xs:element name="TipoNaturezaJuridica" type="TipoNaturezaJuridicaType"/>
+
+	<xs:complexType name="TipoNaturezaJuridicaType">
+		<xs:sequence>
+			<xs:element name="codigo" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation><![CDATA[Código da Natureza Jurídica CONCLA(Comissão Nacional de Classificação).]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:annotation>
+						<xs:documentation>Codigo do tipo da Natureza Juridica.</xs:documentation>
+					</xs:annotation>
+					<xs:restriction base="xs:string">
+						<!-- ADMINISTRACAO PUBLICA -->
+						<xs:enumeration value="1">
+							<xs:annotation>
+								<xs:documentation><![CDATA[ADMINISTRACAO PUBLICA.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<!-- ENTIDADES EMPRESARIAIS -->
+						<xs:enumeration value="2">
+							<xs:annotation>
+								<xs:documentation><![CDATA[ENTIDADES EMPRESARIAIS.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<!-- ENTIDADES SEM FINS LUCRATIVOS -->
+						<xs:enumeration value="3">
+							<xs:annotation>
+								<xs:documentation><![CDATA[ENTIDADES SEM FINS LUCRATIVOS.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<!-- PESSOAS FISICAS -->
+						<xs:enumeration value="4">
+							<xs:annotation>
+								<xs:documentation><![CDATA[PESSOAS FISICAS.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<!-- INSTITUICOES EXTRATERRITORIAIS E OUTRAS INSTITUICOES EXTRATERRITORIAIS -->
+						<xs:enumeration value="5">
+							<xs:annotation>
+								<xs:documentation><![CDATA[INSTITUICOES EXTRATERRITORIAIS E OUTRAS INSTITUICOES EXTRATERRITORIAIS.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+						<!-- ENTIDADE DE NATUREZA JURIDICA INVALIDA -->
+						<xs:enumeration value="8">
+							<xs:annotation>
+								<xs:documentation><![CDATA[ENTIDADE DE NATUREZA JURIDICA INVALIDA.]]></xs:documentation>
+							</xs:annotation>
+						</xs:enumeration>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="descricao" minOccurs="1" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Descrição do tipo da Natureza Juridica</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+</xs:schema>
