@@ -10,8 +10,8 @@
         <jws:handler-chains>
             <jws:handler-chain>
                 <jws:handler>
-                    <jws:handler-name>br.e3ti.cadsus.config.HeaderHandler</jws:handler-name>
-                    <jws:handler-class>br.e3ti.cadsus.config.HeaderHandler</jws:handler-class>
+                    <jws:handler-name>br.e3ti.pje.config.HeaderHandler</jws:handler-name>
+                    <jws:handler-class>br.e3ti.pje.config.HeaderHandler</jws:handler-class>
                 </jws:handler>
             </jws:handler-chain>
         </jws:handler-chains>

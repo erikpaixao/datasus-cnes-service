@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.e3ti</groupId>
-    <artifactId>datasus-service</artifactId>
+    <artifactId>pje-service</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -52,44 +52,8 @@
                             <sourceRoot>${basedir}/src/main/java</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/EstabelecimentoSaudeService/v1r0?wsdl</wsdl>
+                                    <wsdl>https://pje.tjro.jus.br/pg/intercomunicacao?wsdl</wsdl>
                                     <extendedSoapHeaders>true</extendedSoapHeaders> 
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/VinculacaoProfissionalService/v1r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/ProfissionalSaudeService/v1r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/CnesService/v1r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/EquipamentoService/v1r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cnes/LeitoService/v1r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/sigtap/ProcedimentoService/v1?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/horus/v1r0/EstoqueService?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl> https://servicoshm.saude.gov.br/cadsus/AuditoriaCadsusService/v5r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
-                                </wsdlOption>
-                                <wsdlOption>                                                                                                                                
-                                    <wsdl>https://servicoshm.saude.gov.br/cadsus/CadsusService/v5r0?wsdl</wsdl> 
-                                    <extendedSoapHeaders>true</extendedSoapHeaders>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
